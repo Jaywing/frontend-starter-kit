@@ -16,8 +16,6 @@
   },
   "prettier": {},
   "dependencies": {
-    "giza-framework": "*",
-    "giza-lab": "*",
     "jaywing-frontend-starter-kit": "*"
   },
   "devDependencies": {
