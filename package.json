@@ -1,0 +1,31 @@
+{
+  "name": "jaywing-frontend-site-template",
+  "version": "0.0.1",
+  "description": "Jaywing Frontend site template",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.11.1",
+    "npm": ">=3.10.3"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp",
+    "dist": "gulp dist",
+    "fix-code": "prettier-eslint --write ./Frontend/js/**/*.{js,jsx}",
+    "fix-styles": "prettier-stylelint --write ./Frontend/scss/**/*.{css,scss}"
+  },
+  "prettier": {},
+  "dependencies": {
+    "giza-framework": "*",
+    "giza-lab": "*",
+    "jaywing-frontend-starter-kit": "*"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint-config-idiomatic-order": "^6.2.0",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}

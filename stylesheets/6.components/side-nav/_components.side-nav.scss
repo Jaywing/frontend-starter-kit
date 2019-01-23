@@ -1,0 +1,10 @@
+.c-side-nav {
+  h4 {
+    padding: $spacer $spacer ($spacer / 2);
+    margin: 0;
+  }
+
+  .c-nav__link {
+    padding: ($spacer / 2) $spacer;
+  }
+}

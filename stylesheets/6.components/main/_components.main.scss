@@ -1,0 +1,10 @@
+@include breakpoint(md) {
+  .o-site__content {
+    display: flex;
+  }
+
+  .c-main {
+    display: flex;
+    flex: 1;
+  }
+}
