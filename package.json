@@ -11,8 +11,8 @@
   "scripts": {
     "build": "gulp",
     "dist": "gulp dist",
-    "fix-code": "prettier-eslint --write ./Frontend/js/**/*.{js,jsx}",
-    "fix-styles": "prettier-stylelint --write ./Frontend/scss/**/*.{css,scss}"
+    "fix-code": "prettier-eslint --write ./javascripts/**/*.{js,jsx}",
+    "fix-styles": "prettier-stylelint --write ./stylesheets/**/*.{css,scss}"
   },
   "prettier": {},
   "dependencies": {
