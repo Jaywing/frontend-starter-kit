@@ -8,16 +8,26 @@
       "title": "Introduction"
     }
   ],
-  "nav_layout": [
-    { "id": "content", "url": "layout.content.html", "title": "Content" },
-    { "id": "sidebar-content", "url": "layout.sidebar-content.html", "title": "Sidebar / Content" }
+  "nav_layouts": [
+    { "id": "content", "url": "layouts.content.html", "title": "Content" },
+    {
+      "id": "sidebar-content",
+      "url": "layouts.sidebar-content.html",
+      "title": "Sidebar / Content"
+    }
   ],
   "nav_content": [
-    { "id": "typography", "url": "content.typography.html", "title": "Typography" },
+    {
+      "id": "typography",
+      "url": "content.typography.html",
+      "title": "Typography"
+    },
     { "id": "images", "url": "content.images.html", "title": "Images" },
     { "id": "buttons", "url": "content.buttons.html", "title": "Buttons" },
     { "id": "icons", "url": "content.icons.html", "title": "Icons" },
     { "id": "tables", "url": "content.tables.html", "title": "Tables" }
   ],
-  "nav_components": []
+  "nav_components": [
+    { "id": "example", "url": "components.example.html", "title": "Example" }
+  ]
 }

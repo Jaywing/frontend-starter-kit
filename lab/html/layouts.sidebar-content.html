@@ -1,0 +1,20 @@
+{% extends 'layouts/lab-side-content.html' %}
+
+{% from 'macros/lab-example.html' import LabExample %}
+
+{% set pageType = "layouts" %}
+{% set pageId = "sidebar-content" %}
+
+{% block content %}
+  <h1>Sidebar &amp; Content</h1>
+
+  <h3>Usage</h3>
+
+  {{LabExample(pageType, pageId)}}
+
+  <div class="c-code">
+    <pre><code>
+    &lt;div&gt;&lt;/div&gt;
+    </code></pre>
+  </div>
+{% endblock %}

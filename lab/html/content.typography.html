@@ -1,105 +1,90 @@
 {% extends 'layouts/lab-side-content.html' %}
 
-{% from 'macros/lab-example-tab.html' import ExampleTab %}
+{% from 'macros/lab-example.html' import LabExample %}
 
+{% set pageType = "content" %}
 {% set pageId = "typography" %}
 
 {% block content %}
-    <h1>Typography</h1>
+  <h1>Typography</h1>
 
-    <h3>Headings</h3>
+  <h3>Headings</h3>
 
-    <div class="c-example">
-        <div class="c-example__tabs">
-            {{ExampleTab('/iframes/content.typography.headings.html', 'Open this example in a new window')}}
-        </div>
-        <iframe class="c-example__iframe" src="/iframes/content.typography.headings.html" data-module="LabFrame"></iframe>
-    </div>
-    <div class="c-code">
-        <pre><code>
-        &lt;h1 class="u-canon"&gt;...&lt;/h1&gt;
+  {{LabExample(pageType, pageId, 'headings')}}
 
-        &lt;h1&gt;...&lt;/h1&gt;
+  <div class="c-code">
+    <pre><code>
+    &lt;h1 class="u-canon"&gt;...&lt;/h1&gt;
 
-        &lt;h2&gt;...&lt;/h2&gt;
+    &lt;h1&gt;...&lt;/h1&gt;
 
-        &lt;h3&gt;...&lt;/h3&gt;
+    &lt;h2&gt;...&lt;/h2&gt;
 
-        &lt;h4&gt;...&lt;/h4&gt;
+    &lt;h3&gt;...&lt;/h3&gt;
 
-        &lt;h5&gt;...&lt;/h5&gt;
+    &lt;h4&gt;...&lt;/h4&gt;
 
-        &lt;h6&gt;...&lt;/h6&gt;
-        </code></pre>
-    </div>
+    &lt;h5&gt;...&lt;/h5&gt;
 
-    <h3>Text</h3>
+    &lt;h6&gt;...&lt;/h6&gt;
+    </code></pre>
+  </div>
 
-    <div class="c-example">
-        <div class="c-example__tabs">
-            {{ExampleTab('/iframes/content.typography.text.html', 'Open this example in a new window')}}
-        </div>
-        <iframe class="c-example__iframe" src="/iframes/content.typography.text.html" data-module="LabFrame"></iframe>
-    </div>
-    <div class="c-code">
-        <pre><code>
-        &lt;p class="u-brevier"&gt;...&lt;/p&gt;
+  <h3>Text</h3>
 
-        &lt;p class="u-minion"&gt;...&lt;/p&gt;
+  {{LabExample(pageType, pageId, 'text')}}
 
-        &lt;p class="u-body-copy"&gt;...&lt;/p&gt;
+  <div class="c-code">
+    <pre><code>
+    &lt;p class="u-brevier"&gt;...&lt;/p&gt;
 
-        &lt;p&gt;
-            &lt;a href="#"&gt;...&lt;/a&gt;
-        &lt;/p&gt;
-        </code></pre>
-    </div>
+    &lt;p class="u-minion"&gt;...&lt;/p&gt;
 
-    <h3>Lists</h3>
+    &lt;p class="u-body-copy"&gt;...&lt;/p&gt;
 
-    <div class="c-example">
-        <div class="c-example__tabs">
-            {{ExampleTab('/iframes/content.typography.lists.html', 'Open this example in a new window')}}
-        </div>
-        <iframe class="c-example__iframe" src="/iframes/content.typography.lists.html" data-module="LabFrame"></iframe>
-    </div>
-    <div class="c-code">
-        <pre><code>
-        &lt;ul&gt;
-            &lt;li&gt;...&lt;/li&gt;
-            &lt;li&gt;...&lt;/li&gt;
-            &lt;li&gt;...&lt;/li&gt;
-            ...
-        &lt;/ul&gt;
+    &lt;p&gt;
+      &lt;a href="#"&gt;...&lt;/a&gt;
+    &lt;/p&gt;
+    </code></pre>
+  </div>
 
-        &lt;ul&gt;
-            &lt;li&gt;...&lt;/li&gt;
-            &lt;li&gt;...&lt;/li&gt;
-            &lt;li&gt;...&lt;/li&gt;
-            ...
-        &lt;/ul&gt;
+  <h3>Lists</h3>
 
-        &lt;blockquote&gt;
-            &lt;p&gt;...&lt;/p&gt;
-            &lt;cite&gt;...&lt;/cite&gt;
-        &lt;/blockquote&gt;
-        </code></pre>
-    </div>
+  {{LabExample(pageType, pageId, 'lists')}}
 
-    <h3>Blockquote</h3>
+  <div class="c-code">
+    <pre><code>
+    &lt;ul&gt;
+      &lt;li&gt;...&lt;/li&gt;
+      &lt;li&gt;...&lt;/li&gt;
+      &lt;li&gt;...&lt;/li&gt;
+      ...
+    &lt;/ul&gt;
 
-    <div class="c-example">
-        <div class="c-example__tabs">
-            {{ExampleTab('/iframes/content.typography.blockquote.html', 'Open this example in a new window')}}
-        </div>
-        <iframe class="c-example__iframe" src="/iframes/content.typography.blockquote.html" data-module="LabFrame"></iframe>
-    </div>
-    <div class="c-code">
-        <pre><code>
-        &lt;blockquote&gt;
-            &lt;p&gt;...&lt;/p&gt;
-            &lt;cite&gt;...&lt;/cite&gt;
-        &lt;/blockquote&gt;
-        </code></pre>
-    </div>
+    &lt;ul&gt;
+      &lt;li&gt;...&lt;/li&gt;
+      &lt;li&gt;...&lt;/li&gt;
+      &lt;li&gt;...&lt;/li&gt;
+      ...
+    &lt;/ul&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;cite&gt;...&lt;/cite&gt;
+    &lt;/blockquote&gt;
+    </code></pre>
+  </div>
+
+  <h3>Blockquote</h3>
+
+  {{LabExample(pageType, pageId, 'blockquote')}}
+
+  <div class="c-code">
+    <pre><code>
+    &lt;blockquote&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;cite&gt;...&lt;/cite&gt;
+    &lt;/blockquote&gt;
+    </code></pre>
+  </div>
 {% endblock %}

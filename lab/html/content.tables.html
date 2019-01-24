@@ -1,41 +1,38 @@
 {% extends 'layouts/lab-side-content.html' %}
 
-{% from 'macros/lab-example-tab.html' import ExampleTab %}
+{% from 'macros/lab-example.html' import LabExample %}
 
+{% set pageType = "content" %}
 {% set pageId = "tables" %}
 
 {% block content %}
-    <h1>Tables</h1>
+  <h1>Tables</h1>
 
-    <p>Easily create nicely looking tables, which come in different styles.</p>
+  <p>Easily create nicely looking tables, which come in different styles.</p>
 
-    <h3>Usage</h3>
+  <h3>Usage</h3>
 
-    <div class="c-example">
-        <div class="c-example__tabs">
-            {{ExampleTab('/iframes/content.tables.html', 'Open this example in a new window')}}
-        </div>
-        <iframe class="c-example__iframe" src="/iframes/content.tables.html" data-module="LabFrame"></iframe>
-    </div>
-    <div class="c-code">
-        <pre><code>
-        &lt;table class="c-table"&gt;
-            &lt;thead&gt;
-                &lt;tr&gt;
-                    &lt;th&gt;...&lt;/th&gt;
-                    &lt;th&gt;...&lt;/th&gt;
-                    ...
-                &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-                &lt;tr&gt;
-                    &lt;td&gt;...&lt;/td&gt;
-                    &lt;td&gt;...&lt;/td&gt;
-                    ...
-                &lt;/tr&gt;
-                ...
-            &lt;/tbody&gt;
-        &lt;/table&gt;
-        </code></pre>
-    </div>
+  {{LabExample(pageType, pageId)}}
+
+  <div class="c-code">
+    <pre><code>
+    &lt;table class="c-table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;...&lt;/th&gt;
+          &lt;th&gt;...&lt;/th&gt;
+          ...
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;...&lt;/td&gt;
+          &lt;td&gt;...&lt;/td&gt;
+          ...
+        &lt;/tr&gt;
+        ...
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    </code></pre>
+  </div>
 {% endblock %}
