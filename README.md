@@ -4,7 +4,7 @@
 
 ```bash
 yarn
-yarn build
+yarn develop
 ```
 
 ## Production (WIP)
