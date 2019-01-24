@@ -85,13 +85,13 @@ const lab_html_paths = {
 };
 
 const lab_stylesheets_paths = {
-  src: [`./node_modules/giza-lab/dist/stylesheets/lab.css`],
+  src: [`./node_modules/jaywing-frontend-starter-kit/dist/stylesheets/lab.css`],
   dest: projectPath(CONFIG.dest, CONFIG.stylesheets.dest),
   dist: projectPath(CONFIG.dist, CONFIG.stylesheets.dest)
 };
 
 const lab_javascripts_paths = {
-  src: [`./node_modules/giza-lab/dist/javascripts/lab.js`],
+  src: [`./node_modules/jaywing-frontend-starter-kit/dist/javascripts/lab.js`],
   dest: projectPath(CONFIG.dest, CONFIG.javascripts.dest),
   dist: projectPath(CONFIG.dist, CONFIG.javascripts.dest)
 };
