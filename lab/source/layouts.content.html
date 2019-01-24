@@ -1,9 +1,7 @@
-{% extends 'layouts/site.html' %}
+{% extends 'layouts/lab-source.html' %}
+
+{% from 'macros/lab-source.html' import LabIframe %}
 
 {% block body %}
-  <div class="c-main">
-    <div class="c-content">
-      <div style="height: 500px; padding: 10px; background: grey;">Content</div>
-    </div>
-  </div>
+  {{LabIframe('layouts', 'content')}}
 {% endblock %}
