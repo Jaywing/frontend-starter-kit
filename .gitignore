@@ -1,4 +1,6 @@
 node_modules
 _build
 yarn.lock
+
+# VS Code Local History Extension files
 .history
