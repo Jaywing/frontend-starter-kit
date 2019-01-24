@@ -78,6 +78,8 @@ const lab_html_paths = {
   src_render: [
     projectPath(CONFIG.lab),
     `./node_modules/giza-lab/html`,
+    projectPath(CONFIG.lab),
+    `./node_modules/jaywing-frontend-starter-kit/lab/html`,
     projectPath(CONFIG.BASE, CONFIG.html.src)
   ],
   dest: projectPath(CONFIG.dest),
