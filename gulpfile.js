@@ -250,7 +250,7 @@ gulp.task("build_dist", function() {
   production = true;
 
   gulp.start([
-    "clean_build",
+    "clean_dist",
     "html",
     "stylesheets",
     "javascripts",
