@@ -4,13 +4,13 @@
 
 ```bash
 yarn
-yarn develop
+yarn start
 ```
 
 ## Production (WIP)
 
 ```bash
-yarn dist
+yarn build
 ```
 
 ## Documentation
