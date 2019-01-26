@@ -145,7 +145,7 @@ gulp.task("html", function() {
 gulp.task("stylesheets", function() {
   return gulp
     .src(stylesheets_paths.src)
-    .pipe(sourcemaps.init())
+    .pipe(gulpif(!production, sourcemaps.init()))
     .pipe(plumber())
     .pipe(
       sass({
