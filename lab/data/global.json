@@ -12,8 +12,8 @@
   "nav_layouts": [
     { "id": "content", "url": "layouts.content.html", "title": "Content" },
     {
-      "id": "sidebar-content",
-      "url": "layouts.sidebar-content.html",
+      "id": "sidebar",
+      "url": "layouts.sidebar.html",
       "title": "Sidebar / Content"
     }
   ],
