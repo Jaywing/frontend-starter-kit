@@ -1,6 +1,7 @@
 {% extends 'layouts/lab-side-content.html' %}
 
 {% from 'macros/lab-example.html' import LabExample %}
+{% from 'macros/lab-code.html' import LabCode %}
 
 {% set pageType = "content" %}
 {% set pageId = "tables" %}
@@ -13,28 +14,23 @@
   <h3>Usage</h3>
 
   {{LabExample(pageType, pageId)}}
-
-  <div class="c-code" data-module="ExampleCode">
-    <pre class="language-html">
-      <code class="language-html">
-      &lt;table class="c-table"&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th&gt;...&lt;/th&gt;
-            &lt;th&gt;...&lt;/th&gt;
-            ...
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-          &lt;tr&gt;
-            &lt;td&gt;...&lt;/td&gt;
-            &lt;td&gt;...&lt;/td&gt;
-            ...
-          &lt;/tr&gt;
-          ...
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-      </code>
-    </pre>
-  </div>
+  {{LabCode('html', '
+  <table class="c-table">
+    <thead>
+      <tr>
+        <th>...</th>
+        <th>...</th>
+        ...
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+        ...
+      </tr>
+      ...
+    </tbody>
+  </table>
+  ')}}
 {% endblock %}

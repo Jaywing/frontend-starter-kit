@@ -1,6 +1,7 @@
 {% extends 'layouts/lab-side-content.html' %}
 
 {% from 'macros/lab-example.html' import LabExample %}
+{% from 'macros/lab-code.html' import LabCode %}
 
 {% set pageType = "content" %}
 {% set pageId = "typography" %}
@@ -11,88 +12,68 @@
   <h3>Headings</h3>
 
   {{LabExample(pageType, pageId, 'headings')}}
+  {{LabCode('html', '
+  <h1 class="u-canon">...</h1>
 
-  <div class="c-code" data-module="ExampleCode">
-    <pre class="language-html">
-      <code class="language-html">
-      &lt;h1 class="u-canon"&gt;...&lt;/h1&gt;
+  <h1>...</h1>
 
-      &lt;h1&gt;...&lt;/h1&gt;
+  <h2>...</h2>
 
-      &lt;h2&gt;...&lt;/h2&gt;
+  <h3>...</h3>
 
-      &lt;h3&gt;...&lt;/h3&gt;
+  <h4>...</h4>
 
-      &lt;h4&gt;...&lt;/h4&gt;
+  <h5>...</h5>
 
-      &lt;h5&gt;...&lt;/h5&gt;
-
-      &lt;h6&gt;...&lt;/h6&gt;
-      </code>
-    </pre>
-  </div>
+  <h6>...</h6>
+  ')}}
 
   <h3>Text</h3>
 
   {{LabExample(pageType, pageId, 'text')}}
+  {{LabCode('html', '
+  <p class="u-brevier">...</p>
 
-  <div class="c-code" data-module="ExampleCode">
-    <pre class="language-html">
-      <code class="language-html">
-      &lt;p class="u-brevier"&gt;...&lt;/p&gt;
+  <p class="u-minion">...</p>
 
-      &lt;p class="u-minion"&gt;...&lt;/p&gt;
+  <p class="u-body-copy">...</p>
 
-      &lt;p class="u-body-copy"&gt;...&lt;/p&gt;
-
-      &lt;p&gt;
-        &lt;a href="#"&gt;...&lt;/a&gt;
-      &lt;/p&gt;
-      </code>
-    </pre>
-  </div>
+  <p>
+    <a href="#">...</a>
+  </p>
+  ')}}
 
   <h3>Lists</h3>
 
   {{LabExample(pageType, pageId, 'lists')}}
+  {{LabCode('html', '
+  <ul>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    ...
+  </ul>
 
-  <div class="c-code" data-module="ExampleCode">
-    <pre class="language-html">
-      <code class="language-html">
-      &lt;ul&gt;
-        &lt;li&gt;...&lt;/li&gt;
-        &lt;li&gt;...&lt;/li&gt;
-        &lt;li&gt;...&lt;/li&gt;
-        ...
-      &lt;/ul&gt;
+  <ul>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    ...
+  </ul>
 
-      &lt;ul&gt;
-        &lt;li&gt;...&lt;/li&gt;
-        &lt;li&gt;...&lt;/li&gt;
-        &lt;li&gt;...&lt;/li&gt;
-        ...
-      &lt;/ul&gt;
-
-      &lt;blockquote&gt;
-        &lt;p&gt;...&lt;/p&gt;
-        &lt;cite&gt;...&lt;/cite&gt;
-      &lt;/blockquote&gt;
-      </code>
-    </pre>
-  </div>
+  <blockquote>
+    <p>...</p>
+    <cite>...</cite>
+  </blockquote>
+  ')}}
 
   <h3>Blockquote</h3>
 
   {{LabExample(pageType, pageId, 'blockquote')}}
-
-  <div class="c-code" data-module="ExampleCode">
-    <pre class="language-html">
-      <code class="language-html">
-      &lt;blockquote&gt;
-        &lt;p&gt;...&lt;/p&gt;
-        &lt;cite&gt;...&lt;/cite&gt;
-      &lt;/blockquote&gt;
-      </code>
-    </pre>
-  </div>
+  {{LabCode('html', '
+  <blockquote>
+    <p>...</p>
+    <cite>...</cite>
+  </blockquote>
+  ')}}
 {% endblock %}

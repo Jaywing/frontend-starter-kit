@@ -1,8 +1,8 @@
 {% extends 'layouts/lab-side-content.html' %}
 
 {% from 'macros/lab-example.html' import LabExample %}
+{% from 'macros/lab-code.html' import LabCode %}
 
-{% set pageType = "content" %}
 {% set pageId = "buttons" %}
 
 {% block content %}
@@ -12,20 +12,8 @@
 
   <h3>Usage</h3>
 
-  {{LabExample(pageType, pageId)}}
-
-  <div class="c-code" data-module="ExampleCode">
-    <pre class="language-html">
-      <code class="language-html">
-      &lt;button class="c-button"&gt;...&lt;/button&gt;
-
-      &lt;a class="c-button" href="..."&gt;...&lt;/a&gt;
-
-      &lt;div class="c-button"&gt;
-        [icon]
-        &lt;span class="c-button__text"&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-      </code>
-    </pre>
-  </div>
+  {{LabExample('content', 'buttons')}}
+  {{LabCode('html', '
+  <button class="c-button">...</button>
+  ')}}
 {% endblock %}
