@@ -1,7 +1,30 @@
 {% extends 'layouts/lab-side-content.html' %}
 
+{% from 'macros/lab-code.html' import LabCode %}
+
 {% set pageId = "introduction" %}
 
 {% block content %}
   <h1>Introduction</h1>
+
+  <p>An open source toolkit for developing with HTML, CSS and JS.</p>
+
+  <h2>Requirements</h2>
+
+  <p>Requires at least version 6 of Node. We reccomend using nvm to install and manage your Node versions.</p>
+
+  <h2>Installation</h2>
+
+  {{LabCode('html', '
+  $ npm install jaywing-frontend-starter-kit
+  ')}}
+
+  <ul class="c-nav">
+    <li class="c-nav__item">
+      <a class="c-nav__link" href="https://github.com/Jaywing/frontend-site-starter-kit">GitHub</a>
+    </li>
+    <li class="c-nav__item">
+      <a class="c-nav__link" href="https://jaywing.com/">Jaywing</a>
+    </li>
+  </ul>
 {% endblock %}
