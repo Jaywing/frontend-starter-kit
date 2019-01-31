@@ -221,7 +221,7 @@ gulp.task("lab_javascripts", function() {
 });
 
 gulp.task("watch", function() {
-  gulp.watch(html_paths.src, ["html", browser.reload]);
+  gulp.watch(html_paths.src, ["html", "lab_html", browser.reload]);
   gulp.watch(stylesheets_paths.src, ["stylesheets", browser.reload]);
   gulp.watch(javascripts_paths.src, ["javascripts", browser.reload]);
   gulp.watch(images_paths.src, ["images", browser.reload]);
