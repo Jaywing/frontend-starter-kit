@@ -221,12 +221,12 @@ gulp.task("lab_javascripts", function() {
 });
 
 gulp.task("watch", function() {
-  gulp.watch("./Frontend/html/**/*", ["html", browser.reload]);
-  gulp.watch("./Frontend/stylesheets/**/*", ["stylesheets", browser.reload]);
-  gulp.watch("./Frontend/javascripts/**/*", ["javascripts", browser.reload]);
-  gulp.watch("./Frontend/images/**/*", ["images", browser.reload]);
-  gulp.watch("./Frontend/fonts/**/*", ["fonts", browser.reload]);
-  gulp.watch("./Frontend/lab/**/*", ["lab_html", browser.reload]);
+  gulp.watch("./html/**/*", ["html", browser.reload]);
+  gulp.watch("./stylesheets/**/*", ["stylesheets", browser.reload]);
+  gulp.watch("./javascripts/**/*", ["javascripts", browser.reload]);
+  gulp.watch("./images/**/*", ["images", browser.reload]);
+  gulp.watch("./fonts/**/*", ["fonts", browser.reload]);
+  gulp.watch("./lab/**/*", ["lab_html", browser.reload]);
 });
 
 gulp.task("serve", ["build"], function() {

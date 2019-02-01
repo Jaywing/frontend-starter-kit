@@ -3,6 +3,7 @@
 {% from 'macros/lab-example.html' import LabExample %}
 {% from 'macros/lab-code.html' import LabCode %}
 
+{% set pageType = "components" %}
 {% set pageId = "buttons" %}
 
 {% block content %}
@@ -12,7 +13,7 @@
 
   <h3>Usage</h3>
 
-  {{LabExample('content', 'buttons')}}
+  {{LabExample(pageType, pageId)}}
   {{LabCode('html', '
   <button class="c-button">...</button>
   ')}}
