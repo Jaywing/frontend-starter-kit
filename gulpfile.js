@@ -243,7 +243,7 @@ gulp.task("build", [
   "icons",
   "lab_html",
   "lab_stylesheets",
-  "lab_javascriptss"
+  "lab_javascripts"
 ]);
 
 gulp.task("build_dist", function() {
