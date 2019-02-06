@@ -1,0 +1,11 @@
+.c-lab-example .c-card {
+  max-width: 400px; }
+
+.c-lab-example .c-modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
