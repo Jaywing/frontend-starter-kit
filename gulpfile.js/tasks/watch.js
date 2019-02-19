@@ -18,7 +18,7 @@ gulp.task("watch", function() {
     src: projectPath(PATH_CONFIG.BASE, PATH_CONFIG.javascripts.src, "**/*.js")
   };
 
-  gulp.watch(html_paths, ["html", "lab_html", browser.reload]);
+  gulp.watch(html_paths.src, ["html", "lab:html", browser.reload]);
   gulp.watch(stylesheets_paths.src, ["stylesheets", browser.reload]);
   gulp.watch(javascripts_paths.src, ["javascripts", browser.reload]);
 });
