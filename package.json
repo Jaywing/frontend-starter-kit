@@ -10,7 +10,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp dist",
+    "build": "gulp production",
     "fix-code": "prettier-eslint --write ./javascripts/**/*.{js,jsx}",
     "fix-styles": "prettier-stylelint --write ./stylesheets/**/*.{css,scss}"
   },
