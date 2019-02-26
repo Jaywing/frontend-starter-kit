@@ -9,7 +9,7 @@ gulp.task("default", function(cb) {
     "html",
     "stylesheets",
     "images",
-    "javascripts",
+    "webpack",
     "icons",
     "fonts",
     "lab:html",

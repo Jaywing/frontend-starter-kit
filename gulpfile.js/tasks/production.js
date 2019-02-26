@@ -11,9 +11,10 @@ gulp.task("production", function(cb) {
     "html",
     "stylesheets",
     "images",
-    "javascripts",
+    "webpack",
     "icons",
     "fonts",
+    "migrate",
     cb
   );
 });

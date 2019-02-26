@@ -4,6 +4,7 @@
   "site": "site",
   "buildDest": "./_build",
   "finalDest": "./dist",
+  "migrateDest": "./migrated",
 
   "html": {
     "src": "html"
