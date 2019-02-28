@@ -8,7 +8,7 @@ const autoprefixer = require("autoprefixer");
 const projectPath = require("../lib/projectPath");
 
 gulp.task("stylesheets", function() {
-  stylesheets_paths = {
+  paths = {
     src: [
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.stylesheets.src, "**/*.scss")
     ],
@@ -16,7 +16,7 @@ gulp.task("stylesheets", function() {
   };
 
   return gulp
-    .src(stylesheets_paths.src)
+    .src(paths.src)
     .pipe(gulpif(!production, sourcemaps.init()))
     .pipe(plumber())
     .pipe(
@@ -32,5 +32,5 @@ gulp.task("stylesheets", function() {
       ])
     )
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest(stylesheets_paths.dest));
+    .pipe(gulp.dest(paths.dest));
 });

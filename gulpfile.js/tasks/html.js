@@ -4,7 +4,7 @@ const nunjucksRender = require("gulp-nunjucks-render");
 const projectPath = require("../lib/projectPath");
 
 gulp.task("html", function() {
-  html_paths = {
+  paths = {
     src: [
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src, "**/*.html"),
       "!" +
@@ -19,11 +19,11 @@ gulp.task("html", function() {
   };
 
   return gulp
-    .src(html_paths.src)
+    .src(paths.src)
     .pipe(
       nunjucksRender({
-        path: html_paths.src_render
+        path: paths.src_render
       })
     )
-    .pipe(gulp.dest(html_paths.dest));
+    .pipe(gulp.dest(paths.dest));
 });

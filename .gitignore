@@ -1,7 +1,4 @@
 node_modules
 _build
-migrated
-yarn.lock
-
-# VS Code Local History Extension files
+_migrated
 .history

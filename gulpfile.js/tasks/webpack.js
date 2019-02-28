@@ -38,7 +38,7 @@ const webpackConfig = {
 };
 
 gulp.task("webpack", function() {
-  webpack_paths = {
+  paths = {
     src: [
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.javascripts.src, "**/*.js")
     ],
@@ -46,7 +46,7 @@ gulp.task("webpack", function() {
   };
 
   return gulp
-    .src(webpack_paths.src)
+    .src(paths.src)
     .pipe(webpackStream(webpackConfig, webpack))
-    .pipe(gulp.dest(webpack_paths.dest));
+    .pipe(gulp.dest(paths.dest));
 });

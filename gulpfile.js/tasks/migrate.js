@@ -4,7 +4,7 @@ const clean = require("del").sync;
 const projectPath = require("../lib/projectPath");
 
 gulp.task("migrate", function(cb) {
-  foundation_paths = {
+  paths = {
     src: [
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.finalDest, "**/*.css"),
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.finalDest, "**/*.js"),
@@ -14,5 +14,5 @@ gulp.task("migrate", function(cb) {
   };
 
   clean([projectPath(PATH_CONFIG.migrateDest)], { force: true });
-  return gulp.src(foundation_paths.src).pipe(gulp.dest(foundation_paths.dest));
+  return gulp.src(paths.src).pipe(gulp.dest(paths.dest));
 });
