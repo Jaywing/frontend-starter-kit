@@ -7,6 +7,7 @@ gulp.task("production", function(cb) {
   PATH_CONFIG.buildDest = PATH_CONFIG.finalDest;
 
   gulpSequence(
+    "set-prod-node-env",
     "clean:production",
     "html",
     "stylesheets",
@@ -14,7 +15,12 @@ gulp.task("production", function(cb) {
     "webpack",
     "icons",
     "fonts",
+    "static",
     "migrate",
     cb
   );
+});
+
+gulp.task("set-prod-node-env", function() {
+  return (process.env.NODE_ENV = "production");
 });

@@ -5,6 +5,7 @@ gulp.task("default", function(cb) {
   global.production = false;
 
   gulpSequence(
+    "set-dev-node-env",
     "clean:build",
     "html",
     "stylesheets",
@@ -12,6 +13,7 @@ gulp.task("default", function(cb) {
     "webpack",
     "icons",
     "fonts",
+    "static",
     "lab:html",
     "lab:stylesheets",
     "lab:javascripts",
@@ -19,4 +21,8 @@ gulp.task("default", function(cb) {
     "watch",
     cb
   );
+});
+
+gulp.task("set-dev-node-env", function() {
+  return (process.env.NODE_ENV = "development");
 });

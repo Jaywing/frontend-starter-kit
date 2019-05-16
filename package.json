@@ -9,8 +9,8 @@
   },
   "main": "gulpfile.js",
   "scripts": {
-    "start": "SET NODE_ENV=development& gulp",
-    "build": "SET NODE_ENV=production& gulp production",
+    "start": "gulp",
+    "build": "gulp production",
     "fix-code": "prettier-eslint --write ./javascripts/**/*.{js,jsx}",
     "fix-styles": "prettier-stylelint --write ./stylesheets/**/*.{css,scss}"
   },
