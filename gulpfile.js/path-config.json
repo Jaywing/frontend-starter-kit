@@ -11,7 +11,8 @@
   },
 
   "static": {
-    "src": "static"
+    "src": "static",
+    "dest": ""
   },
 
   "javascripts": {
