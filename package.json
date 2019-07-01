@@ -16,7 +16,7 @@
   },
   "prettier": {},
   "dependencies": {
-    "jaywing-frontend-starter-kit": "*"
+    "jaywing-frontend-component-library": "*"
   },
   "devDependencies": {
     "prettier": "^1.14.2",
