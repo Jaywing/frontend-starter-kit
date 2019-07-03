@@ -2926,9 +2926,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.1.0, electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.164, electron-to-chromium@^1.3.30:
-  version "1.3.180"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.180.tgz#8e8c6be930d137e88cf2946ad2ec6521d24ba70e"
-  integrity sha512-jwI82/63GeH7f08IR+4v/tbGM4DMAApMZO0SXLcC0np4lcqWjQBl0MIHkfXEqesLc55+NhVVX8g7eFlamEWoNQ==
+  version "1.3.185"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.185.tgz#36368514eb719632a91435f3c9f57c98b47d81de"
+  integrity sha512-h2iW0AHIwix8ifNJg/RkXhQjUDqBME8TvX8qQQMvvF2Tb6F2KnO6febvI+JqI9CdZOWnl90CPxdBRWGDrdk9UA==
 
 elliptic@^6.0.0:
   version "6.5.0"
@@ -5015,16 +5015,9 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jaywing-frontend-component-library@*:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.0.1.tgz#9841187a985cf82630ec5cbb68290e52d5ad52f9"
-  integrity sha512-BxbC7o92CKyp8gTuXLhck6V2+1XCYe08MbXUNCCXafFREGVEui1BxA8R2+I2z3Crfnn0fb1nmDcVE90jmib0OA==
-  dependencies:
-    jaywing-frontend-starter-kit "*"
-
-jaywing-frontend-starter-kit@*:
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-starter-kit/-/jaywing-frontend-starter-kit-0.0.34.tgz#2dbf5ecc7cce7a523f2ccea7084b2920963652c8"
-  integrity sha512-5RMKRbSzTrGolYanw+Cwq4xjkEaz82Rjq+AhD/Wh0rSKtBmQMkM2zPzljOsJCgXxd4DLdcx3oJJ6ocTdplC8qQ==
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.0.3.tgz#7100ca02558c11de490f6302afca45af7984dbcb"
+  integrity sha512-2MrOHzmlScgZjAUZqW7kihxXGqWuWbHJB9qAMyxUxQJkSE6ffTDVlfeZ9RNBFJ4V+RR9GjYipPkdBnDQX/PitQ==
   dependencies:
     giza-framework "*"
     giza-lab "*"
@@ -7046,9 +7039,9 @@ pseudomap@^1.0.2:
   integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
 
 psl@^1.1.24:
-  version "1.1.33"
-  resolved "https://registry.yarnpkg.com/psl/-/psl-1.1.33.tgz#5533d9384ca7aab86425198e10e8053ebfeab661"
-  integrity sha512-LTDP2uSrsc7XCb5lO7A8BI1qYxRe/8EqlRvMeEl6rsnYAqDOl8xHR+8lSAIVfrNaSAlTPTNOCgNjWcoUL3AZsw==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/psl/-/psl-1.2.0.tgz#df12b5b1b3a30f51c329eacbdef98f3a6e136dc6"
+  integrity sha512-GEn74ZffufCmkDDLNcl3uuyF/aSD6exEyh1v/ZSdAomB82t6G9hzJVRx0jBmLDW+VfZqks3aScmMw9DszwUalA==
 
 public-encrypt@^4.0.0:
   version "4.0.3"

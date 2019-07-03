@@ -479,14 +479,10 @@ a {
   color: #000;
   transition-duration: 200;
   transition-property: color; }
+  a:visited {
+    color: #000; }
   a:hover, a:focus {
     color: #000; }
-  a:visited {
-    color: #000;
-    transition-duration: 200;
-    transition-property: color; }
-    a:visited:hover, a:visited:focus {
-      color: #000; }
 
 ul,
 ol,
@@ -601,7 +597,7 @@ p {
 .o-flex-grid--gutters-single {
   margin-right: -0.5rem;
   margin-left: -0.5rem; }
-  .o-flex-grid--gutters-single .o-flex-grid__cell {
+  .o-flex-grid--gutters-single > .o-flex-grid__cell {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     margin-bottom: 1rem; }
@@ -609,17 +605,17 @@ p {
 .o-flex-grid--gutters-single-horizontal {
   margin-right: -0.5rem;
   margin-left: -0.5rem; }
-  .o-flex-grid--gutters-single-horizontal .o-flex-grid__cell {
+  .o-flex-grid--gutters-single-horizontal > .o-flex-grid__cell {
     padding-right: 0.5rem;
     padding-left: 0.5rem; }
 
-.o-flex-grid--gutters-single-vertical .o-flex-grid__cell {
+.o-flex-grid--gutters-single-vertical > .o-flex-grid__cell {
   margin-bottom: 1rem; }
 
 .o-flex-grid--gutters-double {
   margin-right: -1rem;
   margin-left: -1rem; }
-  .o-flex-grid--gutters-double .o-flex-grid__cell {
+  .o-flex-grid--gutters-double > .o-flex-grid__cell {
     padding-right: 1rem;
     padding-left: 1rem;
     margin-bottom: 2rem; }
@@ -627,17 +623,17 @@ p {
 .o-flex-grid--gutters-double-horizontal {
   margin-right: -1rem;
   margin-left: -1rem; }
-  .o-flex-grid--gutters-double-horizontal .o-flex-grid__cell {
+  .o-flex-grid--gutters-double-horizontal > .o-flex-grid__cell {
     padding-right: 1rem;
     padding-left: 1rem; }
 
-.o-flex-grid--gutters-double-vertical .o-flex-grid__cell {
+.o-flex-grid--gutters-double-vertical > .o-flex-grid__cell {
   margin-bottom: 2rem; }
 
 .o-flex-grid--gutters-triple {
   margin-right: -1.5rem;
   margin-left: -1.5rem; }
-  .o-flex-grid--gutters-triple .o-flex-grid__cell {
+  .o-flex-grid--gutters-triple > .o-flex-grid__cell {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     margin-bottom: 3rem; }
@@ -645,340 +641,340 @@ p {
 .o-flex-grid--gutters-triple-horizontal {
   margin-right: -1.5rem;
   margin-left: -1.5rem; }
-  .o-flex-grid--gutters-triple-horizontal .o-flex-grid__cell {
+  .o-flex-grid--gutters-triple-horizontal > .o-flex-grid__cell {
     padding-right: 1.5rem;
     padding-left: 1.5rem; }
 
-.o-flex-grid--gutters-triple-vertical .o-flex-grid__cell {
+.o-flex-grid--gutters-triple-vertical > .o-flex-grid__cell {
   margin-bottom: 3rem; }
 
 @media (min-width: 320px) {
   .o-flex-grid--gutters-single\@xxs {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single\@xxs .o-flex-grid__cell {
+    .o-flex-grid--gutters-single\@xxs > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
       margin-bottom: 1rem; }
   .o-flex-grid--gutters-single-horizontal\@xxs {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single-horizontal\@xxs .o-flex-grid__cell {
+    .o-flex-grid--gutters-single-horizontal\@xxs > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .o-flex-grid--gutters-single-vertical\@xxs .o-flex-grid__cell {
+  .o-flex-grid--gutters-single-vertical\@xxs > .o-flex-grid__cell {
     margin-bottom: 1rem; }
   .o-flex-grid--gutters-double\@xxs {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double\@xxs .o-flex-grid__cell {
+    .o-flex-grid--gutters-double\@xxs > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem;
       margin-bottom: 2rem; }
   .o-flex-grid--gutters-double-horizontal\@xxs {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double-horizontal\@xxs .o-flex-grid__cell {
+    .o-flex-grid--gutters-double-horizontal\@xxs > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem; }
-  .o-flex-grid--gutters-double-vertical\@xxs .o-flex-grid__cell {
+  .o-flex-grid--gutters-double-vertical\@xxs > .o-flex-grid__cell {
     margin-bottom: 2rem; }
   .o-flex-grid--gutters-triple\@xxs {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple\@xxs .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple\@xxs > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
       margin-bottom: 3rem; }
   .o-flex-grid--gutters-triple-horizontal\@xxs {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple-horizontal\@xxs .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple-horizontal\@xxs > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
-  .o-flex-grid--gutters-triple-vertical\@xxs .o-flex-grid__cell {
+  .o-flex-grid--gutters-triple-vertical\@xxs > .o-flex-grid__cell {
     margin-bottom: 3rem; } }
 
 @media (min-width: 480px) {
   .o-flex-grid--gutters-single\@xs {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single\@xs .o-flex-grid__cell {
+    .o-flex-grid--gutters-single\@xs > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
       margin-bottom: 1rem; }
   .o-flex-grid--gutters-single-horizontal\@xs {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single-horizontal\@xs .o-flex-grid__cell {
+    .o-flex-grid--gutters-single-horizontal\@xs > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .o-flex-grid--gutters-single-vertical\@xs .o-flex-grid__cell {
+  .o-flex-grid--gutters-single-vertical\@xs > .o-flex-grid__cell {
     margin-bottom: 1rem; }
   .o-flex-grid--gutters-double\@xs {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double\@xs .o-flex-grid__cell {
+    .o-flex-grid--gutters-double\@xs > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem;
       margin-bottom: 2rem; }
   .o-flex-grid--gutters-double-horizontal\@xs {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double-horizontal\@xs .o-flex-grid__cell {
+    .o-flex-grid--gutters-double-horizontal\@xs > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem; }
-  .o-flex-grid--gutters-double-vertical\@xs .o-flex-grid__cell {
+  .o-flex-grid--gutters-double-vertical\@xs > .o-flex-grid__cell {
     margin-bottom: 2rem; }
   .o-flex-grid--gutters-triple\@xs {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple\@xs .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple\@xs > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
       margin-bottom: 3rem; }
   .o-flex-grid--gutters-triple-horizontal\@xs {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple-horizontal\@xs .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple-horizontal\@xs > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
-  .o-flex-grid--gutters-triple-vertical\@xs .o-flex-grid__cell {
+  .o-flex-grid--gutters-triple-vertical\@xs > .o-flex-grid__cell {
     margin-bottom: 3rem; } }
 
 @media (min-width: 640px) {
   .o-flex-grid--gutters-single\@sm {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single\@sm .o-flex-grid__cell {
+    .o-flex-grid--gutters-single\@sm > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
       margin-bottom: 1rem; }
   .o-flex-grid--gutters-single-horizontal\@sm {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single-horizontal\@sm .o-flex-grid__cell {
+    .o-flex-grid--gutters-single-horizontal\@sm > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .o-flex-grid--gutters-single-vertical\@sm .o-flex-grid__cell {
+  .o-flex-grid--gutters-single-vertical\@sm > .o-flex-grid__cell {
     margin-bottom: 1rem; }
   .o-flex-grid--gutters-double\@sm {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double\@sm .o-flex-grid__cell {
+    .o-flex-grid--gutters-double\@sm > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem;
       margin-bottom: 2rem; }
   .o-flex-grid--gutters-double-horizontal\@sm {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double-horizontal\@sm .o-flex-grid__cell {
+    .o-flex-grid--gutters-double-horizontal\@sm > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem; }
-  .o-flex-grid--gutters-double-vertical\@sm .o-flex-grid__cell {
+  .o-flex-grid--gutters-double-vertical\@sm > .o-flex-grid__cell {
     margin-bottom: 2rem; }
   .o-flex-grid--gutters-triple\@sm {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple\@sm .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple\@sm > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
       margin-bottom: 3rem; }
   .o-flex-grid--gutters-triple-horizontal\@sm {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple-horizontal\@sm .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple-horizontal\@sm > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
-  .o-flex-grid--gutters-triple-vertical\@sm .o-flex-grid__cell {
+  .o-flex-grid--gutters-triple-vertical\@sm > .o-flex-grid__cell {
     margin-bottom: 3rem; } }
 
 @media (min-width: 768px) {
   .o-flex-grid--gutters-single\@md {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single\@md .o-flex-grid__cell {
+    .o-flex-grid--gutters-single\@md > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
       margin-bottom: 1rem; }
   .o-flex-grid--gutters-single-horizontal\@md {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single-horizontal\@md .o-flex-grid__cell {
+    .o-flex-grid--gutters-single-horizontal\@md > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .o-flex-grid--gutters-single-vertical\@md .o-flex-grid__cell {
+  .o-flex-grid--gutters-single-vertical\@md > .o-flex-grid__cell {
     margin-bottom: 1rem; }
   .o-flex-grid--gutters-double\@md {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double\@md .o-flex-grid__cell {
+    .o-flex-grid--gutters-double\@md > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem;
       margin-bottom: 2rem; }
   .o-flex-grid--gutters-double-horizontal\@md {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double-horizontal\@md .o-flex-grid__cell {
+    .o-flex-grid--gutters-double-horizontal\@md > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem; }
-  .o-flex-grid--gutters-double-vertical\@md .o-flex-grid__cell {
+  .o-flex-grid--gutters-double-vertical\@md > .o-flex-grid__cell {
     margin-bottom: 2rem; }
   .o-flex-grid--gutters-triple\@md {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple\@md .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple\@md > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
       margin-bottom: 3rem; }
   .o-flex-grid--gutters-triple-horizontal\@md {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple-horizontal\@md .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple-horizontal\@md > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
-  .o-flex-grid--gutters-triple-vertical\@md .o-flex-grid__cell {
+  .o-flex-grid--gutters-triple-vertical\@md > .o-flex-grid__cell {
     margin-bottom: 3rem; } }
 
 @media (min-width: 960px) {
   .o-flex-grid--gutters-single\@lg {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single\@lg .o-flex-grid__cell {
+    .o-flex-grid--gutters-single\@lg > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
       margin-bottom: 1rem; }
   .o-flex-grid--gutters-single-horizontal\@lg {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single-horizontal\@lg .o-flex-grid__cell {
+    .o-flex-grid--gutters-single-horizontal\@lg > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .o-flex-grid--gutters-single-vertical\@lg .o-flex-grid__cell {
+  .o-flex-grid--gutters-single-vertical\@lg > .o-flex-grid__cell {
     margin-bottom: 1rem; }
   .o-flex-grid--gutters-double\@lg {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double\@lg .o-flex-grid__cell {
+    .o-flex-grid--gutters-double\@lg > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem;
       margin-bottom: 2rem; }
   .o-flex-grid--gutters-double-horizontal\@lg {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double-horizontal\@lg .o-flex-grid__cell {
+    .o-flex-grid--gutters-double-horizontal\@lg > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem; }
-  .o-flex-grid--gutters-double-vertical\@lg .o-flex-grid__cell {
+  .o-flex-grid--gutters-double-vertical\@lg > .o-flex-grid__cell {
     margin-bottom: 2rem; }
   .o-flex-grid--gutters-triple\@lg {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple\@lg .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple\@lg > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
       margin-bottom: 3rem; }
   .o-flex-grid--gutters-triple-horizontal\@lg {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple-horizontal\@lg .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple-horizontal\@lg > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
-  .o-flex-grid--gutters-triple-vertical\@lg .o-flex-grid__cell {
+  .o-flex-grid--gutters-triple-vertical\@lg > .o-flex-grid__cell {
     margin-bottom: 3rem; } }
 
 @media (min-width: 1180px) {
   .o-flex-grid--gutters-single\@xl {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single\@xl .o-flex-grid__cell {
+    .o-flex-grid--gutters-single\@xl > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
       margin-bottom: 1rem; }
   .o-flex-grid--gutters-single-horizontal\@xl {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single-horizontal\@xl .o-flex-grid__cell {
+    .o-flex-grid--gutters-single-horizontal\@xl > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .o-flex-grid--gutters-single-vertical\@xl .o-flex-grid__cell {
+  .o-flex-grid--gutters-single-vertical\@xl > .o-flex-grid__cell {
     margin-bottom: 1rem; }
   .o-flex-grid--gutters-double\@xl {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double\@xl .o-flex-grid__cell {
+    .o-flex-grid--gutters-double\@xl > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem;
       margin-bottom: 2rem; }
   .o-flex-grid--gutters-double-horizontal\@xl {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double-horizontal\@xl .o-flex-grid__cell {
+    .o-flex-grid--gutters-double-horizontal\@xl > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem; }
-  .o-flex-grid--gutters-double-vertical\@xl .o-flex-grid__cell {
+  .o-flex-grid--gutters-double-vertical\@xl > .o-flex-grid__cell {
     margin-bottom: 2rem; }
   .o-flex-grid--gutters-triple\@xl {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple\@xl .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple\@xl > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
       margin-bottom: 3rem; }
   .o-flex-grid--gutters-triple-horizontal\@xl {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple-horizontal\@xl .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple-horizontal\@xl > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
-  .o-flex-grid--gutters-triple-vertical\@xl .o-flex-grid__cell {
+  .o-flex-grid--gutters-triple-vertical\@xl > .o-flex-grid__cell {
     margin-bottom: 3rem; } }
 
 @media (min-width: 1400px) {
   .o-flex-grid--gutters-single\@xxl {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single\@xxl .o-flex-grid__cell {
+    .o-flex-grid--gutters-single\@xxl > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
       margin-bottom: 1rem; }
   .o-flex-grid--gutters-single-horizontal\@xxl {
     margin-right: -0.5rem;
     margin-left: -0.5rem; }
-    .o-flex-grid--gutters-single-horizontal\@xxl .o-flex-grid__cell {
+    .o-flex-grid--gutters-single-horizontal\@xxl > .o-flex-grid__cell {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .o-flex-grid--gutters-single-vertical\@xxl .o-flex-grid__cell {
+  .o-flex-grid--gutters-single-vertical\@xxl > .o-flex-grid__cell {
     margin-bottom: 1rem; }
   .o-flex-grid--gutters-double\@xxl {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double\@xxl .o-flex-grid__cell {
+    .o-flex-grid--gutters-double\@xxl > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem;
       margin-bottom: 2rem; }
   .o-flex-grid--gutters-double-horizontal\@xxl {
     margin-right: -1rem;
     margin-left: -1rem; }
-    .o-flex-grid--gutters-double-horizontal\@xxl .o-flex-grid__cell {
+    .o-flex-grid--gutters-double-horizontal\@xxl > .o-flex-grid__cell {
       padding-right: 1rem;
       padding-left: 1rem; }
-  .o-flex-grid--gutters-double-vertical\@xxl .o-flex-grid__cell {
+  .o-flex-grid--gutters-double-vertical\@xxl > .o-flex-grid__cell {
     margin-bottom: 2rem; }
   .o-flex-grid--gutters-triple\@xxl {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple\@xxl .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple\@xxl > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
       margin-bottom: 3rem; }
   .o-flex-grid--gutters-triple-horizontal\@xxl {
     margin-right: -1.5rem;
     margin-left: -1.5rem; }
-    .o-flex-grid--gutters-triple-horizontal\@xxl .o-flex-grid__cell {
+    .o-flex-grid--gutters-triple-horizontal\@xxl > .o-flex-grid__cell {
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
-  .o-flex-grid--gutters-triple-vertical\@xxl .o-flex-grid__cell {
+  .o-flex-grid--gutters-triple-vertical\@xxl > .o-flex-grid__cell {
     margin-bottom: 3rem; } }
 
 .o-flex-grid > .o-flex-grid__cell--span-1 {
@@ -1736,6 +1732,7 @@ p {
     display: block; }
 
 .c-button {
+  position: relative;
   display: inline-flex;
   min-width: 44px;
   min-height: 1em;
@@ -1777,8 +1774,13 @@ p {
       color: #fff; }
   .c-button--block {
     display: block; }
-  .c-button .o-icon svg {
-    fill: #fff; }
+  .c-button.has-icon {
+    padding-left: 3rem; }
+  .c-button .o-icon {
+    position: absolute;
+    left: 0.5rem; }
+    .c-button .o-icon svg {
+      fill: #fff; }
 
 .c-button__text {
   display: inline-block; }
@@ -2018,7 +2020,7 @@ p {
   text-align: center; }
 
 .c-nav--horizontal .c-nav__item {
-  flex: 0 0 auto; }
+  flex: 0 1 auto; }
 
 .c-nav--accordion .is-accordion-nav {
   display: none;
@@ -2035,7 +2037,7 @@ p {
   display: flex;
   flex-wrap: wrap; }
   .c-nav--accordion .is-accordion-nav-parent > .c-nav__link {
-    flex: 1; }
+    flex: 1 1 auto; }
   .c-nav--accordion .is-accordion-nav-parent.is-active > .is-accordion-nav {
     display: flex;
     flex: none; }
@@ -2059,7 +2061,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--accordion\@xxs .is-accordion-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--accordion\@xxs .is-accordion-nav-parent.is-active > .is-accordion-nav {
       display: flex;
       flex: none; }
@@ -2080,7 +2082,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--accordion\@xs .is-accordion-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--accordion\@xs .is-accordion-nav-parent.is-active > .is-accordion-nav {
       display: flex;
       flex: none; }
@@ -2101,7 +2103,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--accordion\@sm .is-accordion-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--accordion\@sm .is-accordion-nav-parent.is-active > .is-accordion-nav {
       display: flex;
       flex: none; }
@@ -2122,7 +2124,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--accordion\@md .is-accordion-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--accordion\@md .is-accordion-nav-parent.is-active > .is-accordion-nav {
       display: flex;
       flex: none; }
@@ -2143,7 +2145,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--accordion\@lg .is-accordion-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--accordion\@lg .is-accordion-nav-parent.is-active > .is-accordion-nav {
       display: flex;
       flex: none; }
@@ -2164,7 +2166,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--accordion\@xl .is-accordion-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--accordion\@xl .is-accordion-nav-parent.is-active > .is-accordion-nav {
       display: flex;
       flex: none; }
@@ -2185,7 +2187,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--accordion\@xxl .is-accordion-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--accordion\@xxl .is-accordion-nav-parent.is-active > .is-accordion-nav {
       display: flex;
       flex: none; }
@@ -2216,7 +2218,7 @@ p {
   display: flex;
   flex-wrap: wrap; }
   .c-nav--dropdown .is-dropdown-nav-parent > .c-nav__link {
-    flex: 1; }
+    flex: 1 1 auto; }
   .c-nav--dropdown .is-dropdown-nav-parent.is-active > .is-dropdown-nav {
     display: flex;
     flex: none; }
@@ -2249,7 +2251,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--dropdown\@xxs .is-dropdown-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--dropdown\@xxs .is-dropdown-nav-parent.is-active > .is-dropdown-nav {
       display: flex;
       flex: none; }
@@ -2279,7 +2281,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--dropdown\@xs .is-dropdown-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--dropdown\@xs .is-dropdown-nav-parent.is-active > .is-dropdown-nav {
       display: flex;
       flex: none; }
@@ -2309,7 +2311,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--dropdown\@sm .is-dropdown-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--dropdown\@sm .is-dropdown-nav-parent.is-active > .is-dropdown-nav {
       display: flex;
       flex: none; }
@@ -2339,7 +2341,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--dropdown\@md .is-dropdown-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--dropdown\@md .is-dropdown-nav-parent.is-active > .is-dropdown-nav {
       display: flex;
       flex: none; }
@@ -2369,7 +2371,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--dropdown\@lg .is-dropdown-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--dropdown\@lg .is-dropdown-nav-parent.is-active > .is-dropdown-nav {
       display: flex;
       flex: none; }
@@ -2399,7 +2401,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--dropdown\@xl .is-dropdown-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--dropdown\@xl .is-dropdown-nav-parent.is-active > .is-dropdown-nav {
       display: flex;
       flex: none; }
@@ -2429,7 +2431,7 @@ p {
     display: flex;
     flex-wrap: wrap; }
     .c-nav--dropdown\@xxl .is-dropdown-nav-parent > .c-nav__link {
-      flex: 1; }
+      flex: 1 1 auto; }
     .c-nav--dropdown\@xxl .is-dropdown-nav-parent.is-active > .is-dropdown-nav {
       display: flex;
       flex: none; }
