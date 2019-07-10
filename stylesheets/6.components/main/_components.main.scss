@@ -1,9 +1,9 @@
 @include breakpoint(md) {
-  .o-site__content {
+  .site__content {
     display: flex;
   }
 
-  .c-main {
+  .main {
     display: flex;
     flex: 1;
   }

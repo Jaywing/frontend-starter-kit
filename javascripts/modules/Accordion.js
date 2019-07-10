@@ -10,7 +10,7 @@ export default class Accordion {
 
   cacheDom() {
     return {
-      accordionParent: this.el.querySelectorAll(".c-accordion__toggle")
+      accordionParent: this.el.querySelectorAll(".accordion__toggle")
     };
   }
 

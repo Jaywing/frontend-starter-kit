@@ -1,9 +1,9 @@
-.c-content {
+.content {
   padding: $spacer;
 }
 
 @include md {
-  .c-content {
+  .content {
     flex: 1;
   }
 }

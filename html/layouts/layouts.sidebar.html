@@ -1,17 +1,17 @@
 {% extends 'layouts/layouts.site.html' %}
 
 {% block body %}
-  <div class="c-main">
-    <div class="c-sidebar">
-      <div class="c-button" data-module="Toggle" data-options='{"target": "parent"}'>
-        <div class="c-hamburger">
-          <div class="c-hamburger__inner"></div>
-          <div class="u-sr-only">Menu</div>
+  <div class="main">
+    <div class="sidebar">
+      <div class="button" data-module="Toggle" data-options='{"target": "parent"}'>
+        <div class="hamburger">
+          <div class="hamburger__inner"></div>
+          <div class="sr-only">Menu</div>
         </div>
       </div>
       {% include 'shared/sidebar.html' %}
     </div>
-    <div class="c-content">
+    <div class="content">
       {% block content %}{% endblock %}
     </div>
   </div>

@@ -1,31 +1,31 @@
-.c-sidebar {
-  .c-docs-nav {
+.sidebar {
+  .docs-nav {
     display: none;
   }
 
   &.is-active {
-    .c-docs-nav {
+    .docs-nav {
       display: block;
     }
   }
 }
 
 @include md {
-  .c-sidebar {
+  .sidebar {
     width: 200px;
 
-    > .c-button {
+    > .button {
       display: none;
     }
 
-    .c-docs-nav {
+    .docs-nav {
       display: block;
     }
   }
 }
 
 @include lg {
-  .c-sidebar {
+  .sidebar {
     width: 300px;
   }
 }
