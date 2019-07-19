@@ -15,4 +15,4 @@ yarn build
 
 ## Documentation
 
-[Vist the docs](https://jaywing.github.io/frontend-starter-kit-docs/)
+[Vist the docs](https://jaywing.github.io/frontend-component-library/)
