@@ -31,6 +31,7 @@ gulp.task("stylesheets", function() {
         })
       ])
     )
+    .pipe(gulpif(production, sass({ outputStyle: "compressed" })))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest(paths.dest));
 });
