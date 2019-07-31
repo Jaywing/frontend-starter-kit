@@ -1,7 +1,8 @@
 {
   "BASE": "./",
   "lab": "./lab",
-  "site": "site",
+  "buildSite": "",
+  "buildLab": "lab",
   "buildDest": "./_build",
   "finalDest": "./dist",
   "migrateDest": "./_migrated",

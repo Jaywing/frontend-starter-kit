@@ -1675,6 +1675,11 @@ better-assert@~1.0.0:
   dependencies:
     callsite "1.0.0"
 
+big.js@^3.1.3:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/big.js/-/big.js-3.2.0.tgz#a5fc298b81b9e0dca2e458824784b65c52ba588e"
+  integrity sha512-+hN/Zh2D08Mx65pZ/4g5bsmNiZUuChDiQfTUQ7qJr4/kuopCr88xZsAXv6mBoZEsUI4OuGHlX59qE94K2mMW8Q==
+
 big.js@^5.2.2:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/big.js/-/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
@@ -2058,14 +2063,14 @@ camelcase@^4.0.0, camelcase@^4.1.0:
   integrity sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=
 
 caniuse-db@^1.0.30000639:
-  version "1.0.30000987"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000987.tgz#2137c96cee437f3bbdd9c5caf9dc2f85047ff19c"
-  integrity sha512-Ef4Y8pFDJMBZeRLyqLjLko2EUMxiYSsJbUX3JoAg4skPJQmbk+94rwyngkZp6pmeTfFVFGFWwJL4qFEJXHLsKA==
+  version "1.0.30000988"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000988.tgz#6a761a0204c4c41977b0379fb14f51d367c5e4ee"
+  integrity sha512-P0JCbGJhL1tTTeF+ehckvXwtckRursLDbA/ETdAd8Yg1ROAGJ5OgYgMONW1zWW1+ZTB79d7ZeJiOHGreEGG1ew==
 
 caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, caniuse-lite@^1.0.30000980, caniuse-lite@^1.0.30000984:
-  version "1.0.30000987"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000987.tgz#bc6b47217afd8226a2b1964635c6bff62cdf5738"
-  integrity sha512-O3VrjtRMTxoU5Cn5/QSmXeIR1gkVps4j9jqfIm4FLaQ5JzqBlVjMUG1xWnoYFv8N+H3Lp++aa05TekyIbjHL7g==
+  version "1.0.30000988"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000988.tgz#742f35ec1b8b75b9628d705d7652eea1fef983db"
+  integrity sha512-lPj3T8poYrRc/bniW5SQPND3GRtSrQdUM/R4mCYTbZxyi3jQiggLvZH4+BYUuX0t4TXjU+vMM7KFDQg+rSzZUQ==
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -2921,9 +2926,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.1.0, electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.191, electron-to-chromium@^1.3.30:
-  version "1.3.205"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.205.tgz#084835a5ecca0765a805acb50a0fddc23d8d530e"
-  integrity sha512-VV+f2FVeFI5D/slUD7A3V1lTMDkQTUGWYH2dZGAijIutN5Aga4Fn/Hv4Gc+60OpXFVLYIq5HpXb2cG6NrGGQaA==
+  version "1.3.207"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.207.tgz#b19ce94d61187d72411ebb83dfe287366a785102"
+  integrity sha512-RIgAnfqbjZNECBLjslfy4cIYvcPl3GAXmnENrcoo0TZ8fGkyEEAealAbO7MoevW4xYUPe+e68cWAj6eP0DmMHw==
 
 elliptic@^6.0.0:
   version "6.5.0"
@@ -3196,9 +3201,9 @@ estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1:
   integrity sha1-De4/7TH81GlhjOc0IJn8GvoL2xM=
 
 esutils@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
-  integrity sha1-Cr9PHKpbyx96nYrMbepPqqBLrJs=
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
+  integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
 etag@1.8.1, etag@^1.8.1, etag@~1.8.1:
   version "1.8.1"
@@ -3799,12 +3804,13 @@ giza-framework@*:
     webpack-stream "^5.1.1"
 
 giza-lab@*:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/giza-lab/-/giza-lab-0.1.3.tgz#19adff9600547953ba9e1014c99fb95795c823c1"
-  integrity sha512-M1svNYmDEnyX/4sWJVt23lUoYrlQx9fbT64XpShZU0QPeydt3Xxx0AMM4hJM92Z8j8tDZhJORCUgAVaiXs5QoQ==
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/giza-lab/-/giza-lab-0.1.7.tgz#6b2fcaef1b4b9289f4dfd2b68d6438cfa755d295"
+  integrity sha512-uLrOSOKBUrSJkRJ7RngJ3om+F9OdjajxqxtAjSdN/TyiFNkq1JD4uHDKL9WmuelkXyGZiHz87yVOzYqZVt7ySQ==
   dependencies:
     giza-framework "*"
     gulp-data "^1.2.1"
+    strip-loader "^0.1.2"
 
 glob-base@^0.3.0:
   version "0.3.0"
@@ -5010,12 +5016,13 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jaywing-frontend-component-library@*:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.2.tgz#3d2d79a9e50c4ed54ceae06f8457116efe59e8f3"
-  integrity sha512-2ka9K89GQTUfEW24dolv5SdbA5lFwRDoauqfuXH92JKzRYmmLP4pDCcYqUoxWmQdpyqevdKl0cnUdXH9cOBc8Q==
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.5.tgz#e7c9a4e5c879f48192f956de7fd059e5dba3a3b7"
+  integrity sha512-Q2a0rIZ9PPJ2C5e6yzRz+hxS5fahIOHJTxtODH/mHihxijAZ8wMar6vXvMJ9xnJWdphKzAeJHtMUTaK1HgH2kQ==
   dependencies:
     giza-framework "*"
     giza-lab "*"
+    sticky-js "^1.2.0"
 
 js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.5.1"
@@ -5090,7 +5097,7 @@ json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
-json5@^0.5.1:
+json5@^0.5.0, json5@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
   integrity sha1-Hq3nrMASA0rYTiOWdn6tn6VJWCE=
@@ -5236,6 +5243,16 @@ loader-runner@^2.3.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.4.0.tgz#ed47066bfe534d7e84c4c7b9998c2a75607d9357"
   integrity sha512-Jsmr89RcXGIwivFY21FcRrisYZfvLMTWx5kOLc+JTxtpBOG6xML0vzbc6SEQG2FO9/4Fc3wW4LVcB5DmGflaRw==
+
+loader-utils@^0.2.6:
+  version "0.2.17"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.17.tgz#f86e6374d43205a6e6c60e9196f17c0299bfb348"
+  integrity sha1-+G5jdNQyBabmxg6RlvF8Apm/s0g=
+  dependencies:
+    big.js "^3.1.3"
+    emojis-list "^2.0.0"
+    json5 "^0.5.0"
+    object-assign "^4.0.1"
 
 loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
   version "1.2.3"
@@ -8208,6 +8225,11 @@ stdout-stream@^1.4.0:
   dependencies:
     readable-stream "^2.0.1"
 
+sticky-js@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/sticky-js/-/sticky-js-1.2.0.tgz#da54ece034cc906646fca8c36bc7b5f48eec55e2"
+  integrity sha1-2lTs4DTMkGZG/KjDa8e19I7sVeI=
+
 stream-browserify@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.2.tgz#87521d38a44aa7ee91ce1cd2a47df0cb49dd660b"
@@ -8383,6 +8405,13 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
+
+strip-loader@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/strip-loader/-/strip-loader-0.1.2.tgz#5166038181599342a424c62a49bbd21902ce8f33"
+  integrity sha1-UWYDgYFZk0KkJMYqSbvSGQLOjzM=
+  dependencies:
+    loader-utils "^0.2.6"
 
 style-search@^0.1.0:
   version "0.1.0"

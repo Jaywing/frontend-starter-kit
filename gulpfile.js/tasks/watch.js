@@ -5,8 +5,8 @@ const projectPath = require("../lib/projectPath");
 gulp.task("watch", function() {
   paths = {
     htmlSrc: [
-      projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src, "**/*.html"),
-      projectPath(PATH_CONFIG.lab, "**/*.html")
+      projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src, "**/*"),
+      projectPath(PATH_CONFIG.lab, "**/*")
     ],
     stylesheetsSrc: projectPath(
       PATH_CONFIG.BASE,
@@ -20,7 +20,7 @@ gulp.task("watch", function() {
     )
   };
 
-  gulp.watch(paths.htmlSrc, ["html", browser.reload]);
+  gulp.watch(paths.htmlSrc, ["html", "lab:html", browser.reload]);
   gulp.watch(paths.stylesheetsSrc, ["stylesheets", browser.reload]);
   gulp.watch(paths.javascriptsSrc, ["webpack", browser.reload]);
 });

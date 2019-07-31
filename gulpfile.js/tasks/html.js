@@ -6,16 +6,21 @@ const projectPath = require("../lib/projectPath");
 gulp.task("html", function() {
   paths = {
     src: [
+      `./node_modules/jaywing-frontend-component-library/lab`,
+      projectPath(PATH_CONFIG.lab),
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src, "**/*.html"),
       "!" +
         projectPath(
           PATH_CONFIG.BASE,
           PATH_CONFIG.html.src,
-          "**/{components,layouts,shared,macros,data}/**"
+          "**/{layouts,shared,macros,data}/**"
         )
     ],
-    src_render: [projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src)],
-    dest: projectPath(PATH_CONFIG.buildDest, PATH_CONFIG.site)
+    src_render: [
+      `./node_modules/jaywing-frontend-component-library/lab`,
+      projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src)
+    ],
+    dest: projectPath(PATH_CONFIG.buildDest, PATH_CONFIG.buildSite)
   };
 
   return gulp
