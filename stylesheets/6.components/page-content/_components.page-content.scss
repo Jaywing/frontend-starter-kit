@@ -1,0 +1,9 @@
+.page-content {
+  padding: ($spacer * 4) $spacer;
+}
+
+@include md {
+  .page-content {
+    flex: 1;
+  }
+}
