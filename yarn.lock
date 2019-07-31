@@ -3775,9 +3775,9 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 giza-framework@*:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.3.tgz#54b86cf2915ead20c18d5fa55cc6acda786deaa7"
-  integrity sha512-gm2hxvxcHFgQouto23I1/PhVMeDW78Sa7Z1vha4gHXTa9V47ff9j7OcMJ+6++qLxcE+jsJOEWI/JF2euhqQt2Q==
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.5.tgz#92ab3b902f48833fae371aa63e2e28f325b39ad5"
+  integrity sha512-II9KRq/zsqPczxwOzVMzCePyhoxs5OiX3aLzdYpxlVjmGQzHavyUpW+T10hnucz8Xc+wshqScQHNIVr2r1Hklw==
   dependencies:
     babel-core "^6.25.0"
     babel-loader "^7.1.1"
@@ -3805,9 +3805,9 @@ giza-framework@*:
     webpack-stream "^5.1.1"
 
 giza-lab@*:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/giza-lab/-/giza-lab-0.1.8.tgz#a80f00f4de95f6598bdcbea988f43df3fdedc55c"
-  integrity sha512-AV/NFfN/g8x4o0kdnzKSmkYodQcZEPkNvvw9N7+oEF0NiGZ+c8KylhqYwTgrjzYgeyPxuy86w5XgSqSlnMFGsg==
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/giza-lab/-/giza-lab-0.1.10.tgz#5ad015cec7eb65aecbf90201f98c9af2751bdf30"
+  integrity sha512-bd3lTctft7bccZ46eWQUDLMDX1DZ+7UD1hfB7FPGUsQjvjpniz1K2FZIA/eKkgrOmkLkWgBMdrqxKw1Ps44l2g==
   dependencies:
     giza-framework "*"
     gulp-data "^1.2.1"
@@ -5022,9 +5022,9 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jaywing-frontend-component-library@*:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.6.tgz#44a96078133ff24f92ea74bc138386f6614f1034"
-  integrity sha512-m54JzY5shFEkLH5XNcn4cim0mnXUp1Wy+imj711fLMi5L/RNN0FRybJ5r1euaQ6o8w9UW3EEj5qM7twH4gZKTw==
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.7.tgz#a6dbd6f7ef215e24d76481c384668a50a4ef523c"
+  integrity sha512-vneRidPl3NIYX3QI18lYlFTThIbmIIk5gPj8aOTVycdVhhDltmtUs+Hjp7fAfx5pCVZQLhT4ldqGY9PDQy0UJw==
   dependencies:
     giza-framework "*"
     giza-lab "*"
