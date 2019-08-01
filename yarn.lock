@@ -2927,9 +2927,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.1.0, electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.191, electron-to-chromium@^1.3.30:
-  version "1.3.208"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.208.tgz#6df90b89e8b9af139db3c8d7a6b935db0801e61c"
-  integrity sha512-ljgZXaKSfRg32jEl1V8zRJaT3u653jxfZRztKQWM/I1kE+ifBCQKRY+jOPzb4JS48a4czvT/LQfjdiDq5qjU4g==
+  version "1.3.209"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.209.tgz#cd43879f1d3fb85c75bb843fb11a828570fa1ce4"
+  integrity sha512-KxRvLp5jUapyKIcMaecwgmUpJEsJKuHn0DJJPZjZh2valqYlzdmGvaE/nTAqwKqQwf0jIKv7Go4FYHu9wKWzOg==
 
 elliptic@^6.0.0:
   version "6.5.0"
@@ -3775,9 +3775,9 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 giza-framework@*:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.5.tgz#92ab3b902f48833fae371aa63e2e28f325b39ad5"
-  integrity sha512-II9KRq/zsqPczxwOzVMzCePyhoxs5OiX3aLzdYpxlVjmGQzHavyUpW+T10hnucz8Xc+wshqScQHNIVr2r1Hklw==
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.6.tgz#c3d7f5e29b36a000baa454172437f01ee1a9e4af"
+  integrity sha512-BWns19b+iVim1M1ky57t86pjvHm/eB/GaJjL+zKEW1Bzl+lk578UUJNEUIidIEXlVuARxdORtHR64NlaDWSK/Q==
   dependencies:
     babel-core "^6.25.0"
     babel-loader "^7.1.1"
@@ -3788,6 +3788,7 @@ giza-framework@*:
     browser-sync "^2.26.3"
     del "^3.0.0"
     gulp "^3.9.1"
+    gulp-data "^1.2.1"
     gulp-if "^2.0.2"
     gulp-nunjucks-render "^2.2.2"
     gulp-plumber "^1.2.1"
@@ -3800,18 +3801,10 @@ giza-framework@*:
     react "^16.7.0"
     react-dom "^16.7.0"
     require-dir "^1.2.0"
+    strip-loader "^0.1.2"
     svgxuse "^1.1.23"
     webpack "^4.26.1"
     webpack-stream "^5.1.1"
-
-giza-lab@*:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/giza-lab/-/giza-lab-0.1.10.tgz#5ad015cec7eb65aecbf90201f98c9af2751bdf30"
-  integrity sha512-bd3lTctft7bccZ46eWQUDLMDX1DZ+7UD1hfB7FPGUsQjvjpniz1K2FZIA/eKkgrOmkLkWgBMdrqxKw1Ps44l2g==
-  dependencies:
-    giza-framework "*"
-    gulp-data "^1.2.1"
-    strip-loader "^0.1.2"
 
 glob-base@^0.3.0:
   version "0.3.0"
@@ -5022,12 +5015,11 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jaywing-frontend-component-library@*:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.7.tgz#a6dbd6f7ef215e24d76481c384668a50a4ef523c"
-  integrity sha512-vneRidPl3NIYX3QI18lYlFTThIbmIIk5gPj8aOTVycdVhhDltmtUs+Hjp7fAfx5pCVZQLhT4ldqGY9PDQy0UJw==
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.8.tgz#70664b86e6d2a491f4ec519057d8e797722c31df"
+  integrity sha512-tSvtrrGzMuHvN/dITkZiQK6vpJNKjFAlUx1zUpt8ce5Ub9xDJJsfgaOPOL/LN+Xnsy355XfHJvCEAywBi9PDiQ==
   dependencies:
     giza-framework "*"
-    giza-lab "*"
     sticky-js "^1.2.0"
 
 js-base64@^2.1.8, js-base64@^2.1.9:
@@ -7062,9 +7054,9 @@ pseudomap@^1.0.2:
   integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
 
 psl@^1.1.24:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/psl/-/psl-1.2.0.tgz#df12b5b1b3a30f51c329eacbdef98f3a6e136dc6"
-  integrity sha512-GEn74ZffufCmkDDLNcl3uuyF/aSD6exEyh1v/ZSdAomB82t6G9hzJVRx0jBmLDW+VfZqks3aScmMw9DszwUalA==
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/psl/-/psl-1.3.0.tgz#e1ebf6a3b5564fa8376f3da2275da76d875ca1bd"
+  integrity sha512-avHdspHO+9rQTLbv1RO+MPYeP/SzsCoxofjVnHanETfQhTJrmB0HlDoW+EiN/R+C0BZ+gERab9NY0lPN2TxNag==
 
 public-encrypt@^4.0.0:
   version "4.0.3"
@@ -7651,9 +7643,9 @@ resolve-url@^0.2.1:
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
 resolve@^1.1.6, resolve@^1.1.7, resolve@^1.10.0, resolve@^1.3.2:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.11.1.tgz#ea10d8110376982fef578df8fc30b9ac30a07a3e"
-  integrity sha512-vIpgF6wfuJOZI7KKKSP+HmiKggadPQAdsp5HiC1mvqnfp0gF1vdwgBWZIdrVft9pgqoMFQN+R7BSWZiBxx+BBw==
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.12.0.tgz#3fc644a35c84a48554609ff26ec52b66fa577df6"
+  integrity sha512-B/dOmuoAik5bKcD6s6nXDCjzUKnaDvdkRyAk6rsmsKLipWj4797iothd7jmmUhWTfinVMU+wc56rYKsit2Qy4w==
   dependencies:
     path-parse "^1.0.6"
 

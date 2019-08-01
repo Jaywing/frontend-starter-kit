@@ -24,7 +24,7 @@ gulp.task("lab:html", function() {
     src_render: [
       projectPath(PATH_CONFIG.lab),
       `./node_modules/jaywing-frontend-component-library/lab`,
-      `./node_modules/giza-lab/html`,
+      `./node_modules/giza-framework/lab/html`,
       projectPath(PATH_CONFIG.lab),
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src)
     ],
@@ -50,7 +50,7 @@ gulp.task("lab:html", function() {
 gulp.task("lab:stylesheets", function() {
   paths = {
     src: [
-      `./node_modules/jaywing-frontend-component-library/dist/lab/stylesheets/lab.css`,
+      `./node_modules/jaywing-frontend-component-library/dist/lab/stylesheets/giza-lab.css`,
       ,
       projectPath(PATH_CONFIG.lab, PATH_CONFIG.stylesheets.src, "**/*.scss")
     ],
