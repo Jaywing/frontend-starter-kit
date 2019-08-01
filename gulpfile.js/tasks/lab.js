@@ -95,3 +95,25 @@ gulp.task("lab:javascripts", function() {
   };
   return gulp.src(paths.src).pipe(gulp.dest(paths.dest));
 });
+
+gulp.task("lab:images", function() {
+  paths = {
+    src: [
+      projectPath(
+        "./node_modules/jaywing-frontend-component-library/dist/lab/images/**/*{jpg,png,svg,mp4,webm}"
+      ),
+      projectPath(
+        PATH_CONFIG.lab,
+        PATH_CONFIG.images.src,
+        "**/*{jpg,png,svg,mp4,webm}"
+      )
+    ],
+    dest: projectPath(
+      PATH_CONFIG.buildDest,
+      PATH_CONFIG.buildLab,
+      PATH_CONFIG.images.dest
+    )
+  };
+
+  return gulp.src(paths.src).pipe(gulp.dest(paths.dest));
+});

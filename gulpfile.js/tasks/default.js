@@ -17,6 +17,7 @@ gulp.task("default", function(cb) {
     "lab:html",
     "lab:stylesheets",
     "lab:javascripts",
+    "lab:images",
     "serve",
     "watch",
     cb
