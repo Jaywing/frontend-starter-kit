@@ -3775,9 +3775,9 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 giza-framework@*:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.6.tgz#c3d7f5e29b36a000baa454172437f01ee1a9e4af"
-  integrity sha512-BWns19b+iVim1M1ky57t86pjvHm/eB/GaJjL+zKEW1Bzl+lk578UUJNEUIidIEXlVuARxdORtHR64NlaDWSK/Q==
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.7.tgz#f024c6de5305250c76a3d3e8919cd2dc7399afab"
+  integrity sha512-G9okomQNfPcwqYKLXoEYpiuxKElXG1+0Cpr5VaBk59LiprDUgC3O6cfYujgah27ZqNbW9GbTSMWpP+sOZQFu0g==
   dependencies:
     babel-core "^6.25.0"
     babel-loader "^7.1.1"
@@ -5015,9 +5015,9 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jaywing-frontend-component-library@*:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.8.tgz#70664b86e6d2a491f4ec519057d8e797722c31df"
-  integrity sha512-tSvtrrGzMuHvN/dITkZiQK6vpJNKjFAlUx1zUpt8ce5Ub9xDJJsfgaOPOL/LN+Xnsy355XfHJvCEAywBi9PDiQ==
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.9.tgz#050c1caa25e76e27237bafbcab04b1a7179d69ea"
+  integrity sha512-e/MflO8s/lrWuQl+Vy6TmveBlMqodsCtphrN5uJN8gz9UG2tupXE9uRF50RZ84P4R/ATN5HLEqZbSNCBXa3KZw==
   dependencies:
     giza-framework "*"
     sticky-js "^1.2.0"
