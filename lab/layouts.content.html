@@ -1,17 +1,17 @@
+{% set AppParentId = "layouts" %}
+{% set AppCurrentId = "content" %}
+
 {% extends 'layouts/lab-side-content.html' %}
 
 {% from 'macros/lab-example.html' import LabExample %}
 {% from 'macros/lab-code.html' import LabCode %}
-
-{% set pageType = "layouts" %}
-{% set pageId = "content" %}
 
 {% block content %}
   <h1>Content</h1>
 
   <h3>Usage</h3>
 
-  {{LabExample(pageType, pageId)}}
+  {{LabExample(AppParentId, AppCurrentId)}}
   {{LabCode('html', '
   <div class="site__header">...</div>
   <main class="site__content">

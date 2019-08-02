@@ -1,24 +1,24 @@
+{% set AppParentId = "content" %}
+{% set AppCurrentId = "images" %}
+
 {% extends 'layouts/lab-side-content.html' %}
 
 {% from 'macros/lab-example.html' import LabExample %}
 {% from 'macros/lab-code.html' import LabCode %}
-
-{% set pageType = "content" %}
-{% set pageId = "images" %}
 
 {% block content %}
   <h1>Images</h1>
 
   <h3>Usage</h3>
 
-  {{LabExample(pageType, pageId)}}
+  {{LabExample(AppParentId, AppCurrentId)}}
   {{LabCode('html', '
   <img src="//placehold.it/780x250" alt="...">
   ')}}
 
   <h3>Picture</h3>
 
-  {{LabExample(pageType, pageId, 'picture')}}
+  {{LabExample(AppParentId, AppCurrentId, 'picture')}}
   {{LabCode('html', '
   <picture>
     <source srcset="//placehold.it/780x250" media="(min-width: 768px)">

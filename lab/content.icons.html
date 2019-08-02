@@ -1,10 +1,10 @@
+{% set AppParentId = "content" %}
+{% set AppCurrentId = "icons" %}
+
 {% extends 'layouts/lab-side-content.html' %}
 
 {% from 'macros/lab-example.html' import LabExample %}
 {% from 'macros/lab-code.html' import LabCode %}
-
-{% set pageType = "content" %}
-{% set pageId = "icons" %}
 
 {% block content %}
   <h1>Icons</h1>
@@ -13,7 +13,7 @@
 
   <h3>Usage</h3>
 
-  {{LabExample(pageType, pageId)}}
+  {{LabExample(AppParentId, AppCurrentId)}}
   {{LabCode('html', '
   <span class="icon icon--bell">
     <svg viewbox="0 0 1 1">

@@ -1,20 +1,16 @@
 {% from 'macros/icon.html' import Icon %}
 
 {% macro Button(modal) %}
-  <div class="flex-grid">
-    <div class="flex-grid__cell">
-      <p>
-        <button class="button">Button</button>
+  <p>
+    <button class="button">Button</button>
 
-        <a class="button" href="#">Link Button</a>
+    <a class="button" href="#">Link Button</a>
 
-        <button class="button has-icon">
-          {{Icon('plus')}}
-          <span class="button__text">Button</span>
-        </button>
-      </p>
-    </div>
-  </div>
+    <button class="button has-icon">
+      {{Icon('plus')}}
+      <span class="button__text">Button</span>
+    </button>
+  </p>
 {% endmacro %}
 
 {% extends 'layouts/lab-source.html' %}
