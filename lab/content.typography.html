@@ -1,21 +1,21 @@
+{% set AppParentId = "content" %}
+{% set AppCurrentId = "typography" %}
+
 {% extends 'layouts/lab-side-content.html' %}
 
 {% from 'macros/lab-example.html' import LabExample %}
 {% from 'macros/lab-code.html' import LabCode %}
 
-{% set pageType = "content" %}
-{% set pageId = "typography" %}
-
 {% block content %}
   <h1>Typography</h1>
 
   <h3>Headings</h3>
-
-  {{LabExample(pageType, pageId, 'headings')}}
+  AppParentId
+  {{LabExample(AppParentId, AppCurrentId, 'headings')}}
 
   <h3>Text</h3>
-
-  {{LabExample(pageType, pageId, 'text')}}
+  AppParentId
+  {{LabExample(AppParentId, AppCurrentId, 'text')}}
   {{LabCode('html', '
   <p class="brevier">...</p>
 
@@ -29,8 +29,8 @@
   ')}}
 
   <h3>Lists</h3>
-
-  {{LabExample(pageType, pageId, 'lists')}}
+  AppParentId
+  {{LabExample(AppParentId, AppCurrentId, 'lists')}}
   {{LabCode('html', '
   <ul>
     <li>...</li>
@@ -48,8 +48,8 @@
   ')}}
 
   <h3>Blockquote</h3>
-
-  {{LabExample(pageType, pageId, 'blockquote')}}
+  AppParentId
+  {{LabExample(AppParentId, AppCurrentId, 'blockquote')}}
   {{LabCode('html', '
   <blockquote>
     <p>...</p>
