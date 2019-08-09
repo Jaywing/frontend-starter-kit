@@ -1,4 +1,6 @@
 .page-header {
+  @include font-size-md;
+
   padding: ($spacer * 3);
   background-color: $dune;
   color: $light;

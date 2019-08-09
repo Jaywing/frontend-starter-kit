@@ -16,5 +16,24 @@
   {{LabExample(AppParentId, 'button')}}
   {{LabCode('html', '
   <button class="button">...</button>
+
+  <a href="..." class="button">...</a>
+
+  <button class="button">
+    <span class="icon icon--plus">
+      <svg viewbox="0 0 1 1">
+        <use xlink:href="/assets/images/icons.svg#plus"></use>
+      </svg>
+    </span>
+  </button>
+
+  <button class="button">
+    ...
+    <span class="icon icon--plus">
+      <svg viewbox="0 0 1 1">
+        <use xlink:href="/assets/images/icons.svg#plus"></use>
+      </svg>
+    </span>
+  </button>
   ')}}
 {% endblock %}

@@ -3,32 +3,43 @@
 
 {% extends 'layouts/lab-side-content.html' %}
 
+{% from 'macros/lab-nav-link.html' import LabNavLink %}
 {% from 'macros/lab-code.html' import LabCode %}
-
-{% set AppParentId = "getting-started" %}
-{% set AppCurrentId = "introduction" %}
 
 {% block content %}
   <h1>Introduction</h1>
 
   <p>An open source toolkit for developing with HTML, CSS and JS.</p>
 
-  <h2>Requirements</h2>
+  <h3>Requirements</h3>
 
   <p>Requires at least version 6 of Node. We reccomend using nvm to install and manage your Node versions.</p>
 
-  <h2>Installation</h2>
+  <h3>Installation</h3>
 
   {{LabCode('html', '
-  $ npm install jaywing-frontend-starter-kit
+  $ yarn
   ')}}
 
-  <ul class="nav">
-    <li class="nav__item">
-      <a class="nav__link" href="https://github.com/Jaywing/frontend-site-starter-kit">GitHub</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="https://jaywing.com/">Jaywing</a>
-    </li>
-  </ul>
+  <h3>Prototyping</h3>
+
+  {{LabCode('html', '
+  $ yarn start
+  ')}}
+
+  <h3>Production</h3>
+
+  {{LabCode('html', '
+  $ yarn build
+  ')}}
+
+  {% if resources %}
+    <h2>Resources</h2>
+
+    <ul class="nav nav--vertical">
+      {% for page in resources %}
+        {{ LabNavLink(page, AppParentId, AppCurrentId, loop) }}
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endblock %}
