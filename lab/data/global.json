@@ -35,17 +35,23 @@
       "title": "Components",
       "children": [
         {
-          "id": "buttons",
-          "url": "components.buttons.html",
-          "title": "Buttons"
+          "id": "button",
+          "url": "components.button.html",
+          "title": "Button"
         },
-        { "id": "tables", "url": "components.tables.html", "title": "Tables" },
+        { "id": "table", "url": "components.table.html", "title": "Table" },
         {
           "id": "example",
           "url": "components.example.html",
           "title": "Example"
         }
       ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "Jaywing Frontend Component Library",
+      "url": "https://jaywing.github.io/frontend-component-library/"
     }
   ]
 }

@@ -1,7 +1,10 @@
 {% from 'macros/icon.html' import Icon %}
 
 {% macro Button(modal) %}
-  <button class="button">Button</button>
+  <button class="button">
+    {{Icon('plus')}}
+    <span class="button__text">Button</span>
+  </button>
 {% endmacro %}
 
 {% extends 'layouts/lab-source.html' %}

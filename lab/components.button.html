@@ -1,5 +1,5 @@
 {% set AppParentId = "components" %}
-{% set AppCurrentId = "buttons" %}
+{% set AppCurrentId = "button" %}
 
 {% extends 'layouts/lab-side-content.html' %}
 
@@ -7,28 +7,30 @@
 {% from 'macros/lab-code.html' import LabCode %}
 
 {% block content %}
-  <h1>Buttons</h1>
+  <h1>Button</h1>
 
-  <p>Easily create versatile buttons in a variety of styles.</p>
+  <p class="font-size-md">Easily create versatile buttons in a variety of styles.</p>
 
   <h3>Usage</h3>
 
-  {{LabExample(AppParentId, 'button')}}
+  {{LabExample(AppParentId, AppCurrentId)}}
   {{LabCode('html', '
-  <button class="button">...</button>
+  <button class="button">Button</button>
+  ')}}
 
-  <a href="..." class="button">...</a>
+  <h3>Link</h3>
 
+  {{LabExample(AppParentId, AppCurrentId, 'link')}}
+  {{LabCode('html', '
+  <a class="button" href="#">Link</a>
+  ')}}
+
+  <h3>Icon</h3>
+
+  {{LabExample(AppParentId, AppCurrentId, 'icon')}}
+  {{LabCode('html', '
   <button class="button">
-    <span class="icon icon--plus">
-      <svg viewbox="0 0 1 1">
-        <use xlink:href="/assets/images/icons.svg#plus"></use>
-      </svg>
-    </span>
-  </button>
-
-  <button class="button">
-    ...
+    Button
     <span class="icon icon--plus">
       <svg viewbox="0 0 1 1">
         <use xlink:href="/assets/images/icons.svg#plus"></use>
