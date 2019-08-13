@@ -39,12 +39,7 @@
           "url": "components.button.html",
           "title": "Button"
         },
-        { "id": "table", "url": "components.table.html", "title": "Table" },
-        {
-          "id": "example",
-          "url": "components.example.html",
-          "title": "Example"
-        }
+        { "id": "table", "url": "components.table.html", "title": "Table" }
       ]
     }
   ],

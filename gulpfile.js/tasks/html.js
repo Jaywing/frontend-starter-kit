@@ -8,6 +8,7 @@ gulp.task("html", function() {
     src: [
       projectPath(PATH_CONFIG.lab),
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src, "**/*.html"),
+      `./node_modules/giza-framework/html`,
       "!" +
         projectPath(
           PATH_CONFIG.BASE,
@@ -16,10 +17,12 @@ gulp.task("html", function() {
         )
     ],
     src_render: [
-      `./node_modules/jaywing-frontend-component-library/lab`,
-      `./node_modules/jaywing-frontend-component-library/html`,
+      projectPath(PATH_CONFIG.lab),
       `./node_modules/giza-framework/lab/html`,
-      projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src)
+      `./node_modules/jaywing-frontend-component-library/lab`,
+      projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src),
+      `./node_modules/jaywing-frontend-component-library/html`,
+      `./node_modules/giza-framework/html`
     ],
     dest: projectPath(PATH_CONFIG.buildDest, PATH_CONFIG.buildSite)
   };
