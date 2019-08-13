@@ -1,5 +1,7 @@
 {% extends 'layouts/content.html' %}
 
+{% from 'components/button.html' import Button %}
+
 {% block body %}
 
   <div class="container container--centered">
@@ -7,7 +9,10 @@
     <p>To get started,
       <a href="https://jaywing.github.io/frontend-component-library/lab/" target="_blank">visit the docs</a>.</p>
     <p class="text-center">
-      <a class="button" href="lab/">Open the lab</a>
+      {{ Button({
+        'url': 'lab/',
+        'description': 'Open the lab'
+      }) }}
     </p>
   </div>
 

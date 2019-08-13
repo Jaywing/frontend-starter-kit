@@ -3220,9 +3220,9 @@ esrecurse@^4.1.0:
     estraverse "^4.1.0"
 
 estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"
-  integrity sha1-De4/7TH81GlhjOc0IJn8GvoL2xM=
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.3.0.tgz#398ad3f3c5a24948be7725e83d11a7de28cdbd1d"
+  integrity sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==
 
 esutils@^2.0.2:
   version "2.0.3"
@@ -5063,9 +5063,9 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jaywing-frontend-component-library@*:
-  version "0.1.28"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.28.tgz#75ede8c1371ad51be3877984b3e78117e577e6b3"
-  integrity sha512-xGmbFreT+W/mB0VCq5T8LhWGfTyWT2V/alMaCGFqk9QH3ayc+/4XiB3507aIZ0awB6LzWrwFXT0NpyIJuNTvcA==
+  version "0.1.29"
+  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.29.tgz#bb7c83c41db2b5d4e038281c4e36617c0a2b6370"
+  integrity sha512-6gT2K4F9d1CcfenO7wCZjH7TtN0iwZtLcBOEfkIjeiXReXv6pDlCe1wWyEJFMaOZO6jsT8fQLP4939XtBoQ3hQ==
   dependencies:
     giza-framework "*"
     imagesloaded "^4.1.4"
