@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../stylesheets/app.css">
+    <link rel="stylesheet" href="../lab/stylesheets/giza-lab-example.css">
+    <script>
+      if (document.documentElement) {
+        document
+          .documentElement
+          .classList
+          .add('js');
+      }
+    </script>
+  </head>
+  <body class="app-example">
+    
+
+  
+  <div class="off-canvas" data-module="OffCanvas">
+    <div class="off-canvas__aside off-canvas-left" style="padding: 1rem; background: #ddd;">
+      <p>Aside</p>
+    </div>
+    <div class="off-canvas__aside off-canvas-right" style="padding: 1rem; background: #ddd;">
+      <p>Aside</p>
+    </div>
+    <div class="off-canvas__content" style="padding: 1rem;">
+      <p>Content</p>
+    </div>
+  </div>
+
+  <p class="text-center">
+    <button class="button" data-module="Toggle" data-options='{"target": ".off-canvas", "activeClass": "is-open-left"}'>Toggle left canvas</button>
+  </p>
+  <p class="text-center">
+    <button class="button" data-module="Toggle" data-options='{"target": ".off-canvas", "activeClass": "is-open-right"}'>Toggle right canvas</button>
+  </p>
+
+
+
+    <script src="../javascripts/app.js"></script>
+  </body>
+</html>
