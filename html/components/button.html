@@ -1,0 +1,31 @@
+{% extends 'layouts/lab-source.html' %}
+
+{% from 'icon.html' import Icon %}
+
+{% macro Button(model) %}
+  {% if model.url %}
+    <p>This button has been changed!</p>
+    <a class="button" href="{{modal.url}}">
+      {% if model.icon %}
+        {{Icon(model.icon)}}
+      {% endif %}
+      <span class="button__text">{{model.description}}</span>
+    </a>
+  {% else %}
+    <p>This button has been changed!</p>
+    <button class="button">
+      {% if model.icon %}
+        {{Icon(model.icon)}}
+      {% endif %}
+      <span class="button__text">{{model.description}}</span>
+    </button>
+  {% endif %}
+{% endmacro %}
+
+{% block body %}
+
+  {{ Button({
+    'description': 'Primary'
+  }) }}
+
+{% endblock %}

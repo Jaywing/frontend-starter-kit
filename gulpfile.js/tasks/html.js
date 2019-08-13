@@ -6,8 +6,12 @@ const projectPath = require("../lib/projectPath");
 gulp.task("html", function() {
   paths = {
     src: [
-      projectPath(PATH_CONFIG.lab),
+      // projectPath(PATH_CONFIG.lab, "**/*.html"),
+      `./node_modules/giza-framework/html/**/*.html`,
+      `./node_modules/giza-framework/html/**/*.html`,
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src, "**/*.html"),
+      // `./node_modules/giza-framework/html/components`,
+      // `./node_modules/jaywing-frontend-component-library/html/components`,
       "!" +
         projectPath(
           PATH_CONFIG.BASE,
@@ -16,9 +20,13 @@ gulp.task("html", function() {
         )
     ],
     src_render: [
+      projectPath(PATH_CONFIG.lab),
       `./node_modules/jaywing-frontend-component-library/lab`,
-      `./node_modules/jaywing-frontend-component-library/html`,
       `./node_modules/giza-framework/lab/html`,
+      `./node_modules/jaywing-frontend-component-library/html/components`,
+      `./node_modules/jaywing-frontend-component-library/html/content`,
+      `./node_modules/giza-framework/html/components`,
+      `./node_modules/giza-framework/html/content`,
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src)
     ],
     dest: projectPath(PATH_CONFIG.buildDest, PATH_CONFIG.buildSite)

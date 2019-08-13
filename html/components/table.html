@@ -1,4 +1,4 @@
-{% from 'macros/icon.html' import Icon %}
+{% extends 'layouts/lab-source.html' %}
 
 {% macro Table(modal) %}
   <table class="table">
@@ -24,10 +24,6 @@
     </tbody>
   </table>
 {% endmacro %}
-
-{% extends 'layouts/lab-source.html' %}
-
-{% from 'macros/lab-source.html' import LabIframe %}
 
 {% block body %}
 
