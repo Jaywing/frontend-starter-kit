@@ -17,10 +17,10 @@
     },
     {
       "id": "content",
-      "url": "content.icons.html",
+      "url": "content.icon.html",
       "title": "Content",
       "children": [
-        { "id": "icons", "url": "content.icons.html", "title": "Icons" },
+        { "id": "icon", "url": "content.icon.html", "title": "Icon" },
         { "id": "images", "url": "content.images.html", "title": "Images" },
         {
           "id": "typography",

@@ -1,3 +1,5 @@
+{% extends 'layouts/lab-source.html' %}
+
 {% macro Table(modal) %}
   <table class="table">
     <thead>
@@ -22,10 +24,6 @@
     </tbody>
   </table>
 {% endmacro %}
-
-{% extends 'layouts/lab-source.html' %}
-
-{% from 'macros/lab-source.html' import LabIframe %}
 
 {% block body %}
 
