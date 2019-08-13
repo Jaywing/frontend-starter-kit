@@ -17,6 +17,7 @@ gulp.task("html", function() {
     ],
     src_render: [
       `./node_modules/jaywing-frontend-component-library/lab`,
+      `./node_modules/jaywing-frontend-component-library/html`,
       `./node_modules/giza-framework/lab/html`,
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src)
     ],
