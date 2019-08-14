@@ -32,7 +32,9 @@ gulp.task("lab:html", function() {
   };
 
   const dataFunction = function() {
-    var dataPath = path.resolve(`${PATH_CONFIG.BASE}/lab/data/global.json`);
+    var dataPath = path.resolve(
+      `${PATH_CONFIG.BASE}/${PATH_CONFIG.lab}/_data.json`
+    );
     return JSON.parse(fs.readFileSync(dataPath, "utf8"));
   };
 
@@ -52,7 +54,7 @@ gulp.task("lab:stylesheets", function() {
     src: [
       `./node_modules/jaywing-frontend-component-library/dist/lab/stylesheets/giza-lab.css`,
       ,
-      projectPath(PATH_CONFIG.lab, PATH_CONFIG.stylesheets.src, "**/*.scss")
+      projectPath(PATH_CONFIG.lab, "giza-lab-example.scss")
     ],
     dest: projectPath(
       PATH_CONFIG.buildDest,
