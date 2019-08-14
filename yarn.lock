@@ -5063,9 +5063,9 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jaywing-frontend-component-library@*:
-  version "0.1.31"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.31.tgz#8f793b2005b09aea55306f2a806430821fb97a8e"
-  integrity sha512-dgmAKQQnkzvICpUMzx5l/l+HuanYuUnXjHPQ502bIww8QGcnsPqk9K8tdUyqIVw22vGfZXDncLXR+JTVwdszuA==
+  version "0.1.32"
+  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.32.tgz#2022bb25274525867a6b9ad0a60f2a6664ec72f1"
+  integrity sha512-4lGwag+JFTwgILwCJjf/JmoTMnAL9en1rVb/cBtlmb7BUgKA9XkY1kEZomoOIDy0/xeJmuGxEaeMpAHM3Z8CHA==
   dependencies:
     giza-framework "*"
     imagesloaded "^4.1.4"
