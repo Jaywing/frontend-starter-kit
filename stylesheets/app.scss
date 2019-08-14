@@ -4,7 +4,7 @@
 
 // Giza framework
 // Loads local settings allowing overrides first
-@import '1.settings/settings';
+@import 'settings/settings';
 @import 'jaywing-frontend-component-library/stylesheets/app';
 
 // Tools
@@ -16,11 +16,11 @@
 // Objects
 
 // Components
-@import '6.components/main/main';
-@import '6.components/side-nav/side-nav';
-@import '6.components/sidebar/sidebar';
-@import '6.components/page-content/page-content';
-@import '6.components/page-footer/page-footer';
-@import '6.components/page-header/page-header';
+@import 'components/main';
+@import 'components/side-nav';
+@import 'components/sidebar';
+@import 'components/page-content';
+@import 'components/page-footer';
+@import 'components/page-header';
 
 // Utilities
