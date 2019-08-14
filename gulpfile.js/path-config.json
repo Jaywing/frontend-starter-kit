@@ -12,7 +12,7 @@
   },
 
   "static": {
-    "src": "static",
+    "src": "html/static",
     "dest": ""
   },
 
@@ -27,17 +27,17 @@
   },
 
   "images": {
-    "src": "images",
+    "src": "assets/images",
     "dest": "images"
   },
 
   "fonts": {
-    "src": "fonts",
+    "src": "assets/fonts",
     "dest": "fonts"
   },
 
   "icons": {
-    "src": "icons",
+    "src": "assets/icons",
     "dest": "images"
   }
 }
