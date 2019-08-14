@@ -17,12 +17,12 @@
   },
 
   "javascripts": {
-    "src": "javascripts",
+    "src": "js",
     "dest": "javascripts"
   },
 
   "stylesheets": {
-    "src": "stylesheets",
+    "src": "scss",
     "dest": "stylesheets"
   },
 
