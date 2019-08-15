@@ -1,4 +1,4 @@
-# Jaywing Frontend Site Starter Kit Template
+# Jaywing Frontend Starter Kit
 
 ## Usage
 
