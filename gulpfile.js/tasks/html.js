@@ -2,6 +2,9 @@ const gulp = require("gulp");
 const gulpif = require("gulp-if");
 const nunjucksRender = require("gulp-nunjucks-render");
 const projectPath = require("../lib/projectPath");
+const data = require("gulp-data");
+const path = require("path");
+const fs = require("fs");
 
 gulp.task("html", function() {
   paths = {
@@ -29,8 +32,14 @@ gulp.task("html", function() {
     dest: projectPath(PATH_CONFIG.buildDest, PATH_CONFIG.buildSite)
   };
 
+  const dataFunction = function() {
+    var dataPath = path.resolve(`${PATH_CONFIG.lab}/_data.json`);
+    return JSON.parse(fs.readFileSync(dataPath, "utf8"));
+  };
+
   return gulp
     .src(paths.src)
+    .pipe(data(dataFunction))
     .pipe(
       nunjucksRender({
         path: paths.src_render
