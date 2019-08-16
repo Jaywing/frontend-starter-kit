@@ -1,3 +1,6 @@
+{% from 'navbar.html' import Navbar %}
+{% from 'components/footer.html' import Footer %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,14 +19,34 @@
     </script>
   </head>
   <body class="display-flex flex-column min-height-100">
-    <header class="app-header">
-      {% include 'shared/app-header.html' %}
-    </header>
+    {{ Navbar({
+      'brand': {
+        'title': 'Navbar',
+        'url': '#'
+      },
+      'nav': {
+        'items': [
+          {
+            'title': 'Link 1',
+            'url': '#'
+          },
+          {
+            'title': 'Link 2',
+            'url': '#'
+          },
+          {
+            'title': 'Link 3',
+            'url': '#'
+          }
+        ],
+        'classes': ' navbar__nav'
+      }
+    }) }}
     <main class="app-content text-center">
       {% block body %}{% endblock %}
     </main>
     <footer class="margin-top-auto app-footer app-footer text-center">
-      {% include 'shared/app-footer.html' %}
+      {{ Footer() }}
     </footer>
     <script src="/javascripts/app.js"></script>
   </body>
