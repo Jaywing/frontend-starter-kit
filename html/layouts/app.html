@@ -15,14 +15,14 @@
       }
     </script>
   </head>
-  <body class="app">
+  <body class="display-flex flex-column min-height-100">
     <header class="app-header">
       {% include 'shared/app-header.html' %}
     </header>
     <main class="app-content text-center">
       {% block body %}{% endblock %}
     </main>
-    <footer class="app_footer app-footer text-center">
+    <footer class="margin-top-auto app-footer app-footer text-center">
       {% include 'shared/app-footer.html' %}
     </footer>
     <script src="/javascripts/app.js"></script>
