@@ -27,10 +27,10 @@ gulp.task("lab:html", function() {
       projectPath(PATH_CONFIG.lab),
       `./node_modules/jaywing-frontend-component-library/lab/html`,
       `./node_modules/jaywing-frontend-component-library/lab/html/layouts`,
-      `./node_modules/jaywing-frontend-component-library/lab/html/macros`,
+      `./node_modules/jaywing-frontend-component-library/lab/html/components`,
       `./node_modules/giza-framework/lab/html`,
       `./node_modules/giza-framework/lab/html/layouts`,
-      `./node_modules/giza-framework/lab/html/macros`
+      `./node_modules/giza-framework/lab/html/components`
     ],
     dest: projectPath(PATH_CONFIG.buildDest, PATH_CONFIG.buildLab)
   };
