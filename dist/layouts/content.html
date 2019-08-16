@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,26 +19,71 @@
     </script>
   </head>
   <body class="display-flex flex-column min-height-100">
-    <header class="app-header">
-      Frontend starter kit
-
-    </header>
-    <main class="app-content text-center">
+    
+  <nav class="navbar">
+    <a class="navbar__brand" href="#">Navbar</a>
+    
       
+  <button class="navbar__toggler" data-module="Toggle" data-options='{"target": "parent", "activeClass": "has-nav-open"}'  aria-label="Toggle navigation" >
+    <span class="navbar__toggler-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </button>
+
+      <div class="navbar__toggle">
+        
+  <ul class="nav navbar__nav">
+    
+
+      
+
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 1</a>
+      </li>
+    
+
+      
+
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 2</a>
+      </li>
+    
+
+      
+
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 3</a>
+      </li>
+    
+  </ul>
+
+        <form class="form navbar__form">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="button" type="submit">Search</button>
+        </form>
+      </div>
+    
+  </nav>
+
+    
   <main>
     
       Site Content
     
   </main>
 
-    </main>
-    <footer class="margin-top-auto app-footer app-footer text-center">
-      <p class="powered">
-  Powered by
-  <a href="https://github.com/r500dwp/giza" target="_blank">Giza framework</a>, components by
-  <a href="https://github.com/Jaywing/frontend-component-library" target="_blank">Jaywing Component Library</a>.
-</p>
-<p class="build">Build 0.1.0</p>
+    <footer class="margin-top-auto">
+      
+  <div class="app-footer">
+    <p class="powered">
+      Powered by
+      <a href="https://github.com/r500dwp/giza" target="_blank">Giza framework</a>, components by
+      <a href="https://github.com/Jaywing/frontend-component-library" target="_blank">Jaywing Component Library</a>.
+    </p>
+    <p class="build">Build 0.1.0</p>
+  </div>
 
     </footer>
     <script src="/javascripts/app.js"></script>

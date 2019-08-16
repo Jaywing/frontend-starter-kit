@@ -42,10 +42,8 @@
         'classes': ' navbar__nav'
       }
     }) }}
-    <main class="app-content text-center">
-      {% block body %}{% endblock %}
-    </main>
-    <footer class="margin-top-auto app-footer text-center">
+    {% block body %}{% endblock %}
+    <footer class="margin-top-auto">
       {{ Footer() }}
     </footer>
     <script src="/javascripts/app.js"></script>
