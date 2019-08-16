@@ -23,8 +23,12 @@ gulp.task("lab:html", function() {
     ],
     src_render: [
       projectPath(PATH_CONFIG.lab),
-      `./node_modules/jaywing-frontend-component-library/lab`,
+      `./node_modules/jaywing-frontend-component-library/lab/html`,
+      `./node_modules/jaywing-frontend-component-library/lab/html/layouts`,
+      `./node_modules/jaywing-frontend-component-library/lab/html/macros`,
       `./node_modules/giza-framework/lab/html`,
+      `./node_modules/giza-framework/lab/html/layouts`,
+      `./node_modules/giza-framework/lab/html/macros`,
       projectPath(PATH_CONFIG.lab),
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src)
     ],
