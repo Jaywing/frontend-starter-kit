@@ -28,9 +28,7 @@ gulp.task("lab:html", function() {
       `./node_modules/jaywing-frontend-component-library/lab/html/macros`,
       `./node_modules/giza-framework/lab/html`,
       `./node_modules/giza-framework/lab/html/layouts`,
-      `./node_modules/giza-framework/lab/html/macros`,
-      projectPath(PATH_CONFIG.lab),
-      projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src)
+      `./node_modules/giza-framework/lab/html/macros`
     ],
     dest: projectPath(PATH_CONFIG.buildDest, PATH_CONFIG.buildLab)
   };

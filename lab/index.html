@@ -3,7 +3,6 @@
 
 {% extends 'lab-side-content.html' %}
 
-{% from 'lab-nav-link.html' import LabNavLink %}
 {% from 'lab-code.html' import LabCode %}
 
 {% block content %}
@@ -32,14 +31,4 @@
   {{LabCode('html', '
   $ yarn build
   ')}}
-
-  {% if resources %}
-    <h3>Resources</h3>
-
-    <ul class="nav nav--vertical">
-      {% for page in resources %}
-        {{ LabNavLink(page, AppParentId, AppCurrentId, loop) }}
-      {% endfor %}
-    </ul>
-  {% endif %}
 {% endblock %}
