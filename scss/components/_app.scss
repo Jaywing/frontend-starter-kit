@@ -1,14 +1,3 @@
-.app-header {
-  @include font-size-md;
-
-  padding: ($spacer * 3);
-  background-color: $dune;
-  color: $color-light;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .app-content {
   padding: ($spacer * 4) $spacer;
 }

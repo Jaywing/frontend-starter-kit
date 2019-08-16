@@ -1,0 +1,27 @@
+{% set AppParentId = "components" %}
+{% set AppCurrentId = "footer" %}
+
+{% extends 'lab-side-content.html' %}
+
+{% from 'lab-example.html' import LabExample %}
+{% from 'lab-code.html' import LabCode %}
+
+{% block content %}
+  <h1>Footer</h1>
+
+  <p class="font-size-md">A responsive navigation header for brranding and navigation.</p>
+
+  <h2>Usage</h2>
+
+  {{LabExample(AppParentId, AppCurrentId)}}
+  {{LabCode('html', '
+  <div class="app-footer">
+    <p class="powered">
+      Powered by
+      <a href="https://github.com/r500dwp/giza" target="_blank">Giza framework</a>, components by
+      <a href="https://github.com/Jaywing/frontend-component-library" target="_blank">Jaywing Component Library</a>.
+    </p>
+    <p class="build">Build 0.1.0</p>
+  </div>
+  ')}}
+{% endblock %}

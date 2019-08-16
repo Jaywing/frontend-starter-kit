@@ -41,6 +41,9 @@
           "url": "components.button.html",
           "title": "Button"
         },
+        { "id": "footer", "url": "components.footer.html", "title": "Footer" },
+        { "id": "nav", "url": "components.nav.html", "title": "Navs" },
+        { "id": "navbar", "url": "components.navbar.html", "title": "Navbar" },
         { "id": "table", "url": "components.table.html", "title": "Table" }
       ]
     }

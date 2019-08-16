@@ -14,6 +14,8 @@ const projectPath = require("../lib/projectPath");
 gulp.task("lab:html", function() {
   paths = {
     src: [
+      `./node_modules/giza-framework/lab/html/**/*.html`,
+      `./node_modules/jaywing-frontend-component-library/lab/html/**/*.html`,
       projectPath(PATH_CONFIG.lab, "**/*.html"),
       "!" +
         projectPath(

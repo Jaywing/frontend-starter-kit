@@ -1,0 +1,40 @@
+{% set AppParentId = "components" %}
+{% set AppCurrentId = "navbar" %}
+
+{% extends 'lab-side-content.html' %}
+
+{% from 'lab-example.html' import LabExample %}
+{% from 'lab-code.html' import LabCode %}
+
+{% block content %}
+  <h1>Navbar</h1>
+
+  <p class="font-size-md">A responsive navigation header for brranding and navigation.</p>
+
+  <h2>Usage</h2>
+
+  {{LabExample(AppParentId, AppCurrentId)}}
+  {{LabCode('html', '
+  <nav class="navbar">
+    <a class="navbar__brand" href="#">Navbar</a>
+    <button class="navbar__toggler" data-module="Toggle" data-options="{target: parent, activeClass: has-nav-open}" aria-label="Toggle navigation">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <ul class="nav navbar__nav">
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 1</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 2</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 3</a>
+      </li>
+    </ul>
+  </nav>
+  ')}}
+{% endblock %}
