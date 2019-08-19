@@ -6,12 +6,12 @@
   "nav": [
     {
       "id": "getting-started",
-      "url": "index.html",
+      "url": "introduction.getting-started.html",
       "title": "Getting started",
       "children": [
         {
           "id": "introduction",
-          "url": "index.html",
+          "url": "introduction.getting-started.html",
           "title": "Introduction"
         }
       ]
