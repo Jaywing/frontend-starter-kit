@@ -1,4 +1,9 @@
 {
+  "lab_stylesheet": "stylesheets/lab.css",
+  "lab_javascript": "javascripts/giza.js",
+  "lab_iframe_stylesheet": "../stylesheets/app.css",
+  "lab_iframe_stylesheet_demo": "../stylesheets/lab-demo.css",
+  "lab_iframe_javascript": "../javascripts/app.js",
   "app_file": "app",
   "meta_title": "Lab",
   "lab_title": "Lab",

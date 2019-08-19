@@ -10,7 +10,7 @@ const projectPath = require("../lib/projectPath");
 gulp.task("stylesheets", function() {
   paths = {
     src: [
-      "./node_modules/jaywing-frontend-component-library/scss/giza-lab.scss",
+      "./node_modules/jaywing-frontend-component-library/scss/lab.scss",
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.stylesheets.src, "**/*.scss")
     ],
     dest: projectPath(PATH_CONFIG.buildDest, PATH_CONFIG.stylesheets.dest)
