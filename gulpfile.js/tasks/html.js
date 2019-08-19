@@ -29,13 +29,11 @@ gulp.task("html", function() {
     ],
     src_render: [
       projectPath(PATH_CONFIG.lab),
-      // `./node_modules/jaywing-frontend-component-library/html`,
       `./node_modules/jaywing-frontend-component-library/html/layouts`,
       `./node_modules/jaywing-frontend-component-libraryk/html/macros`,
       `./node_modules/jaywing-frontend-component-library/html/content`,
       `./node_modules/jaywing-frontend-component-library/html/components`,
       `./node_modules/jaywing-frontend-component-library/html/modules`,
-      // `./node_modules/giza-framework/html`,
       `./node_modules/giza-framework/html/layouts`,
       `./node_modules/giza-framework/html/macros`,
       `./node_modules/giza-framework/html/content`,
