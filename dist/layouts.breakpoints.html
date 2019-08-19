@@ -1,0 +1,368 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lab</title>
+    <link rel="stylesheet" href="stylesheets/giza-lab.css">
+    <script>
+      if (document.documentElement) {
+        document
+          .documentElement
+          .classList
+          .add('js');
+      }
+    </script>
+  </head>
+  <body class="display-flex flex-column min-height-100">
+    <header class="app-header" data-module="LabHeader">
+      <div class="container app-header__inner">
+        <a class="app-logo" href="index.html">
+          <img class="app-logo__image" src="images/app-logo-light.svg" alt="">
+          <span class="app-logo__text">Lab</span>
+        </a>
+        <span class="app-version">v0.0.1</span>
+        
+        <button class="button app-sidebar-toggle" data-module="Toggle" data-options='{"target": ".app-sidebar"}'>
+          <div class="hamburger">
+            <div class="hamburger__inner"></div>
+            <div class="sr-only">Menu</div>
+          </div>
+        </button>
+      </div>
+    </header>
+    <div class="container app-main">
+      
+  <div class="app-sidebar">
+    <nav class="app-nav">
+      <ul class="nav nav--vertical">
+        
+          
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  <li class="nav__item nav__item-level-1 nav__item-parent">
+    <a class="nav__link" href="index.html">Getting started</a>
+    
+      <ul class="nav nav--vertical nav--nested">
+        
+          
+  
+
+  
+
+  
+
+  
+
+  <li class="nav__item">
+    <a class="nav__link" href="index.html">Introduction</a>
+    
+</li>
+
+        
+    </ul>
+  
+</li>
+
+        
+          
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  <li class="nav__item nav__item-level-1 nav__item-parent">
+    <a class="nav__link" href="content.icon.html">Content</a>
+    
+      <ul class="nav nav--vertical nav--nested">
+        
+          
+  
+
+  
+
+  
+
+  
+
+  <li class="nav__item">
+    <a class="nav__link" href="content.icon.html">Icon</a>
+    
+</li>
+
+        
+          
+  
+
+  
+
+  
+
+  
+
+  <li class="nav__item">
+    <a class="nav__link" href="content.images.html">Images</a>
+    
+</li>
+
+        
+          
+  
+
+  
+
+  
+
+  
+
+  <li class="nav__item">
+    <a class="nav__link" href="content.typography.html">Typography</a>
+    
+</li>
+
+        
+    </ul>
+  
+</li>
+
+        
+          
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  <li class="nav__item nav__item-level-1 nav__item-parent">
+    <a class="nav__link" href="components.button.html">Components</a>
+    
+      <ul class="nav nav--vertical nav--nested">
+        
+          
+  
+
+  
+
+  
+
+  
+
+  <li class="nav__item">
+    <a class="nav__link" href="components.button.html">Button</a>
+    
+</li>
+
+        
+          
+  
+
+  
+
+  
+
+  
+
+  <li class="nav__item">
+    <a class="nav__link" href="components.footer.html">Footer</a>
+    
+</li>
+
+        
+          
+  
+
+  
+
+  
+
+  
+
+  <li class="nav__item">
+    <a class="nav__link" href="components.nav.html">Navs</a>
+    
+</li>
+
+        
+          
+  
+
+  
+
+  
+
+  
+
+  <li class="nav__item">
+    <a class="nav__link" href="components.navbar.html">Navbar</a>
+    
+</li>
+
+        
+          
+  
+
+  
+
+  
+
+  
+
+  <li class="nav__item">
+    <a class="nav__link" href="components.table.html">Table</a>
+    
+</li>
+
+        
+    </ul>
+  
+</li>
+
+        
+      </ul>
+    </nav>
+
+  </div>
+  <main class="app-content">
+    
+  <h1>Breakpoints</h1>
+
+  <h2>Usage</h2>
+
+  <h3>Default breakpoints</h3>
+
+  
+  <div class="app-code" data-module="LabCode">
+    <button class="button app-copy-button js-app-copy-button">Copy code</button>
+    <pre class="language-scss"><code class="language-scss">
+  $breakpoints: (
+    xxs: 320px,
+    xs: 480px,
+    sm: 640px,
+    md: 768px,
+    lg: 960px,
+    xl: 1180px,
+    xxl: 1400px
+  ) !default;
+  </code></pre>
+  </div>
+
+
+  <h3>Media query mixin</h3>
+
+  <p>
+    <code>@include breakpoint(xs) { ... }</code>
+  </p>
+
+  <h3>Shorthand media query mixin</h3>
+
+  <ul>
+    <li>
+      <code>@include xxs { ... }</code>
+    </li>
+    <li>
+      <code>@include xs { ... }</code>
+    </li>
+    <li>
+      <code>@include sm { ... }</code>
+    </li>
+    <li>
+      <code>@include md { ... }</code>
+    </li>
+    <li>
+      <code>@include lg { ... }</code>
+    </li>
+    <li>
+      <code>@include xl { ... }</code>
+    </li>
+    <li>
+      <code>@include xxl { ... }</code>
+    </li>
+  </ul>
+
+  <h3>HTML class breakpoint suffixes</h3>
+
+  <ul>
+    <li>
+      <code>@xxs</code>
+    </li>
+    <li>
+      <code>@xs</code>
+    </li>
+    <li>
+      <code>@sm</code>
+    </li>
+    <li>
+      <code>@md</code>
+    </li>
+    <li>
+      <code>@lg</code>
+    </li>
+    <li>
+      <code>@xl</code>
+    </li>
+    <li>
+      <code>@xxl</code>
+    </li>
+  </ul>
+
+  </main>
+
+    </div>
+    <footer class="margin-top-auto app-footer">
+      <div class="container app-footer__inner">
+        
+          <h3 class="app-footer__title">Resources</h3>
+
+          <ul class="nav nav--vertical">
+            
+              
+  
+
+  
+
+  
+
+  
+
+  <li class="nav__item">
+    <a class="nav__link" href="https://jaywing.github.io/frontend-component-library/">Jaywing Frontend Component Library</a>
+    
+</li>
+
+            
+          </ul>
+        
+
+        <p class="brevier">Currently v0.0.1.</p>
+
+      </div>
+    </footer>
+    <script src="javascripts/giza.js"></script>
+  </body>
+</html>

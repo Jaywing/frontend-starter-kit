@@ -10,9 +10,15 @@ gulp.task("html", function() {
   paths = {
     src: [
       `./node_modules/giza-framework/html/**/*.html`,
-      `!./node_modules/giza-framework/html/**/{layouts,data}/**`,
+      "!" +
+        projectPath(
+          `./node_modules/giza-framework/html/**/{layouts,macros,data}/**`
+        ),
       `./node_modules/jaywing-frontend-component-library/html/**/*.html`,
-      `!./node_modules/jaywing-frontend-component-library/html/**/{layouts,data}/**`,
+      "!" +
+        projectPath(
+          `./node_modules/jaywing-frontend-component-library/html/**/{layouts,macros,data}/**`
+        ),
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src, "**/*.html"),
       "!" +
         projectPath(
@@ -23,12 +29,15 @@ gulp.task("html", function() {
     ],
     src_render: [
       projectPath(PATH_CONFIG.lab),
-      `./node_modules/jaywing-frontend-component-library/lab`,
-      `./node_modules/giza-framework/lab/html`,
-      `./node_modules/giza-framework/lab/html/layouts`,
+      // `./node_modules/jaywing-frontend-component-library/html`,
+      `./node_modules/jaywing-frontend-component-library/html/layouts`,
+      `./node_modules/jaywing-frontend-component-libraryk/html/macros`,
       `./node_modules/jaywing-frontend-component-library/html/content`,
       `./node_modules/jaywing-frontend-component-library/html/components`,
       `./node_modules/jaywing-frontend-component-library/html/modules`,
+      // `./node_modules/giza-framework/html`,
+      `./node_modules/giza-framework/html/layouts`,
+      `./node_modules/giza-framework/html/macros`,
       `./node_modules/giza-framework/html/content`,
       `./node_modules/giza-framework/html/components`,
       `./node_modules/giza-framework/html/modules`,
@@ -38,7 +47,9 @@ gulp.task("html", function() {
   };
 
   const dataFunction = function() {
-    var dataPath = path.resolve(`${PATH_CONFIG.lab}/_data.json`);
+    var dataPath = path.resolve(
+      `${PATH_CONFIG.BASE}/${PATH_CONFIG.html.src}/_data.json`
+    );
     return JSON.parse(fs.readFileSync(dataPath, "utf8"));
   };
 

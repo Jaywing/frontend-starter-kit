@@ -3815,9 +3815,9 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 giza-framework@*:
-  version "0.1.67"
-  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.67.tgz#5e4483ca35afbbbe180e58cdbe66256e6400b47a"
-  integrity sha512-2r8mKIsVYA0z2RNgEP5D6Tu9TwtofqF5I6b8aKAvdV0ZikdpaZx+Ogna3TnZLFyTQiYzSz9zorcRJ2XyseyaGw==
+  version "0.1.69"
+  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.69.tgz#e94189dc15f42eb6bf10bf3ba2187c25af92b02b"
+  integrity sha512-5o77mFNM9rQ/fN86JPf+fZLdmHhskvAxxS7k1kHtWvm/1i+BtChkkjfH1nG48GgzanenXKYmT3zpUC+KYW8f8g==
   dependencies:
     babel-core "^6.25.0"
     babel-loader "^7.1.1"
@@ -5063,9 +5063,9 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jaywing-frontend-component-library@*:
-  version "0.1.41"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.41.tgz#afa50fd43b84069935429d4a4fb8c1307038130e"
-  integrity sha512-29e/qAro8jpmAh7l2iVyWN6BVqEE2kg+uPYsnU1Wco3M7ljtc0Eccex3R9jr9DZllRzj9cRoZ/UcsZFNZIVgyQ==
+  version "0.1.43"
+  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.43.tgz#8d20b5efdb8e76c71e2eec277e758a134e0e4765"
+  integrity sha512-CZ8Txtio/D/cZ4cr5UJAox55kuw3qGrhI6UUKbx7mRd5vZtL7QTB3XajX3miM43RXhRGO5bo9nJvrQL6xYgn4Q==
   dependencies:
     giza-framework "*"
     imagesloaded "^4.1.4"
@@ -9268,9 +9268,9 @@ utils-merge@1.0.1:
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
 uuid@^3.0.1, uuid@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
-  integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
+  integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
 
 v8flags@^2.0.2:
   version "2.1.1"
