@@ -10,23 +10,28 @@ gulp.task("html", function() {
   paths = {
     src: [
       `./node_modules/giza-framework/html/**/*.html`,
+      `!./node_modules/giza-framework/html/**/{layouts,data}/**`,
       `./node_modules/jaywing-frontend-component-library/html/**/*.html`,
+      `!./node_modules/jaywing-frontend-component-library/html/**/{layouts,data}/**`,
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src, "**/*.html"),
       "!" +
         projectPath(
           PATH_CONFIG.BASE,
           PATH_CONFIG.html.src,
-          "**/{layouts,shared,macros,data}/**"
+          "**/{layouts,data}/**"
         )
     ],
     src_render: [
       projectPath(PATH_CONFIG.lab),
       `./node_modules/jaywing-frontend-component-library/lab`,
       `./node_modules/giza-framework/lab/html`,
-      `./node_modules/jaywing-frontend-component-library/html/components`,
+      `./node_modules/giza-framework/lab/html/layouts`,
       `./node_modules/jaywing-frontend-component-library/html/content`,
-      `./node_modules/giza-framework/html/components`,
+      `./node_modules/jaywing-frontend-component-library/html/components`,
+      `./node_modules/jaywing-frontend-component-library/html/modules`,
       `./node_modules/giza-framework/html/content`,
+      `./node_modules/giza-framework/html/components`,
+      `./node_modules/giza-framework/html/modules`,
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src)
     ],
     dest: projectPath(PATH_CONFIG.buildDest, PATH_CONFIG.buildSite)

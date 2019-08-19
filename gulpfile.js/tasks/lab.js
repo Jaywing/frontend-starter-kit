@@ -56,9 +56,9 @@ gulp.task("lab:html", function() {
 gulp.task("lab:stylesheets", function() {
   paths = {
     src: [
-      `./node_modules/jaywing-frontend-component-library/dist/lab/stylesheets/jaywing-lab.css`,
+      `./node_modules/jaywing-frontend-component-library/dist/lab/stylesheets/giza-lab.css`,
       ,
-      projectPath(PATH_CONFIG.lab, "jaywing-lab-example.scss")
+      projectPath(PATH_CONFIG.lab, "giza-lab-example.scss")
     ],
     dest: projectPath(
       PATH_CONFIG.buildDest,
