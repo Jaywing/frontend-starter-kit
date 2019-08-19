@@ -1,6 +1,6 @@
 {
-  "lab_stylesheet": "stylesheets/lab.css",
-  "lab_javascript": "javascripts/giza.js",
+  "lab_stylesheet": "../stylesheets/lab.css",
+  "lab_javascript": "../javascripts/giza.js",
   "lab_iframe_stylesheet": "../stylesheets/app.css",
   "lab_iframe_stylesheet_demo": "../stylesheets/lab-demo.css",
   "lab_iframe_javascript": "../javascripts/app.js",
@@ -11,12 +11,12 @@
   "nav": [
     {
       "id": "getting-started",
-      "url": "introduction.getting-started.html",
+      "url": "index.html",
       "title": "Getting started",
       "children": [
         {
           "id": "introduction",
-          "url": "introduction.getting-started.html",
+          "url": "index.html",
           "title": "Introduction"
         }
       ]
