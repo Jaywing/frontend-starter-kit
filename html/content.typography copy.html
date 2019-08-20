@@ -1,0 +1,78 @@
+{% extends 'lab-side-content.html' %}
+
+{% set AppParentId = "content" %}
+{% set AppCurrentId = "typography" %}
+
+{% block content %}
+  <h1>Typography</h1>
+
+  <p class="font-size-md">Our typography with global settings for headings, body text, lists and more.</p>
+
+  <h2>Headings</h2>
+
+  {{LabExample(AppParentId, AppCurrentId, 'headings')}}
+  {{LabCode('html', '
+  <h1>...</h1>
+
+  <h2>...</h2>
+
+  <h3>...</h3>
+
+  <h4>...</h4>
+
+  <h5>...</h5>
+
+  <h6>...</h6>
+  ')}}
+
+  <h2>Text</h2>
+
+  {{LabExample(AppParentId, AppCurrentId, 'text')}}
+  {{LabCode('html', '
+  <p class="font-size-display">...</p>
+
+  <p class="font-size-sm">...</p>
+
+  <p class="font-size-xs">...</p>
+
+  <p class="font-size-base">...</p>
+
+  <p>
+    <a href="#">...</a>
+  </p>
+  ')}}
+
+  <h2>Lists</h2>
+
+  {{LabExample(AppParentId, AppCurrentId, 'lists')}}
+  {{LabCode('html', '
+  <ul>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    ...
+  </ul>
+
+  <ul>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    ...
+  </ul>
+
+  <blockquote>
+    <p>...</p>
+    <cite>...</cite>
+  </blockquote>
+  ')}}
+
+  <h2>Blockquote</h2>
+
+  {{LabExample(AppParentId, AppCurrentId, 'blockquote')}}
+  {{LabCode('html', '
+  <blockquote>
+    <p>...</p>
+    <cite>...</cite>
+  </blockquote>
+  ')}}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'lab-side-content.html' %}
+
+{% set AppParentId = "content" %}
+{% set AppCurrentId = "icon" %}
+
+{% block content %}
+  <h1>Icon</h1>
+
+  <p class="font-size-md">Place vector icons anywhere using our SVG sprite generator.</p>
+
+  <h2>Usage</h2>
+
+  {{LabExample(AppParentId, AppCurrentId)}}
+  {{LabCode('html', '
+  <span class="icon icon--check">
+    <svg viewbox="0 0 1 1">
+      <use xlink:href="/assets/images/icons.svg#check"></use>
+    </svg>
+  </span>
+  ')}}
+{% endblock %}

@@ -1,19 +1,32 @@
-{% extends 'layouts/content.html' %}
+{% extends 'lab-side-content.html' %}
 
-{% from 'button.html' import Button %}
+{% set AppParentId = "getting-started" %}
+{% set AppCurrentId = "introduction" %}
 
 {% block content %}
+  <h1>Introduction</h1>
 
-  <div class="container">
-    <h1>Welcome to the Jaywing Frontend site starter kit</h1>
-    <p>To get started,
-      <a href="https://jaywing.github.io/frontend-component-library/lab/" target="_blank">visit the docs</a>.</p>
-    <p>
-      {{ Button({
-        'url': 'introduction.getting-started.html',
-        'description': 'Open the lab'
-      }) }}
-    </p>
-  </div>
+  <p>An open source toolkit for developing with HTML, CSS and JS.</p>
 
+  <h3>Requirements</h3>
+
+  <p>Requires at least version 6 of Node. We reccomend using nvm to install and manage your Node versions.</p>
+
+  <h3>Installation</h3>
+
+  {{LabCode('html', '
+  $ yarn
+  ')}}
+
+  <h3>Prototyping</h3>
+
+  {{LabCode('html', '
+  $ yarn start
+  ')}}
+
+  <h3>Production</h3>
+
+  {{LabCode('html', '
+  $ yarn build
+  ')}}
 {% endblock %}

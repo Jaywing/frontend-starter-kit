@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Lab</title>
-    <link rel="stylesheet" href="stylesheets/giza-lab.css">
+    <link rel="stylesheet" href="stylesheets/lab.css">
     <script>
       if (document.documentElement) {
         document
@@ -42,8 +42,6 @@
         
           
   
-    
-  
 
   
 
@@ -55,15 +53,13 @@
     
   
 
-  <li class="nav__item nav__item-level-1 nav__item-parent is-active">
+  <li class="nav__item nav__item-level-1 nav__item-parent">
     <a class="nav__link" href="index.html">Getting started</a>
     
       <ul class="nav nav--vertical nav--nested">
         
           
   
-    
-  
 
   
 
@@ -71,7 +67,7 @@
 
   
 
-  <li class="nav__item is-active">
+  <li class="nav__item">
     <a class="nav__link" href="index.html">Introduction</a>
     
 </li>
@@ -152,6 +148,8 @@
         
           
   
+    
+  
 
   
 
@@ -163,7 +161,7 @@
     
   
 
-  <li class="nav__item nav__item-level-1 nav__item-parent">
+  <li class="nav__item nav__item-level-1 nav__item-parent is-active">
     <a class="nav__link" href="components.button.html">Components</a>
     
       <ul class="nav nav--vertical nav--nested">
@@ -185,14 +183,16 @@
         
           
   
-
+    
   
 
   
 
   
 
-  <li class="nav__item">
+  
+
+  <li class="nav__item is-active">
     <a class="nav__link" href="components.footer.html">Footer</a>
     
 </li>
@@ -254,43 +254,34 @@
   </div>
   <main class="app-content">
     
-  <h1>Introduction</h1>
+  <h1>Footer</h1>
 
-  <p>An open source toolkit for developing with HTML, CSS and JS.</p>
+  <p class="font-size-md">A responsive navigation header for brranding and navigation.</p>
 
-  <h3>Requirements</h3>
+  <h2>Usage</h2>
 
-  <p>Requires at least version 6 of Node. We reccomend using nvm to install and manage your Node versions.</p>
-
-  <h3>Installation</h3>
+  
+  
+    <div class="app-example">
+      <div class="app-example__tabs">
+        <a class="app-example__tab" href="components/footer.html" target="_blank">Open this example in a new window</a>
+      </div>
+      <div data-module="LabFrame" data-options='{"src": "components/footer.html"}'></div>
+    </div>
+  
 
   
   <div class="app-code" data-module="LabCode">
     <button class="button app-copy-button js-app-copy-button">Copy code</button>
     <pre class="language-html"><code class="language-html">
-  $ yarn
-  </code></pre>
-  </div>
-
-
-  <h3>Prototyping</h3>
-
-  
-  <div class="app-code" data-module="LabCode">
-    <button class="button app-copy-button js-app-copy-button">Copy code</button>
-    <pre class="language-html"><code class="language-html">
-  $ yarn start
-  </code></pre>
-  </div>
-
-
-  <h3>Production</h3>
-
-  
-  <div class="app-code" data-module="LabCode">
-    <button class="button app-copy-button js-app-copy-button">Copy code</button>
-    <pre class="language-html"><code class="language-html">
-  $ yarn build
+  &lt;div class=&quot;app-footer&quot;&gt;
+    &lt;p class=&quot;powered&quot;&gt;
+      Powered by
+      &lt;a href=&quot;https://github.com/r500dwp/giza&quot; target=&quot;_blank&quot;&gt;Giza framework&lt;/a&gt;, components by
+      &lt;a href=&quot;https://github.com/Jaywing/frontend-component-library&quot; target=&quot;_blank&quot;&gt;Jaywing Component Library&lt;/a&gt;.
+    &lt;/p&gt;
+    &lt;p class=&quot;build&quot;&gt;Build 0.1.0&lt;/p&gt;
+  &lt;/div&gt;
   </code></pre>
   </div>
 

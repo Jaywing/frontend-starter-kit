@@ -9,6 +9,16 @@ const fs = require("fs");
 gulp.task("html", function() {
   paths = {
     src: [
+      `./node_modules/giza-framework/html/**/*.html`,
+      "!" +
+        projectPath(
+          `./node_modules/giza-framework/html/**/{layouts,macros,data}/**`
+        ),
+        `./node_modules/jaywing-frontend-component-library/html/**/*.html`,
+      "!" +
+        projectPath(
+          `./node_modules/jaywing-frontend-component-library/html/**/{layouts,macros,data}/**`
+        ),
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src, "**/*.html"),
       "!" +
         projectPath(

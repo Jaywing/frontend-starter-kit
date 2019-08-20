@@ -1,0 +1,19 @@
+{% extends 'layouts/content.html' %}
+
+{% from 'button.html' import Button %}
+
+{% block content %}
+
+  <div class="container">
+    <h1>Welcome to the Jaywing Frontend site starter kit</h1>
+    <p>To get started,
+      <a href="https://jaywing.github.io/frontend-component-library/lab/" target="_blank">visit the docs</a>.</p>
+    <p>
+      {{ Button({
+        'url': 'introduction.getting-started.html',
+        'description': 'Open the lab'
+      }) }}
+    </p>
+  </div>
+
+{% endblock %}

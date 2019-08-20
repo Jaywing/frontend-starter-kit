@@ -1,0 +1,27 @@
+{% extends 'lab-side-content.html' %}
+
+{% set AppParentId = "components" %}
+{% set AppCurrentId = "nav" %}
+
+{% block content %}
+  <h1>Navs</h1>
+
+  <p class="font-size-md">Our navigation components.</p>
+
+  <h2>Usage</h2>
+
+  {{LabExample(AppParentId, AppCurrentId)}}
+  {{LabCode('html', '
+  <ul class="nav">
+    <li class="nav__item">
+      <a class="nav__link" href="#">Link 1</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">Link 2</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">Link 3</a>
+    </li>
+  </ul>
+  ')}}
+{% endblock %}

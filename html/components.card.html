@@ -1,0 +1,42 @@
+{% extends 'lab-side-content.html' %}
+
+{% set AppParentId = "components" %}
+{% set AppCurrentId = "card" %}
+
+{% block content %}
+  <h1>Card</h1>
+
+  <p class="font-size-md">Use our cards system to create flexible content containers.</p>
+
+  <h2>Usage</h2>
+
+  {{LabExample(AppParentId, AppCurrentId)}}
+  {{LabCode('html', '
+  <div class="card">
+    <div class="card__header">...</div>
+    <img class="card__img" src="..." alt="">
+    <div class="card__body">
+      <h5 class="card__title">...</h5>
+      <p class="card__text">...</p>
+    </div>
+  </div>
+  ')}}
+
+  <h2>Body</h2>
+  {{LabExample(AppParentId, AppCurrentId, 'body')}}
+  {{LabCode('html', '
+  <div class="card">
+    <div class="card__body">
+      <p class="card__text">...</p>
+    </div>
+  </div>
+  ')}}
+
+  <h2>Image</h2>
+  {{LabExample(AppParentId, AppCurrentId, 'image')}}
+  {{LabCode('html', '
+  <div class="card">
+    <img class="card__img" src="..." alt="">
+  </div>
+  ')}}
+{% endblock %}
