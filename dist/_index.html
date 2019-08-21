@@ -1,14 +1,11 @@
-
-
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Jaywing Frontend site starter kit</title>
-    <link rel="stylesheet" href="/stylesheets/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giza</title>
+    <link rel="stylesheet" href="stylesheets/giza.css">
     <script>
       if (document.documentElement) {
         document
@@ -17,77 +14,53 @@
           .add('js');
       }
     </script>
+    <style type="text/css">
+      .demo {
+        width: 100%;
+        background-color: #ddd;
+      }
+    </style>
   </head>
-  <body class="display-flex flex-column min-height-100">
-    
-  <nav class="navbar">
-    <a class="navbar__brand" href="#">Navbar</a>
-    
-      
-  <button class="navbar__toggler" data-module="Toggle" data-options='{"target": "parent", "activeClass": "has-nav-open"}'  aria-label="Toggle navigation" >
-    <span class="navbar__toggler-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
-  </button>
+  <body>
 
-      <div class="navbar__toggle">
-        
-  <ul class="nav navbar__nav">
-    
+    <div class="container container--centered">
+      <div class="container container--centered" style="padding: 2rem;">
 
-      
+        <h1>Giza Frontend Framework</h1>
 
-      <li class="nav__item">
-        <a class="nav__link" href="#">Link 1</a>
-      </li>
-    
+        <p class="pica">Welcome to the Giza frontend framework.</p>
 
-      
+        <p class="pica">Get started with the
+          <a href="lab/">lab</a>.</p>
 
-      <li class="nav__item">
-        <a class="nav__link" href="#">Link 2</a>
-      </li>
-    
+        <h2>Setup</h2>
 
-      
+        <p>Requires
+          <a href="https://nodejs.org/en/" target="_blank">Node 6</a>
+          or above and
+          <a href="https://yarnpkg.com/lang/en/" target="_blank">Yarn</a>.
 
-      <li class="nav__item">
-        <a class="nav__link" href="#">Link 3</a>
-      </li>
-    
-  </ul>
+          <h3>Installation</h3>
 
-        <form class="form navbar__form">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-          <button class="button" type="submit">Search</button>
-        </form>
+          <code>
+            <pre>yarn</pre>
+          </code>
+
+          <h3>Prototyping</h3>
+
+          <code>
+            <pre>yarn start</pre>
+          </code>
+
+          <h3>Production</h3>
+
+          <code>
+            <pre>yarn build</pre>
+          </code>
+
+        </div>
       </div>
-    
-  </nav>
 
-    
-  <main class="app-content">
-    
-  <p class="text-center">
-    <a class="button" href="lab/">Go to the documentation</a>
-  </p>
-
-  </main>
-
-    <footer class="margin-top-auto">
-      
-  <div class="app-footer">
-    <p class="powered">
-      Powered by
-      <a href="https://github.com/r500dwp/giza" target="_blank">Giza framework</a>, components by
-      <a href="https://github.com/Jaywing/frontend-component-library" target="_blank">Jaywing Component Library</a>.
-    </p>
-    <p class="build">Build 0.1.0</p>
-  </div>
-
-    </footer>
-    <script src="/javascripts/app.js"></script>
-  </body>
-</html>
+      <script src="javascripts/giza.js"></script>
+    </body>
+  </html>

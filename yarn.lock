@@ -2945,9 +2945,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.1.0, electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.191, electron-to-chromium@^1.3.30:
-  version "1.3.236"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.236.tgz#c7158cbd4d17a3670ac7c9b44da44d752aa193a9"
-  integrity sha512-LWOvuJ80pLO3FtFqTcGuXB0dxdMtzSCkRmbXdY5mHUvXRQGor3sTVmyfU70aD2yF5i+fbHz52ncWr5T3xUYHlA==
+  version "1.3.237"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.237.tgz#39c5d1da59d6fd16ff705b97e772bb3b5dfda7e4"
+  integrity sha512-SPAFjDr/7iiVK2kgTluwxela6eaWjjFkS9rO/iYpB/KGXgccUom5YC7OIf19c8m8GGptWxLU0Em8xM64A/N7Fg==
 
 elliptic@^6.0.0:
   version "6.5.0"
@@ -3815,9 +3815,9 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 giza-framework@*:
-  version "0.1.71"
-  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.71.tgz#1c1004c22eee741383da66b80b3321374786e78a"
-  integrity sha512-WnNbbMu9gg6GyUzOqUrSeqfJ1vXYseoUS9klcFhjCxpadYwMpH7ICe+ieVG0ljsPsbtDQyhyh4zJqJAR6CTd1g==
+  version "0.1.74"
+  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.74.tgz#61e1fd33d156aaf9d894a4bd229b20c979d60a7b"
+  integrity sha512-ZSCUM+Dx1z/bWyjyoDB65Km7WMzfCGgLgtafRm91XGK/Hc4jHADlFMSg2WaFRbamFtxB6oxrFpky8XErPQHrYQ==
   dependencies:
     babel-core "^6.25.0"
     babel-loader "^7.1.1"
@@ -5063,9 +5063,9 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jaywing-frontend-component-library@*:
-  version "0.1.44"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.44.tgz#ccb6f1b8c0a1e9119c1e030b5d22c0f2ace7ee93"
-  integrity sha512-UqCAw/NUL+26TU1FS+Q0Lhn+AA6lqPFKFZDo7p2ztEjiJ2WEDVqZE6k6Mdj1/TjfOl2MVgdX4YboSctA4HeRxA==
+  version "0.1.45"
+  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.45.tgz#6cf48fc2f759fd96e993deac062dd9564c08b0ed"
+  integrity sha512-ixJ/UIK1el+et/Yjf5SOO78kAxlGlT3VdP/pQHoCkmLDa3JK02EkvySyfl48USPQO2tVElPbbaxChe/XbqSv7g==
   dependencies:
     giza-framework "*"
     imagesloaded "^4.1.4"
@@ -7909,9 +7909,9 @@ sequencify@~0.0.7:
   integrity sha1-kM/xnQLgcCf9dn9erT57ldHnOAw=
 
 serialize-javascript@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.7.0.tgz#d6e0dfb2a3832a8c94468e6eb1db97e55a192a65"
-  integrity sha512-ke8UG8ulpFOxO8f8gRYabHQe/ZntKlcig2Mp+8+URDP1D8vJZ0KUt7LYo07q25Z/+JVSgpr/cui9PIp5H6/+nA==
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.8.0.tgz#9515fc687232e2321aea1ca7a529476eb34bb480"
+  integrity sha512-3tHgtF4OzDmeKYj6V9nSyceRS0UJ3C7VqyD2Yj28vC/z2j6jG5FmFGahOKMD9CrglxTm3tETr87jEypaYV8DUg==
 
 serve-index@1.9.1:
   version "1.9.1"

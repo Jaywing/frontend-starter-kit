@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Lab</title>
+    <title>Jaywing Component Library</title>
     <link rel="stylesheet" href="stylesheets/lab.css">
     <script>
       if (document.documentElement) {
@@ -21,16 +21,16 @@
     <header class="app-header" data-module="LabHeader">
       <div class="container app-header__inner">
         <a class="app-logo" href="index.html">
-          <img class="app-logo__image" src="images/app-logo-light.svg" alt="">
-          <span class="app-logo__text">Lab</span>
+          <img class="app-logo__image" src="images/app-logo-light.svg" alt="Jaywing">
         </a>
         <span class="app-version">v0.0.1</span>
         
-        <button class="button app-sidebar-toggle" data-module="Toggle" data-options='{"target": ".app-sidebar"}'>
-          <div class="hamburger">
-            <div class="hamburger__inner"></div>
-            <div class="sr-only">Menu</div>
-          </div>
+        <button class="button app-sidebar-toggle" data-module="Toggle" data-options='{"target": ".app-sidebar"}' aria-label="Menu">
+          <span class="navbar__toggler-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </button>
       </div>
     </header>
@@ -258,94 +258,88 @@
 
   
 
-  <table class="table" data-module="LabCode">
-    <tr>
-      <td style="padding: 1rem 0;" class="font-size-xs">Class</td>
-      <td style="padding: 1rem 0;" class="font-size-xs">Rule</td>
-    </tr>
-
-    
+  <div class="app-code" data-module="LabCode">
+    <table class="table">
       <tr>
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">$spacer-xxs</code></pre>
-        </td>
-
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">0.25</code></pre>
-        </td>
+        <th class="font-size-xs">Class</th>
+        <th class="font-size-xs">Rule</th>
       </tr>
-    
-      <tr>
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">$spacer-xxs</code></pre>
-        </td>
 
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">0.50</code></pre>
-        </td>
-      </tr>
-    
-      <tr>
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">spacer-xs</code></pre>
-        </td>
-
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">0.75</code></pre>
-        </td>
-      </tr>
-    
-      <tr>
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">spacer-base</code></pre>
-        </td>
-
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">1</code></pre>
-        </td>
-      </tr>
-    
-      <tr>
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">spacer-md</code></pre>
-        </td>
-
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">1.25</code></pre>
-        </td>
-      </tr>
-    
-      <tr>
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">spacer-lg</code></pre>
-        </td>
-
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">1.50</code></pre>
-        </td>
-      </tr>
-    
-      <tr>
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">spacer-xl</code></pre>
-        </td>
-
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">1.75</code></pre>
-        </td>
-      </tr>
-    
-      <tr>
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">spacer-xxl</code></pre>
-        </td>
-
-        <td style="padding: 0;">
-          <pre class="language-css" style="margin: 0;"><code class="language-css" style="padding: 1rem 0;">2</code></pre>
-        </td>
-      </tr>
-    
-  </table>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer-xxs</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">0.25</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer-xxs</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">0.50</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">spacer-xs</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">0.75</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">spacer-base</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">1</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">spacer-md</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">1.25</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">spacer-lg</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">1.50</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">spacer-xl</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">1.75</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">spacer-xxl</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">2</code></pre>
+          </td>
+        </tr>
+      
+    </table>
+  </div>
 
 
 
