@@ -17,287 +17,42 @@
       }
     </script>
   </head>
-  <body class="display-flex flex-column min-height-100">
-    <header class="app-header" data-module="LabHeader">
+  <body class="display-flex flex-column min-height-100" data-module="Sticky" data-sticky-container="data-sticky-container">
+    <header class="app-header">
       <div class="container app-header__inner">
         <a class="app-logo" href="index.html">
           <img class="app-logo__image" src="images/app-logo-light.svg" alt="Jaywing">
         </a>
         <span class="app-version">v0.0.1</span>
         
-        <button class="button app-sidebar-toggle" data-module="Toggle" data-options='{"target": ".app-sidebar"}' aria-label="Menu">
-          <span class="navbar__toggler-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
       </div>
     </header>
-    <div class="container app-main">
+    <button class="button app-sidebar-toggle sticky__item" data-module="Toggle" data-options='{"target": ".app-sidebar"}' aria-label="Menu">
+      <span class="navbar__toggler-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+
+    
+  <div class="container">
+    <main class="app-content">
       
-  <div class="app-sidebar">
-    <nav class="app-nav">
-      <ul class="nav nav--vertical">
-        
-          
-  
-    
-  
+  <div class="text-center">
+    <h1>Build mobile first pages easily and fast</h1>
 
-  
+    <p class="font-size-md">Use the Giza framework for building responsive mobile first websites and apps.</p>
 
-  
-    
-  
-
-  
-    
-  
-
-  <li class="nav__item nav__item-level-1 nav__item-parent is-active">
-    <a class="nav__link" href="index.html">Getting started</a>
-    
-      <ul class="nav nav--vertical nav--nested">
-        
-          
-  
-    
-  
-
-  
-
-  
-
-  
-
-  <li class="nav__item is-active">
-    <a class="nav__link" href="index.html">Introduction</a>
-    
-</li>
-
-        
-    </ul>
-  
-</li>
-
-        
-          
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  <li class="nav__item nav__item-level-1 nav__item-parent">
-    <a class="nav__link" href="content.icon.html">Content</a>
-    
-      <ul class="nav nav--vertical nav--nested">
-        
-          
-  
-
-  
-
-  
-
-  
-
-  <li class="nav__item">
-    <a class="nav__link" href="content.icon.html">Icon</a>
-    
-</li>
-
-        
-          
-  
-
-  
-
-  
-
-  
-
-  <li class="nav__item">
-    <a class="nav__link" href="content.images.html">Images</a>
-    
-</li>
-
-        
-          
-  
-
-  
-
-  
-
-  
-
-  <li class="nav__item">
-    <a class="nav__link" href="content.typography.html">Typography</a>
-    
-</li>
-
-        
-    </ul>
-  
-</li>
-
-        
-          
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  <li class="nav__item nav__item-level-1 nav__item-parent">
-    <a class="nav__link" href="components.button.html">Components</a>
-    
-      <ul class="nav nav--vertical nav--nested">
-        
-          
-  
-
-  
-
-  
-
-  
-
-  <li class="nav__item">
-    <a class="nav__link" href="components.button.html">Button</a>
-    
-</li>
-
-        
-          
-  
-
-  
-
-  
-
-  
-
-  <li class="nav__item">
-    <a class="nav__link" href="components.footer.html">Footer</a>
-    
-</li>
-
-        
-          
-  
-
-  
-
-  
-
-  
-
-  <li class="nav__item">
-    <a class="nav__link" href="components.nav.html">Navs</a>
-    
-</li>
-
-        
-          
-  
-
-  
-
-  
-
-  
-
-  <li class="nav__item">
-    <a class="nav__link" href="components.navbar.html">Navbar</a>
-    
-</li>
-
-        
-          
-  
-
-  
-
-  
-
-  
-
-  <li class="nav__item">
-    <a class="nav__link" href="components.table.html">Table</a>
-    
-</li>
-
-        
-    </ul>
-  
-</li>
-
-        
-      </ul>
-    </nav>
-
+    <p>
+      <a class="button" href="getting-started.introduction.html">Get started</a>
+    </p>
   </div>
-  <main class="app-content">
-    
-  <h1>Introduction</h1>
 
-  <p>An open source toolkit for developing with HTML, CSS and JS.</p>
-
-  <h3>Requirements</h3>
-
-  <p>Requires at least version 6 of Node. We reccomend using nvm to install and manage your Node versions.</p>
-
-  <h3>Installation</h3>
-
-  
-  <div class="app-code" data-module="LabCode">
-    <button class="button app-copy-button js-app-copy-button">Copy code</button>
-    <pre class="language-html"><code class="language-html">
-  $ yarn
-  </code></pre>
+    </main>
   </div>
 
 
-  <h3>Prototyping</h3>
-
-  
-  <div class="app-code" data-module="LabCode">
-    <button class="button app-copy-button js-app-copy-button">Copy code</button>
-    <pre class="language-html"><code class="language-html">
-  $ yarn start
-  </code></pre>
-  </div>
-
-
-  <h3>Production</h3>
-
-  
-  <div class="app-code" data-module="LabCode">
-    <button class="button app-copy-button js-app-copy-button">Copy code</button>
-    <pre class="language-html"><code class="language-html">
-  $ yarn build
-  </code></pre>
-  </div>
-
-
-  </main>
-
-    </div>
     <footer class="margin-top-auto app-footer">
       <div class="container app-footer__inner">
         

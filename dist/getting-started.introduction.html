@@ -43,6 +43,8 @@
           
             
   
+    
+  
 
   
 
@@ -54,21 +56,23 @@
     
   
 
-  <li class="nav__item nav__item-level-1 nav__item-parent">
+  <li class="nav__item nav__item-level-1 nav__item-parent is-active">
     <a class="nav__link" href="getting-started.introduction.html">Getting started</a>
     
       <ul class="nav nav--vertical nav--nested">
         
           
   
-
+    
   
 
   
 
   
 
-  <li class="nav__item">
+  
+
+  <li class="nav__item is-active">
     <a class="nav__link" href="getting-started.introduction.html">Introduction</a>
     
 </li>
@@ -149,8 +153,6 @@
           
             
   
-    
-  
 
   
 
@@ -162,7 +164,7 @@
     
   
 
-  <li class="nav__item nav__item-level-1 nav__item-parent is-active">
+  <li class="nav__item nav__item-level-1 nav__item-parent">
     <a class="nav__link" href="components.button.html">Components</a>
     
       <ul class="nav nav--vertical nav--nested">
@@ -253,119 +255,43 @@
     </div>
     <main class="app-content-sibling">
       
-  <h1>Hero</h1>
+  <h1>Introduction</h1>
 
-  <p class="font-size-md">Add a hero to your page with image and video options.</p>
+  <p>An open source toolkit for developing with HTML, CSS and JS.</p>
 
-  <h3>Usage</h3>
+  <h3>Requirements</h3>
 
-  
-  
-    <div class="app-example">
-      <div class="app-example__tabs">
-        <a class="app-example__tab" href="components/hero.html" target="_blank">Open this example in a new window</a>
-      </div>
-      <div data-module="LabFrame" data-options='{"src": "components/hero.html"}'></div>
-    </div>
-  
+  <p>Requires at least version 6 of Node. We reccomend using nvm to install and manage your Node versions.</p>
+
+  <h3>Installation</h3>
 
   
   <div class="app-code" data-module="LabCode">
     <button class="button app-copy-button js-app-copy-button">Copy code</button>
     <pre class="language-html"><code class="language-html">
-  &lt;div class=&quot;hero&quot;&gt;
-    &lt;picture class=&quot;hero__image&quot;&gt;
-      &lt;source media=&quot;(min-width: 768px)&quot; srcset=&quot;...&quot;/&gt;
-      &lt;source srcset=&quot;...&quot;/&gt;
-      &lt;img src=&quot;...&quot; alt=&quot;&quot;/&gt;
-    &lt;/picture&gt;
-    &lt;div class=&quot;hero__body&quot;&gt;
-      &lt;div class=&quot;hero__title&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;hero__text&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  $ yarn
   </code></pre>
   </div>
 
 
-  <h3>With video</h3>
-
-  
-  
-    <div class="app-example">
-      <div class="app-example__tabs">
-        <a class="app-example__tab" href="components/hero.video.html" target="_blank">Open this example in a new window</a>
-      </div>
-      <div data-module="LabFrame" data-options='{"src": "components/hero.video.html"}'></div>
-    </div>
-  
+  <h3>Prototyping</h3>
 
   
   <div class="app-code" data-module="LabCode">
     <button class="button app-copy-button js-app-copy-button">Copy code</button>
     <pre class="language-html"><code class="language-html">
-  &lt;div class=&quot;hero&quot;&gt;
-    &lt;div class=&quot;hero__media&quot;&gt;
-      &lt;picture class=&quot;hero__image&quot;&gt;
-        &lt;source media=&quot;(min-width: 768px)&quot; srcset=&quot;...&quot;/&gt;
-        &lt;source srcset=&quot;...&quot;/&gt;
-        &lt;img src=&quot;...&quot; alt=&quot;&quot;/&gt;
-      &lt;/picture&gt;
-      &lt;video autoplay=&quot;autoplay&quot; loop=&quot;loop&quot; muted=&quot;muted&quot; playsinline=&quot;playsinline&quot; class=&quot;hero__video&quot;&gt;
-        &lt;source src=&quot;....mp4&quot; type=&quot;video/mp4&quot;&gt;
-      &lt;/video&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hero__body&quot;&gt;
-      &lt;div class=&quot;hero__title&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;hero__text&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  $ yarn start
   </code></pre>
   </div>
 
 
-  <h3>With YouTube</h3>
-
-  
-  
-    <div class="app-example">
-      <div class="app-example__tabs">
-        <a class="app-example__tab" href="components/hero.youtube.html" target="_blank">Open this example in a new window</a>
-      </div>
-      <div data-module="LabFrame" data-options='{"src": "components/hero.youtube.html"}'></div>
-    </div>
-  
+  <h3>Production</h3>
 
   
   <div class="app-code" data-module="LabCode">
     <button class="button app-copy-button js-app-copy-button">Copy code</button>
     <pre class="language-html"><code class="language-html">
-  &lt;div class=&quot;hero&quot;&gt;
-    &lt;div class=&quot;hero__media&quot;&gt;
-      &lt;picture class=&quot;hero__image&quot;&gt;
-        &lt;source media=&quot;(min-width: 768px)&quot; srcset=&quot;...&quot;/&gt;
-        &lt;source srcset=&quot;...&quot;/&gt;
-        &lt;img src=&quot;...&quot; alt=&quot;&quot;/&gt;
-      &lt;/picture&gt;
-      &lt;iframe class=&quot;hero__video&quot; src=&quot;https://www.youtube.com/embed/XXX?controls=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autoplay=1&amp;amp;loop=1&amp;amp;mute=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hero__body&quot;&gt;
-      &lt;div class=&quot;hero__title&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;hero__text&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  $ yarn build
   </code></pre>
   </div>
 

@@ -15,12 +15,12 @@
   "nav": [
     {
       "id": "getting-started",
-      "url": "index.html",
+      "url": "getting-started.introduction.html",
       "title": "Getting started",
       "children": [
         {
           "id": "introduction",
-          "url": "index.html",
+          "url": "getting-started.introduction.html",
           "title": "Introduction"
         }
       ]
