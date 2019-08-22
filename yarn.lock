@@ -2165,9 +2165,9 @@ cheerio@0.*:
     lodash.some "^4.4.0"
 
 chokidar@^2.0.0, chokidar@^2.0.2, chokidar@^2.0.4:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.6.tgz#b6cad653a929e244ce8a834244164d241fa954c5"
-  integrity sha512-V2jUo67OKkc6ySiRpJrjlpJKl9kDuG+Xb8VgsGzb+aEouhgS1D0weyPU4lEzdAcsCAvrih2J2BqyXqHWvVLw5g==
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
+  integrity sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==
   dependencies:
     anymatch "^2.0.0"
     async-each "^1.0.1"
@@ -3815,9 +3815,9 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 giza-framework@*:
-  version "0.1.76"
-  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.76.tgz#89fd99501202d70fda99b258429a22bf75645166"
-  integrity sha512-irMxEsUzMXV8zcTJcr9pMbh5+LSLSE3RjfWbOCrIDmr6EpSHt+2bhsN5bfBzldpA3IZha7COHQ36zKzRqVkVIA==
+  version "0.1.82"
+  resolved "https://registry.yarnpkg.com/giza-framework/-/giza-framework-0.1.82.tgz#8a8c55188d17b6209d231efac4e441f74896b160"
+  integrity sha512-uI9ZhdWY+ioSUSek7DR7Y0W3CNG7WghEGZ2RKrZyQk6gP0QNeAicP99RFxtDiuQIMhUENrYbPj1GgMAeFFThBg==
   dependencies:
     babel-core "^6.25.0"
     babel-loader "^7.1.1"
@@ -5063,9 +5063,9 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 jaywing-frontend-component-library@*:
-  version "0.1.47"
-  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.47.tgz#bb582b1591605b24600a6b88ebaa9ca0230df27d"
-  integrity sha512-y6H3FiwCynfKkp93SEojiWdoA4qm87bXFq9ZR6sHj4QDf00xR0yeipw7t67EsZmCnsrr6f/0OJ55RlQVKM0bPA==
+  version "0.1.48"
+  resolved "https://registry.yarnpkg.com/jaywing-frontend-component-library/-/jaywing-frontend-component-library-0.1.48.tgz#3ad20e5dc2b01c7fb03c180fb20f9fff3ddd1c8b"
+  integrity sha512-CPAm4yK9+NCoG1Lgz++sGgEwYQnMxzWS1Mi44Idx1LazFlH6u3LiznyDhWqhswPd1KQfvx2NZNrXjX2JMUJ8Aw==
   dependencies:
     giza-framework "*"
     imagesloaded "^4.1.4"
@@ -6133,9 +6133,9 @@ node-pre-gyp@^0.12.0:
     tar "^4"
 
 node-releases@^1.1.25:
-  version "1.1.27"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.27.tgz#b19ec8add2afe9a826a99dceccc516104c1edaf4"
-  integrity sha512-9iXUqHKSGo6ph/tdXVbHFbhRVQln4ZDTIBJCzsa90HimnBYc5jw8RWYt4wBYFHehGyC3koIz5O4mb2fHrbPOuA==
+  version "1.1.28"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.28.tgz#503c3c70d0e4732b84e7aaa2925fbdde10482d4a"
+  integrity sha512-AQw4emh6iSXnCpDiFe0phYcThiccmkNWMZnFZ+lDJjAP8J0m2fVd59duvUUyuTirQOhIAajTFkzG6FHCLBO59g==
   dependencies:
     semver "^5.3.0"
 

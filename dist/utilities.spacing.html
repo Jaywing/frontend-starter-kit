@@ -252,7 +252,11 @@
     <main class="app-content-sibling">
       
 
-  <h1>Margin</h1>
+  <h1>Spacing</h1>
+
+  <p class="font-size-md">Responsive margins and paddings.</p>
+
+  <h3>Margin</h3>
 
   
 
@@ -266,37 +270,64 @@
       
         <tr>
           <td>
-            <pre class="language-css"><code class="language-css">.margin-top-auto</code></pre>
+            <pre class="language-css"><code class="language-css">.margin-auto</code></pre>
           </td>
           <td>
-            <pre class="language-css"><code class="language-css">margin-top: auto;</code></pre>
-          </td>
-        </tr>
-      
-        <tr>
-          <td>
-            <pre class="language-css"><code class="language-css">.margin-right-auto</code></pre>
-          </td>
-          <td>
-            <pre class="language-css"><code class="language-css">margin-right: auto;</code></pre>
+            <pre class="language-css"><code class="language-css">auto</code></pre>
           </td>
         </tr>
       
         <tr>
           <td>
-            <pre class="language-css"><code class="language-css">.margin-bottom-auto</code></pre>
+            <pre class="language-css"><code class="language-css">.margin-0</code></pre>
           </td>
           <td>
-            <pre class="language-css"><code class="language-css">margin-bottom: auto;</code></pre>
+            <pre class="language-css"><code class="language-css">0</code></pre>
           </td>
         </tr>
       
         <tr>
           <td>
-            <pre class="language-css"><code class="language-css">.margin-left-auto</code></pre>
+            <pre class="language-css"><code class="language-css">.margin-1</code></pre>
           </td>
           <td>
-            <pre class="language-css"><code class="language-css">margin-left: auto;</code></pre>
+            <pre class="language-css"><code class="language-css">$spacer * 0.25</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">.margin-2</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer * 0.5</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">.margin-3</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">.margin-4</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer * 1.5</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">.margin-5</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer * 2</code></pre>
           </td>
         </tr>
       
@@ -305,10 +336,124 @@
 
 
 
+  <h3>Padding</h3>
+
+  
+
+  <div class="app-code" data-module="LabCode">
+    <table class="table">
+      <tr>
+        <th class="font-size-xs">Class</th>
+        <th class="font-size-xs">Rule</th>
+      </tr>
+
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">.padding-0</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">0</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">.padding-1</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer * 0.25</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">.padding-2</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer * 0.5</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">.padding-3</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">.padding-4</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer * 1.5</code></pre>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <pre class="language-css"><code class="language-css">.padding-5</code></pre>
+          </td>
+          <td>
+            <pre class="language-css"><code class="language-css">$spacer * 2</code></pre>
+          </td>
+        </tr>
+      
+    </table>
+  </div>
+
+
+
+  <h3>Individual margin</h3>
+
+  
+  <div class="app-code" data-module="LabCode">
+    <button class="button app-copy-button js-app-copy-button">Copy code</button>
+    <pre class="language-html"><code class="language-html">
+    .margin-top-1
+    .margin-right-1
+    .margin-bottom-1
+    .margin-left-1
+  </code></pre>
+  </div>
+
+
+  <h3>Negative margin</h3>
+
+  
+  <div class="app-code" data-module="LabCode">
+    <button class="button app-copy-button js-app-copy-button">Copy code</button>
+    <pre class="language-html"><code class="language-html">
+    .margin-negative-1
+    .margin-top-negative-1
+    .margin-right-negative-1
+    .margin-bottom-negative-1
+    .margin-left-negative-1
+  </code></pre>
+  </div>
+
+
+  <h3>Individual padding</h3>
+
+  
+  <div class="app-code" data-module="LabCode">
+    <button class="button app-copy-button js-app-copy-button">Copy code</button>
+    <pre class="language-html"><code class="language-html">
+    .padding-top-1
+    .padding-right-1
+    .padding-bottom-1
+    .padding-left-1
+  </code></pre>
+  </div>
+
+
   <h2>Media Queries</h2>
 
   <p>
-    <code>margin-top@md</code>
+    <code>padding-top-3@md</code>
   </p>
 
 
