@@ -11,36 +11,57 @@ export default class Nav {
 
   cacheDom() {
     return {
-      dropdownMenuParent: this.el.querySelectorAll(".is-dropdown-button"),
-      accordionMenuParent: this.el.querySelectorAll(".is-accordion-button")
+      menuParent: this.el.querySelectorAll(
+        ".is-parent-button, .nav--tabs .nav__link"
+      )
     };
   }
 
   addEventListeners() {
-    for (let i = 0, len = this.dom.dropdownMenuParent.length; i < len; i++) {
-      this.dom.dropdownMenuParent[i].addEventListener("click", e => {
+    for (let i = 0, len = this.dom.menuParent.length; i < len; i++) {
+      this.dom.menuParent[i].addEventListener("click", e => {
         e.preventDefault();
-        this.handleParentClick(e, i, this.dom.dropdownMenuParent[i].parentNode);
-      });
-    }
-
-    for (let i = 0, len = this.dom.accordionMenuParent.length; i < len; i++) {
-      this.dom.accordionMenuParent[i].addEventListener("click", e => {
-        e.preventDefault();
-        this.handleParentClick(
-          e,
-          i,
-          this.dom.accordionMenuParent[i].parentNode
-        );
+        this.handleParentClick(e);
       });
     }
   }
 
-  handleParentClick(e, item, itemParent) {
-    if (itemParent.classList.contains("is-active")) {
-      itemParent.classList.remove("is-active");
-    } else {
-      itemParent.classList.add("is-active");
+  handleParentClick(e) {
+    var getClosest = function(elem, selector) {
+      for (; elem && elem !== document; elem = elem.parentNode) {
+        if (elem.matches(selector)) return elem;
+      }
+      return null;
+    };
+
+    let clickedContainer = getClosest(e.target, ".nav");
+    let clickedParent = getClosest(e.target, ".nav__item");
+
+    if (clickedParent.classList.contains("is-active")) {
+      clickedParent.classList.remove("is-active");
+      return;
     }
+
+    if (clickedContainer.classList.contains("nav--tabs")) {
+      this.handleTabs(e.target);
+    }
+
+    let items = clickedParent.parentNode.querySelectorAll(".nav__item");
+
+    for (let i = 0, len = items.length; i < len; i++) {
+      items[i].classList.remove("is-active");
+    }
+
+    clickedParent.classList.add("is-active");
+  }
+
+  handleTabs(elem) {
+    let target = elem.getAttribute("href").substr(1);
+    let tab = document.getElementById(target);
+    let tabs = tab.parentNode.querySelectorAll(".tab-pane");
+    for (let i = 0, len = tabs.length; i < len; i++) {
+      tabs[i].classList.remove("is-active");
+    }
+    tab.classList.add("is-active");
   }
 }
