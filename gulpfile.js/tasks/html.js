@@ -9,16 +9,16 @@ const fs = require("fs");
 gulp.task("html", function() {
   paths = {
     src: [
-      `./node_modules/giza-framework/html/**/*.html`,
-      "!" +
-        projectPath(
-          `./node_modules/giza-framework/html/**/{layouts,macros,data}/**`
-        ),
-        `./node_modules/jaywing-frontend-component-library/html/**/*.html`,
-      "!" +
-        projectPath(
-          `./node_modules/jaywing-frontend-component-library/html/**/{layouts,macros,data}/**`
-        ),
+      // `./node_modules/giza-framework/html/**/*.html`,
+      // "!" +
+      //   projectPath(
+      //     `./node_modules/giza-framework/html/**/{layouts,macros,data}/**`
+      //   ),
+      //   `./node_modules/jaywing-frontend-component-library/html/**/*.html`,
+      // "!" +
+      //   projectPath(
+      //     `./node_modules/jaywing-frontend-component-library/html/**/{layouts,macros,data}/**`
+      //   ),
       projectPath(PATH_CONFIG.BASE, PATH_CONFIG.html.src, "**/*.html"),
       "!" +
         projectPath(
@@ -46,7 +46,7 @@ gulp.task("html", function() {
 
   const dataFunction = function() {
     var dataPath = path.resolve(
-      `${PATH_CONFIG.BASE}/${PATH_CONFIG.html.src}/_data.json`
+      `${PATH_CONFIG.BASE}/${PATH_CONFIG.html.src}/lab/_data.json`
     );
     return JSON.parse(fs.readFileSync(dataPath, "utf8"));
   };

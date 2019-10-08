@@ -1,14 +1,14 @@
 {
   "version": "0.0.1",
   "settings": {
-    "lab_stylesheet": "stylesheets/lab.css",
-    "lab_javascript": "javascripts/giza.js",
+    "lab_stylesheet": "/stylesheets/lab.css",
+    "lab_javascript": "/javascripts/giza.js",
     "lab_iframe_stylesheet": "../stylesheets/app.css",
     "lab_iframe_stylesheet_demo": "../stylesheets/lab-demo.css",
     "lab_iframe_javascript": "../javascripts/app.js",
     "meta_title": "Jaywing Component Library",
     "logo": {
-      "src": "images/app-logo-light.svg",
+      "src": "/images/app-logo-light.svg",
       "description": "Jaywing"
     }
   },

@@ -20,33 +20,67 @@
     
 
   
-  <ul class="nav nav--vertical">
-    <li class="nav__item">
-      <a class="nav__link is-active" href="#">Active</a>
-      <ul class="nav nav--vertical nav--nested">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Link</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Link</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Link</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Link</a>
-        </li>
-      </ul>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="#">Link</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="#">Link</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link is-disabled" href="#">Disabled</a>
-    </li>
+  <ul class="nav nav--vertical" data-module="Nav">
+    
+
+      
+
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 1</a>
+
+        
+          <button class="button is-parent-button">
+            
+  <span class='icon icon--chevron-down'>
+    <svg viewbox="0 0 1 1">
+      <use xlink:href='../images/icons.svg#chevron-down'></use>
+    </svg>
+  </span>
+
+          </button>
+        
+
+        
+          <ul class="nav nav--nested">
+            
+              <li class="nav__item">
+                <a class="nav__link" href="#">Link 1</a>
+              </li>
+            
+              <li class="nav__item">
+                <a class="nav__link" href="#">Link 2</a>
+              </li>
+            
+              <li class="nav__item">
+                <a class="nav__link" href="#">Link 3</a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+
+      
+
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 2</a>
+
+        
+
+        
+      </li>
+    
+
+      
+
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 3</a>
+
+        
+
+        
+      </li>
+    
   </ul>
 
 

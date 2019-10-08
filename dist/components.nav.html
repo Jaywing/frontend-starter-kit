@@ -255,11 +255,11 @@
     </div>
     <main class="app-content-sibling">
       
-  <h1>Nav</h1>
+  <h1>Navs</h1>
 
-  <p class="font-size-md">Use our navigation components to build small and large menu systems.</p>
+  <p class="font-size-md">Our navigation components.</p>
 
-  <h3>Usage</h3>
+  <h2>Usage</h2>
 
   
   
@@ -277,18 +277,14 @@
     <pre class="language-html"><code class="language-html">
   &lt;ul class=&quot;nav&quot;&gt;
     &lt;li class=&quot;nav__item&quot;&gt;
-      &lt;a class=&quot;nav__link is-active&quot; href=&quot;...&quot;&gt;...&lt;/a&gt;
+      &lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Link 1&lt;/a&gt;
     &lt;/li&gt;
     &lt;li class=&quot;nav__item&quot;&gt;
-      &lt;a class=&quot;nav__link&quot; href=&quot;...&quot;&gt;...&lt;/a&gt;
+      &lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Link 2&lt;/a&gt;
     &lt;/li&gt;
     &lt;li class=&quot;nav__item&quot;&gt;
-      &lt;a class=&quot;nav__link&quot; href=&quot;...&quot;&gt;...&lt;/a&gt;
+      &lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Link 3&lt;/a&gt;
     &lt;/li&gt;
-    &lt;li class=&quot;nav__item&quot;&gt;
-      &lt;a class=&quot;nav__link is-disabled&quot; href=&quot;...&quot;&gt;...&lt;/a&gt;
-    &lt;/li&gt;
-    ...
   &lt;/ul&gt;
   </code></pre>
   </div>
@@ -371,7 +367,7 @@
   &lt;ul class=&quot;nav nav--dropdown&quot; data-module=&quot;Nav&quot;&gt;
     &lt;li class=&quot;nav__item is-dropdown-nav-parent&quot;&gt;
       &lt;a href=&quot;...&quot; class=&quot;nav__link&quot;&gt;...&lt;/a&gt;
-      &lt;button class=&quot;button is-dropdown-button&quot;&gt;
+      &lt;button class=&quot;button is-parent-button&quot;&gt;
         &lt;span class=&quot;icon icon--chevron-down&quot;&gt;
           [icon]
         &lt;/span&gt;
@@ -408,7 +404,7 @@
   &lt;ul class=&quot;nav nav--vertical nav--accordion&quot; data-module=&quot;Nav&quot;&gt;
     &lt;li class=&quot;nav__item is-accordion-nav-parent&quot;&gt;
       &lt;a href=&quot;...&quot; class=&quot;nav__link&quot;&gt;...&lt;/a&gt;
-      &lt;button class=&quot;button is-accordion-button&quot;&gt;
+      &lt;button class=&quot;button is-parent-button&quot;&gt;
         &lt;span class=&quot;icon icon--chevron-down&quot;&gt;
           [icon]
         &lt;/span&gt;
@@ -422,6 +418,48 @@
     &lt;/li&gt;
     ...
   &lt;/ul&gt;
+  </code></pre>
+  </div>
+
+
+  <h3>Tabs</h3>
+
+  
+  
+    <div class="app-example">
+      <div class="app-example__tabs">
+        <a class="app-example__tab" href="components/nav.tabs.html" target="_blank">Open this example in a new window</a>
+      </div>
+      <div data-module="LabFrame" data-options='{"src": "components/nav.tabs.html"}'></div>
+    </div>
+  
+
+  
+  <div class="app-code" data-module="LabCode">
+    <button class="button app-copy-button js-app-copy-button">Copy code</button>
+    <pre class="language-html"><code class="language-html">
+  &lt;nav class=&quot;nav nav--tabs&quot; data-module=&quot;Nav&quot;&gt;
+    &lt;li class=&quot;nav__item is-active&quot;&gt;
+      &lt;a href=&quot;#nav-tab-one&quot; class=&quot;nav__link&quot;&gt;Item 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;
+      &lt;a href=&quot;#nav-tab-two&quot; class=&quot;nav__link&quot;&gt;Item 2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav__item&quot;&gt;
+      &lt;a href=&quot;#nav-tab-three&quot; class=&quot;nav__link&quot;&gt;Item 3&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/nav&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div class=&quot;tab-pane is-active&quot; id=&quot;nav-tab-one&quot;&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus orci ac enim finibus, nec auctor est volutpat. Mauris vitae.
+    &lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;nav-tab-two&quot;&gt;
+      Fusce tincidunt sodales mauris, sit amet consectetur enim luctus id. Phasellus iaculis condimentum odio. Integer nisi turpis, consectetur posuere lobortis.
+    &lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;nav-tab-three&quot;&gt;
+      Vestibulum vitae vulputate neque. Vivamus sit amet lobortis metus. Aliquam eget imperdiet urna, hendrerit blandit quam. Pellentesque tempus sapien sed.
+    &lt;/div&gt;
+  &lt;/div&gt;
   </code></pre>
   </div>
 
@@ -489,7 +527,6 @@
   &lt;/ul&gt;
   </code></pre>
   </div>
-
 
 
     </main>
