@@ -1,0 +1,33 @@
+{% extends 'lab-side-content.html' %}
+
+{% set AppParentId = "components" %}
+{% set AppCurrentId = "table" %}
+
+{% block content %}
+  <h1>Table</h1>
+
+  <p class="font-size-md">Example of styled tables.</p>
+
+  <h2>Usage</h2>
+
+  {{LabExample(AppParentId, AppCurrentId)}}
+  {{LabCode('html', '
+  <table class="table">
+    <thead>
+      <tr>
+        <th>...</th>
+        <th>...</th>
+        ...
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+        ...
+      </tr>
+      ...
+    </tbody>
+  </table>
+  ')}}
+{% endblock %}

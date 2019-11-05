@@ -1,0 +1,66 @@
+{% extends 'lab-side-content.html' %}
+
+{% set AppParentId = "components" %}
+{% set AppCurrentId = "button" %}
+
+{% block content %}
+  <h1>Button</h1>
+
+  <p class="font-size-md">Easily create versatile buttons in a variety of styles.</p>
+
+  <h2>Usage</h2>
+
+  {{LabExample(AppParentId, AppCurrentId)}}
+  {{LabCode('html', '
+  <button class="button">
+    <span class="button__text">Button</span>
+  </button>
+  ')}}
+
+  <h2>Link</h2>
+
+  {{LabExample(AppParentId, AppCurrentId, 'link')}}
+  {{LabCode('html', '
+  <a class="button" href="">
+    <span class="button__text">Link button</span>
+  </a>
+  ')}}
+
+  <h2>Toggle</h2>
+
+  {{LabExample(AppParentId, AppCurrentId, 'toggle')}}
+  {{LabCode('html', '
+  <button class="button is-active" data-module="Toggle" data-options="{target: parent, activeClass: is-active}">
+    <span class="button__text">Toggle button</span>
+  </button>
+  ')}}
+
+  <h2>Sizes</h2>
+
+  {{LabExample(AppParentId, AppCurrentId, 'large')}}
+  {{LabCode('html', '
+  <button class="button button--lg">
+    <span class="button__text">Large button</span>
+  </button>
+  ')}}
+
+  {{LabExample(AppParentId, AppCurrentId, 'small')}}
+  {{LabCode('html', '
+  <button class="button button-sm">
+    <span class="button__text">Small button</span>
+  </button>
+  ')}}
+
+  <h2>Icon</h2>
+
+  {{LabExample(AppParentId, AppCurrentId, 'icon')}}
+  {{LabCode('html', '
+  <button class="button" aria-label="Toggle">
+    <span class="icon icon--plus">
+      <svg viewBox="0 0 1 1">
+        <use xlink:href="../images/icons.svg#plus"></use>
+      </svg>
+    </span>
+  </button>
+  ')}}
+{% endblock %}
