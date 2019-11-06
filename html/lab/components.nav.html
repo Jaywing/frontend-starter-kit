@@ -1,0 +1,167 @@
+{% extends 'lab-side-content.html' %}
+
+{% set AppParentId = "components" %}
+{% set AppCurrentId = "nav" %}
+
+{% block content %}
+  <h1>Navs</h1>
+
+  <p class="font-size-md">Our navigation components.</p>
+
+  <h2>Usage</h2>
+
+  {{LabExample(AppParentId, AppCurrentId)}}
+  {{LabCode('html', '
+  <ul class="nav">
+    <li class="nav__item">
+      <a class="nav__link" href="#">Link 1</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">Link 2</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">Link 3</a>
+    </li>
+  </ul>
+  ')}}
+
+  <h3>Vertical</h3>
+
+  {{LabExample(AppParentId, AppCurrentId, 'vertical')}}
+  {{LabCode('html', '
+  <ul class="nav nav--vertical">
+    <li class="nav__item">
+      <a class="nav__link" href="...">...</a>
+    </li>
+    ...
+  </ul>
+  ')}}
+
+  <h3>Nested</h3>
+
+  {{LabExample(AppParentId, AppCurrentId, 'nested')}}
+  {{LabCode('html', '
+  <ul class="nav nav--vertical">
+    <li class="nav__item">
+      <a class="nav__link is-active" href="...">...</a>
+      <ul class="nav nav--vertical nav--nested">
+        <li class="nav__item">
+          <a class="nav__link" href="...">...</a>
+        </li>
+        ...
+      </ul>
+    </li>
+    ...
+  </ul>
+  ')}}
+
+  <h3>Dropdown</h3>
+
+  {{LabExample(AppParentId, AppCurrentId, 'dropdown')}}
+  {{LabCode('html', '
+  <ul class="nav nav--dropdown" data-module="Nav">
+    <li class="nav__item is-dropdown-nav-parent">
+      <a href="..." class="nav__link">...</a>
+      <button class="button is-parent-button">
+        <span class="icon icon--chevron-down">
+          [icon]
+        </span>
+      </button>
+      <ul class="nav is-dropdown-nav nav--vertical">
+        <li class="nav__item ">
+          <a href="..." class="nav__link">...</a>
+        </li>
+        ...
+      </ul>
+    </li>
+    ...
+  </ul>
+  ')}}
+
+  <h3>Accordion</h3>
+
+  {{LabExample(AppParentId, AppCurrentId, 'accordion')}}
+  {{LabCode('html', '
+  <ul class="nav nav--vertical nav--accordion" data-module="Nav">
+    <li class="nav__item is-accordion-nav-parent">
+      <a href="..." class="nav__link">...</a>
+      <button class="button is-parent-button">
+        <span class="icon icon--chevron-down">
+          [icon]
+        </span>
+      </button>
+      <ul class="nav is-accordion-nav nav--vertical">
+        <li class="nav__item ">
+          <a href="..." class="nav__link">...</a>
+        </li>
+        ...
+      </ul>
+    </li>
+    ...
+  </ul>
+  ')}}
+
+  <h3>Tabs</h3>
+
+  {{LabExample(AppParentId, AppCurrentId, 'tabs')}}
+  {{LabCode('html', '
+  <nav class="nav nav--tabs" data-module="Nav">
+    <li class="nav__item is-active">
+      <a href="#nav-tab-one" class="nav__link">Item 1</a>
+    </li>
+    <li class="nav__item">
+      <a href="#nav-tab-two" class="nav__link">Item 2</a>
+    </li>
+    <li class="nav__item">
+      <a href="#nav-tab-three" class="nav__link">Item 3</a>
+    </li>
+  </nav>
+  <div class="tab-content">
+    <div class="tab-pane is-active" id="nav-tab-one">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus orci ac enim finibus, nec auctor est volutpat. Mauris vitae.
+    </div>
+    <div class="tab-pane" id="nav-tab-two">
+      Fusce tincidunt sodales mauris, sit amet consectetur enim luctus id. Phasellus iaculis condimentum odio. Integer nisi turpis, consectetur posuere lobortis.
+    </div>
+    <div class="tab-pane" id="nav-tab-three">
+      Vestibulum vitae vulputate neque. Vivamus sit amet lobortis metus. Aliquam eget imperdiet urna, hendrerit blandit quam. Pellentesque tempus sapien sed.
+    </div>
+  </div>
+  ')}}
+
+  <h3>Responsive</h3>
+
+  {{LabExample(AppParentId, AppCurrentId, 'responsive')}}
+  {{LabCode('html', '
+  <ul class="nav nav--vertical nav--horizontal@md">
+    <li class="nav__item">
+      <a class="nav__link" href="...">...</a>
+    </li>
+    ...
+  </ul>
+  ')}}
+
+  <h4>Responsive dropdown</h4>
+
+  {{LabCode('html', '
+  <ul class="nav nav--dropdown@md" data-module="Nav">
+    ...
+  </ul>
+  ')}}
+
+  <h4>Responsive accordion</h4>
+
+  {{LabCode('html', '
+  <ul class="nav nav--vertical nav--accordion@md" data-module="Nav">
+    ...
+  </ul>
+  ')}}
+
+  <h4>Responsive dropdown &amp; accordion</h4>
+
+  {{LabCode('html', '
+  <ul class="nav nav--vertical nav--horizontal@lg nav--accordion@md nav--dropdown@lg" data-module="Nav">
+    ...
+  </ul>
+  ')}}
+{% endblock %}

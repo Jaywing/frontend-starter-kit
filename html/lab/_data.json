@@ -1,0 +1,65 @@
+{
+  "version": "0.0.1",
+  "settings": {
+    "lab_stylesheet": "stylesheets/lab.css",
+    "lab_javascript": "javascripts/giza.js",
+    "lab_iframe_stylesheet": "stylesheets/app.css",
+    "lab_iframe_stylesheet_demo": "stylesheets/lab-demo.css",
+    "lab_iframe_javascript": "javascripts/app.js",
+    "meta_title": "Jaywing Component Library",
+    "logo": {
+      "src": "images/app-logo-light.svg",
+      "description": "Jaywing"
+    }
+  },
+  "nav": [
+    {
+      "id": "getting-started",
+      "url": "getting-started.introduction.html",
+      "title": "Getting started",
+      "children": [
+        {
+          "id": "introduction",
+          "url": "getting-started.introduction.html",
+          "title": "Introduction"
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "url": "content.icon.html",
+      "title": "Content",
+      "children": [
+        { "id": "icon", "url": "content.icon.html", "title": "Icon" },
+        { "id": "images", "url": "content.images.html", "title": "Images" },
+        {
+          "id": "typography",
+          "url": "content.typography.html",
+          "title": "Typography"
+        }
+      ]
+    },
+    {
+      "id": "components",
+      "url": "components.button.html",
+      "title": "Components",
+      "children": [
+        {
+          "id": "button",
+          "url": "components.button.html",
+          "title": "Button"
+        },
+        { "id": "footer", "url": "components.footer.html", "title": "Footer" },
+        { "id": "nav", "url": "components.nav.html", "title": "Navs" },
+        { "id": "navbar", "url": "components.navbar.html", "title": "Navbar" },
+        { "id": "table", "url": "components.table.html", "title": "Table" }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "Jaywing Frontend Component Library",
+      "url": "https://jaywing.github.io/frontend-component-library/"
+    }
+  ]
+}
