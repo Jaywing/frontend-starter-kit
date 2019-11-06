@@ -1,13 +1,14 @@
 
 
+
 <!doctype html>
-<html lang="en">
+<html lang="en" class="height-100">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jaywing Component Library</title>
-    <link rel="stylesheet" href="stylesheets/lab.css">
+    <link rel="stylesheet" href="/stylesheets/lab.css">
     <script>
       if (document.documentElement) {
         document
@@ -21,7 +22,7 @@
     <header class="app-header">
       <div class="container app-header__inner">
         <a class="app-logo" href="index.html">
-          <img class="app-logo__image" src="images/app-logo-light.svg" alt="Jaywing">
+          <img class="app-logo__image" src="/images/app-logo-light.svg" alt="Jaywing">
         </a>
         <span class="app-version">v0.0.1</span>
         
@@ -214,14 +215,16 @@
         
           
   
-
+    
   
 
   
 
   
 
-  <li class="nav__item">
+  
+
+  <li class="nav__item is-active">
     <a class="nav__link" href="components.navbar.html">Navbar</a>
     
 </li>
@@ -253,19 +256,19 @@
     </div>
     <main class="app-content-sibling">
       
-  <h1>Breadcrumb</h1>
+  <h1>Navbar</h1>
 
-  <p class="font-size-md">Use the breadcrumb to indicate the current page's location.</p>
+  <p class="font-size-md">A responsive navigation header for brranding and navigation.</p>
 
-  <h3>Usage</h3>
+  <h2>Usage</h2>
 
   
   
     <div class="app-example">
       <div class="app-example__tabs">
-        <a class="app-example__tab" href="components/breadcrumb.html" target="_blank">Open this example in a new window</a>
+        <a class="app-example__tab" href="/components/navbar.html" target="_blank">Open this example in a new window</a>
       </div>
-      <div data-module="LabFrame" data-options='{"src": "components/breadcrumb.html"}'></div>
+      <div data-module="LabFrame" data-options='{"src": "/components/navbar.html"}'></div>
     </div>
   
 
@@ -273,26 +276,27 @@
   <div class="app-code" data-module="LabCode">
     <button class="button app-copy-button js-app-copy-button">Copy code</button>
     <pre class="language-html"><code class="language-html">
-  &lt;ol class=&quot;breadcrumb&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http://schema.org/BreadcrumbList&quot;&gt;
-    &lt;li class=&quot;breadcrumb__item&quot; itemprop=&quot;itemListElement&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;
-      &lt;a itemprop=&quot;item&quot; class=&quot;breadcrumb__link&quot; href=&quot;#&quot;&gt;
-        &lt;span itemprop=&quot;name&quot;&gt;Link One&lt;/span&gt;
-        &lt;meta itemprop=&quot;position&quot; content=&quot;1&quot;/&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;breadcrumb__item&quot; itemprop=&quot;itemListElement&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;
-      &lt;a itemprop=&quot;item&quot; class=&quot;breadcrumb__link&quot; href=&quot;#&quot;&gt;
-        &lt;span itemprop=&quot;name&quot;&gt;Link Two&lt;/span&gt;
-        &lt;meta itemprop=&quot;position&quot; content=&quot;2&quot;/&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;breadcrumb__item&quot; itemprop=&quot;itemListElement&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http://schema.org/ListItem&quot;&gt;
-      &lt;a itemprop=&quot;item&quot; class=&quot;breadcrumb__link&quot; href=&quot;#&quot;&gt;
-        &lt;span itemprop=&quot;name&quot;&gt;Link Three&lt;/span&gt;
-        &lt;meta itemprop=&quot;position&quot; content=&quot;3&quot;/&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
+  &lt;nav class=&quot;navbar&quot;&gt;
+    &lt;a class=&quot;navbar__brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
+    &lt;button class=&quot;navbar__toggler&quot; data-module=&quot;Toggle&quot; data-options=&quot;{target: parent, activeClass: has-nav-open}&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+      &lt;div class=&quot;hamburger&quot;&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;nav navbar__nav&quot;&gt;
+      &lt;li class=&quot;nav__item&quot;&gt;
+        &lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Link 1&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav__item&quot;&gt;
+        &lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Link 2&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav__item&quot;&gt;
+        &lt;a class=&quot;nav__link&quot; href=&quot;#&quot;&gt;Link 3&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
   </code></pre>
   </div>
 
@@ -330,6 +334,6 @@
 
       </div>
     </footer>
-    <script src="javascripts/giza.js"></script>
+    <script src="/javascripts/giza.js"></script>
   </body>
 </html>

@@ -1,13 +1,14 @@
 
 
+
 <!doctype html>
-<html lang="en">
+<html lang="en" class="height-100">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jaywing Component Library</title>
-    <link rel="stylesheet" href="stylesheets/lab.css">
+    <link rel="stylesheet" href="/stylesheets/lab.css">
     <script>
       if (document.documentElement) {
         document
@@ -21,7 +22,7 @@
     <header class="app-header">
       <div class="container app-header__inner">
         <a class="app-logo" href="index.html">
-          <img class="app-logo__image" src="images/app-logo-light.svg" alt="Jaywing">
+          <img class="app-logo__image" src="/images/app-logo-light.svg" alt="Jaywing">
         </a>
         <span class="app-version">v0.0.1</span>
         
@@ -81,6 +82,8 @@
           
             
   
+    
+  
 
   
 
@@ -92,7 +95,7 @@
     
   
 
-  <li class="nav__item nav__item-level-1 nav__item-parent">
+  <li class="nav__item nav__item-level-1 nav__item-parent is-active">
     <a class="nav__link" href="content.icon.html">Content</a>
     
       <ul class="nav nav--vertical nav--nested">
@@ -129,14 +132,16 @@
         
           
   
-
+    
   
 
   
 
   
 
-  <li class="nav__item">
+  
+
+  <li class="nav__item is-active">
     <a class="nav__link" href="content.typography.html">Typography</a>
     
 </li>
@@ -149,8 +154,6 @@
           
             
   
-    
-  
 
   
 
@@ -162,7 +165,7 @@
     
   
 
-  <li class="nav__item nav__item-level-1 nav__item-parent is-active">
+  <li class="nav__item nav__item-level-1 nav__item-parent">
     <a class="nav__link" href="components.button.html">Components</a>
     
       <ul class="nav nav--vertical nav--nested">
@@ -253,19 +256,17 @@
     </div>
     <main class="app-content-sibling">
       
-  <h1>Hero</h1>
+  <h1>Typography</h1>
 
-  <p class="font-size-md">Add a hero to your page with image and video options.</p>
-
-  <h3>Usage</h3>
+  <h3>Headings</h3>
 
   
   
     <div class="app-example">
       <div class="app-example__tabs">
-        <a class="app-example__tab" href="components/hero.html" target="_blank">Open this example in a new window</a>
+        <a class="app-example__tab" href="/content/typography.headings.html" target="_blank">Open this example in a new window</a>
       </div>
-      <div data-module="LabFrame" data-options='{"src": "components/hero.html"}'></div>
+      <div data-module="LabFrame" data-options='{"src": "/content/typography.headings.html"}'></div>
     </div>
   
 
@@ -273,34 +274,30 @@
   <div class="app-code" data-module="LabCode">
     <button class="button app-copy-button js-app-copy-button">Copy code</button>
     <pre class="language-html"><code class="language-html">
-  &lt;div class=&quot;hero&quot;&gt;
-    &lt;picture class=&quot;hero__image&quot;&gt;
-      &lt;source media=&quot;(min-width: 768px)&quot; srcset=&quot;...&quot;/&gt;
-      &lt;source srcset=&quot;...&quot;/&gt;
-      &lt;img src=&quot;...&quot; alt=&quot;&quot;/&gt;
-    &lt;/picture&gt;
-    &lt;div class=&quot;hero__body&quot;&gt;
-      &lt;div class=&quot;hero__title&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;hero__text&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;h1&gt;...&lt;/h1&gt;
+
+  &lt;h2&gt;...&lt;/h2&gt;
+
+  &lt;h3&gt;...&lt;/h3&gt;
+
+  &lt;h4&gt;...&lt;/h4&gt;
+
+  &lt;h5&gt;...&lt;/h5&gt;
+
+  &lt;h6&gt;...&lt;/h6&gt;
   </code></pre>
   </div>
 
 
-  <h3>With video</h3>
+  <h3>Text</h3>
 
   
   
     <div class="app-example">
       <div class="app-example__tabs">
-        <a class="app-example__tab" href="components/hero.video.html" target="_blank">Open this example in a new window</a>
+        <a class="app-example__tab" href="/content/typography.text.html" target="_blank">Open this example in a new window</a>
       </div>
-      <div data-module="LabFrame" data-options='{"src": "components/hero.video.html"}'></div>
+      <div data-module="LabFrame" data-options='{"src": "/content/typography.text.html"}'></div>
     </div>
   
 
@@ -308,39 +305,30 @@
   <div class="app-code" data-module="LabCode">
     <button class="button app-copy-button js-app-copy-button">Copy code</button>
     <pre class="language-html"><code class="language-html">
-  &lt;div class=&quot;hero&quot;&gt;
-    &lt;div class=&quot;hero__media&quot;&gt;
-      &lt;picture class=&quot;hero__image&quot;&gt;
-        &lt;source media=&quot;(min-width: 768px)&quot; srcset=&quot;...&quot;/&gt;
-        &lt;source srcset=&quot;...&quot;/&gt;
-        &lt;img src=&quot;...&quot; alt=&quot;&quot;/&gt;
-      &lt;/picture&gt;
-      &lt;video autoplay=&quot;autoplay&quot; loop=&quot;loop&quot; muted=&quot;muted&quot; playsinline=&quot;playsinline&quot; class=&quot;hero__video&quot;&gt;
-        &lt;source src=&quot;....mp4&quot; type=&quot;video/mp4&quot;&gt;
-      &lt;/video&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hero__body&quot;&gt;
-      &lt;div class=&quot;hero__title&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;hero__text&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;p class=&quot;font-size-display&quot;&gt;...&lt;/p&gt;
+
+  &lt;p class=&quot;font-size-sm&quot;&gt;...&lt;/p&gt;
+
+  &lt;p class=&quot;font-size-xs&quot;&gt;...&lt;/p&gt;
+
+  &lt;p class=&quot;font-size-base&quot;&gt;...&lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+  &lt;/p&gt;
   </code></pre>
   </div>
 
 
-  <h3>With YouTube</h3>
+  <h3>Lists</h3>
 
   
   
     <div class="app-example">
       <div class="app-example__tabs">
-        <a class="app-example__tab" href="components/hero.youtube.html" target="_blank">Open this example in a new window</a>
+        <a class="app-example__tab" href="/content/typography.lists.html" target="_blank">Open this example in a new window</a>
       </div>
-      <div data-module="LabFrame" data-options='{"src": "components/hero.youtube.html"}'></div>
+      <div data-module="LabFrame" data-options='{"src": "/content/typography.lists.html"}'></div>
     </div>
   
 
@@ -348,24 +336,48 @@
   <div class="app-code" data-module="LabCode">
     <button class="button app-copy-button js-app-copy-button">Copy code</button>
     <pre class="language-html"><code class="language-html">
-  &lt;div class=&quot;hero&quot;&gt;
-    &lt;div class=&quot;hero__media&quot;&gt;
-      &lt;picture class=&quot;hero__image&quot;&gt;
-        &lt;source media=&quot;(min-width: 768px)&quot; srcset=&quot;...&quot;/&gt;
-        &lt;source srcset=&quot;...&quot;/&gt;
-        &lt;img src=&quot;...&quot; alt=&quot;&quot;/&gt;
-      &lt;/picture&gt;
-      &lt;iframe class=&quot;hero__video&quot; src=&quot;https://www.youtube.com/embed/XXX?controls=0&amp;amp;showinfo=0&amp;amp;rel=0&amp;amp;autoplay=1&amp;amp;loop=1&amp;amp;mute=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hero__body&quot;&gt;
-      &lt;div class=&quot;hero__title&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;hero__text&quot;&gt;
-        &lt;span class=&quot;hero__text-background&quot;&gt;...&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    ...
+  &lt;/ul&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    ...
+  &lt;/ul&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;...&lt;/p&gt;
+    &lt;cite&gt;...&lt;/cite&gt;
+  &lt;/blockquote&gt;
+  </code></pre>
+  </div>
+
+
+  <h3>Blockquote</h3>
+
+  
+  
+    <div class="app-example">
+      <div class="app-example__tabs">
+        <a class="app-example__tab" href="/content/typography.blockquote.html" target="_blank">Open this example in a new window</a>
+      </div>
+      <div data-module="LabFrame" data-options='{"src": "/content/typography.blockquote.html"}'></div>
+    </div>
+  
+
+  
+  <div class="app-code" data-module="LabCode">
+    <button class="button app-copy-button js-app-copy-button">Copy code</button>
+    <pre class="language-html"><code class="language-html">
+  &lt;blockquote&gt;
+    &lt;p&gt;...&lt;/p&gt;
+    &lt;cite&gt;...&lt;/cite&gt;
+  &lt;/blockquote&gt;
   </code></pre>
   </div>
 
@@ -403,6 +415,6 @@
 
       </div>
     </footer>
-    <script src="javascripts/giza.js"></script>
+    <script src="/javascripts/giza.js"></script>
   </body>
 </html>

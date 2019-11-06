@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,8 +7,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaywing Component Library</title>
-    <link rel="stylesheet" href="../stylesheets/app.css">
-    <link rel="stylesheet" href="../stylesheets/lab-demo.css">
+    <link rel="stylesheet" href="/stylesheets/app.css">
+    <link rel="stylesheet" href="/stylesheets/lab-demo.css">
     <script>
       if (document.documentElement) {
         document
@@ -30,9 +32,9 @@
 
         <div class="slider__slide is-active">
           <picture class="slider__picture">
-            <source srcset="https://picsum.photos/1600/800/" media="(min-width: 768px)">
-            <source srcset="https://picsum.photos/600/600">
-            <img class="slider__image" src="https://picsum.photos/600/600" alt="{{item.imgAlt}}">
+            <source data-srcset="https://picsum.photos/1600/800/" media="(min-width: 768px)">
+            <source data-srcset="https://picsum.photos/600/600">
+            <img class="slider__image lazy" data-src="https://picsum.photos/600/600" alt="">
           </picture>
           <div class="slider__content">
             <h2 class="slider__title">
@@ -49,9 +51,9 @@
 
         <div class="slider__slide">
           <picture class="slider__picture">
-            <source srcset="https://picsum.photos/1600/800/" media="(min-width: 768px)">
-            <source srcset="https://picsum.photos/600/600">
-            <img class="slider__image" src="https://picsum.photos/600/600" alt="{{item.imgAlt}}">
+            <source data-srcset="https://picsum.photos/1600/800/" media="(min-width: 768px)">
+            <source data-srcset="https://picsum.photos/600/600">
+            <img class="slider__image lazy" data-src="https://picsum.photos/600/600" alt="">
           </picture>
           <div class="slider__content">
             <h2 class="slider__title">
@@ -68,13 +70,32 @@
 
         <div class="slider__slide">
           <picture class="slider__picture">
-            <source srcset="https://picsum.photos/1600/800/" media="(min-width: 768px)">
-            <source srcset="https://picsum.photos/600/600">
-            <img class="slider__image" src="https://picsum.photos/600/600" alt="{{item.imgAlt}}">
+            <source data-srcset="https://picsum.photos/1600/800/" media="(min-width: 768px)">
+            <source data-srcset="https://picsum.photos/600/600">
+            <img class="slider__image lazy" data-src="https://picsum.photos/600/600" alt="">
           </picture>
           <div class="slider__content">
             <h2 class="slider__title">
               <span class="slider__text-background">Slide title 3</span>
+            </h2>
+            <div class="slider__text">
+              <span class="slider__text-background">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+
+        <div class="slider__slide">
+          <picture class="slider__picture">
+            <source data-srcset="https://picsum.photos/1600/800/" media="(min-width: 768px)">
+            <source data-srcset="https://picsum.photos/600/600">
+            <img class="slider__image lazy" data-src="https://picsum.photos/600/600" alt="">
+          </picture>
+          <div class="slider__content">
+            <h2 class="slider__title">
+              <span class="slider__text-background">Slide title 4</span>
             </h2>
             <div class="slider__text">
               <span class="slider__text-background">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
@@ -108,6 +129,6 @@
 
 
 
-    <script src="../javascripts/app.js"></script>
+    <script src="/javascripts/app.js"></script>
   </body>
 </html>

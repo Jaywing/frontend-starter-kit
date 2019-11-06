@@ -1,13 +1,14 @@
 
 
+
 <!doctype html>
-<html lang="en">
+<html lang="en" class="height-100">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jaywing Component Library</title>
-    <link rel="stylesheet" href="stylesheets/lab.css">
+    <link rel="stylesheet" href="/stylesheets/lab.css">
     <script>
       if (document.documentElement) {
         document
@@ -21,7 +22,7 @@
     <header class="app-header">
       <div class="container app-header__inner">
         <a class="app-logo" href="index.html">
-          <img class="app-logo__image" src="images/app-logo-light.svg" alt="Jaywing">
+          <img class="app-logo__image" src="/images/app-logo-light.svg" alt="Jaywing">
         </a>
         <span class="app-version">v0.0.1</span>
         
@@ -81,6 +82,8 @@
           
             
   
+    
+  
 
   
 
@@ -92,7 +95,7 @@
     
   
 
-  <li class="nav__item nav__item-level-1 nav__item-parent">
+  <li class="nav__item nav__item-level-1 nav__item-parent is-active">
     <a class="nav__link" href="content.icon.html">Content</a>
     
       <ul class="nav nav--vertical nav--nested">
@@ -114,14 +117,16 @@
         
           
   
-
+    
   
 
   
 
   
 
-  <li class="nav__item">
+  
+
+  <li class="nav__item is-active">
     <a class="nav__link" href="content.images.html">Images</a>
     
 </li>
@@ -149,8 +154,6 @@
           
             
   
-    
-  
 
   
 
@@ -162,7 +165,7 @@
     
   
 
-  <li class="nav__item nav__item-level-1 nav__item-parent is-active">
+  <li class="nav__item nav__item-level-1 nav__item-parent">
     <a class="nav__link" href="components.button.html">Components</a>
     
       <ul class="nav nav--vertical nav--nested">
@@ -253,19 +256,19 @@
     </div>
     <main class="app-content-sibling">
       
-  <h1>Pagination</h1>
+  <h1>Images</h1>
 
-  <p class="font-size-md">Pagination for idicating the currently active page.</p>
+  <p class="font-size-md">Examples of adding images with responsive behaviour to your page.</p>
 
-  <h3>Usage</h3>
+  <h2>Usage</h2>
 
   
   
     <div class="app-example">
       <div class="app-example__tabs">
-        <a class="app-example__tab" href="components/pagination.html" target="_blank">Open this example in a new window</a>
+        <a class="app-example__tab" href="/content/images.html" target="_blank">Open this example in a new window</a>
       </div>
-      <div data-module="LabFrame" data-options='{"src": "components/pagination.html"}'></div>
+      <div data-module="LabFrame" data-options='{"src": "/content/images.html"}'></div>
     </div>
   
 
@@ -273,18 +276,32 @@
   <div class="app-code" data-module="LabCode">
     <button class="button app-copy-button js-app-copy-button">Copy code</button>
     <pre class="language-html"><code class="language-html">
-  &lt;ul class=&quot;pagination&quot;&gt;
-    &lt;li class=&quot;pagination__item is-disabled&quot;&gt;
-      &lt;span class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;...&lt;/span&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;pagination__item&quot;&gt;
-      &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
-    &lt;/li&gt;
-    ...
-    &lt;li class=&quot;pagination__item&quot;&gt;
-      &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
+  &lt;img src=&quot;//placehold.it/780x250&quot; alt=&quot;...&quot;&gt;
+  </code></pre>
+  </div>
+
+
+  <h2>Picture</h2>
+
+  
+  
+    <div class="app-example">
+      <div class="app-example__tabs">
+        <a class="app-example__tab" href="/content/images.picture.html" target="_blank">Open this example in a new window</a>
+      </div>
+      <div data-module="LabFrame" data-options='{"src": "/content/images.picture.html"}'></div>
+    </div>
+  
+
+  
+  <div class="app-code" data-module="LabCode">
+    <button class="button app-copy-button js-app-copy-button">Copy code</button>
+    <pre class="language-html"><code class="language-html">
+  &lt;picture&gt;
+    &lt;source srcset=&quot;//placehold.it/780x250&quot; media=&quot;(min-width: 768px)&quot;&gt;
+    &lt;source srcset=&quot;//placehold.it/420x250&quot; media=&quot;(max-width: 768px)&quot;&gt;
+    &lt;img src=&quot;//placehold.it/480x250&quot; alt=&quot;...&quot;&gt;
+  &lt;/picture&gt;
   </code></pre>
   </div>
 
@@ -322,6 +339,6 @@
 
       </div>
     </footer>
-    <script src="javascripts/giza.js"></script>
+    <script src="/javascripts/giza.js"></script>
   </body>
 </html>

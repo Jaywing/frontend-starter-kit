@@ -1,13 +1,14 @@
 
 
+
 <!doctype html>
-<html lang="en">
+<html lang="en" class="height-100">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jaywing Component Library</title>
-    <link rel="stylesheet" href="stylesheets/lab.css">
+    <link rel="stylesheet" href="/stylesheets/lab.css">
     <script>
       if (document.documentElement) {
         document
@@ -21,7 +22,7 @@
     <header class="app-header">
       <div class="container app-header__inner">
         <a class="app-logo" href="index.html">
-          <img class="app-logo__image" src="images/app-logo-light.svg" alt="Jaywing">
+          <img class="app-logo__image" src="/images/app-logo-light.svg" alt="Jaywing">
         </a>
         <span class="app-version">v0.0.1</span>
         
@@ -81,6 +82,8 @@
           
             
   
+    
+  
 
   
 
@@ -92,21 +95,23 @@
     
   
 
-  <li class="nav__item nav__item-level-1 nav__item-parent">
+  <li class="nav__item nav__item-level-1 nav__item-parent is-active">
     <a class="nav__link" href="content.icon.html">Content</a>
     
       <ul class="nav nav--vertical nav--nested">
         
           
   
-
+    
   
 
   
 
   
 
-  <li class="nav__item">
+  
+
+  <li class="nav__item is-active">
     <a class="nav__link" href="content.icon.html">Icon</a>
     
 </li>
@@ -251,32 +256,31 @@
     </div>
     <main class="app-content-sibling">
       
-  <h1>Container</h1>
+  <h1>Icon</h1>
 
-  <p class="font-size-md">Options for displaying your content in layouts.</p>
+  <p class="font-size-md">Place vector icons anywhere using our SVG sprite generator.</p>
 
   <h2>Usage</h2>
 
   
-  <div class="app-code" data-module="LabCode">
-    <button class="button app-copy-button js-app-copy-button">Copy code</button>
-    <pre class="language-html"><code class="language-html">
-  &lt;div class=&quot;container&quot;&gt;
-    ...
-  &lt;/div&gt;
-  </code></pre>
-  </div>
-
-
-  <h2>Fluid</h2>
+  
+    <div class="app-example">
+      <div class="app-example__tabs">
+        <a class="app-example__tab" href="/content/icon.html" target="_blank">Open this example in a new window</a>
+      </div>
+      <div data-module="LabFrame" data-options='{"src": "/content/icon.html"}'></div>
+    </div>
+  
 
   
   <div class="app-code" data-module="LabCode">
     <button class="button app-copy-button js-app-copy-button">Copy code</button>
     <pre class="language-html"><code class="language-html">
-  &lt;div class=&quot;container-fluid&quot;&gt;
-    ...
-  &lt;/div&gt;
+  &lt;span class=&quot;icon icon--check&quot;&gt;
+    &lt;svg viewbox=&quot;0 0 1 1&quot;&gt;
+      &lt;use xlink:href=&quot;/assets/images/icons.svg#check&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/span&gt;
   </code></pre>
   </div>
 
@@ -314,6 +318,6 @@
 
       </div>
     </footer>
-    <script src="javascripts/giza.js"></script>
+    <script src="/javascripts/giza.js"></script>
   </body>
 </html>

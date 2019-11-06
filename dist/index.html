@@ -1,13 +1,15 @@
 
 
+
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Jaywing Component Library</title>
-    <link rel="stylesheet" href="stylesheets/lab.css">
+    <title>Jaywing Frontend site starter kit</title>
+    <link rel="stylesheet" href="/stylesheets/app.css">
     <script>
       if (document.documentElement) {
         document
@@ -17,71 +19,106 @@
       }
     </script>
   </head>
-  <body class="display-flex flex-column min-height-100" data-module="Sticky" data-sticky-container="data-sticky-container">
-    <header class="app-header">
-      <div class="container app-header__inner">
-        <a class="app-logo" href="index.html">
-          <img class="app-logo__image" src="images/app-logo-light.svg" alt="Jaywing">
-        </a>
-        <span class="app-version">v0.0.1</span>
+  <body class="display-flex flex-column min-height-100">
+    
+  <nav class="navbar">
+    <a class="navbar__brand" href="#">Navbar</a>
+    
+      
+  <button class="navbar__toggler" data-module="Toggle" data-options='{"target": "parent", "activeClass": "has-nav-open"}'  aria-label="Toggle navigation" >
+    <span class="navbar__toggler-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </button>
+
+      <div class="navbar__toggle">
+        
+  <ul class="nav navbar__nav" data-module="Nav">
+    
+
+      
+
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 1</a>
+
+        
+
+        
+      </li>
+    
+
+      
+
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 2</a>
+
+        
+
+        
+      </li>
+    
+
+      
+
+      <li class="nav__item">
+        <a class="nav__link" href="#">Link 3</a>
+
+        
+
+        
+      </li>
+    
+  </ul>
+
         
       </div>
-    </header>
-    <button class="button app-sidebar-toggle sticky__item" data-module="Toggle" data-options='{"target": ".app-sidebar"}' aria-label="Menu">
-      <span class="navbar__toggler-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-    </button>
+    
+  </nav>
 
     
+  <main class="app-content">
+    
+
   <div class="container">
-    <main class="app-content">
-      
-  <div class="text-center">
-    <h1>Build mobile first pages easily and fast</h1>
-
-    <p class="font-size-md">Use the Giza framework for building responsive mobile first websites and apps.</p>
-
+    <h1>Welcome to the Jaywing Frontend site starter kit</h1>
+    <p>To get started,
+      <a href="https://jaywing.github.io/frontend-component-library/" target="_blank">visit the docs</a>.</p>
     <p>
-      <a class="button" href="getting-started.introduction.html">Get started</a>
+      
+
+  
+
+  
+
+  
+    <a class="button" href="/lab" >
+      
+      
+        <span class="button__text">Open the lab</span>
+      
+    </a>
+  
+
     </p>
   </div>
 
-    </main>
+
+  </main>
+
+    <footer class="margin-top-auto">
+      
+  <div class="app-footer">
+    <p class="powered">
+      Powered by
+      <a href="https://github.com/r500dwp/giza" target="_blank">Giza framework</a>, components by
+      <a href="https://github.com/Jaywing/frontend-component-library" target="_blank">Jaywing Component Library</a>.
+    </p>
+    <p class="build">Build 0.1.0</p>
   </div>
 
-
-    <footer class="margin-top-auto app-footer">
-      <div class="container app-footer__inner">
-        
-          <h3 class="app-footer__title">Resources</h3>
-
-          <ul class="nav nav--vertical">
-            
-              
-  
-
-  
-
-  
-
-  
-
-  <li class="nav__item">
-    <a class="nav__link" href="https://jaywing.github.io/frontend-component-library/">Jaywing Frontend Component Library</a>
-    
-</li>
-
-            
-          </ul>
-        
-
-        <p class="brevier">Currently v0.0.1.</p>
-
-      </div>
     </footer>
-    <script src="javascripts/giza.js"></script>
+    <script src="/javascripts/app.js"></script>
   </body>
 </html>
