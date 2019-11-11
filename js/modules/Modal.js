@@ -1,13 +1,17 @@
-export default class CookieMessage {
-  constructor(el) {
+export default class Modal {
+  constructor(el, options) {
+    const defaults = {
+      name: "Cookie"
+    };
     this.el = el;
+    this.settings = Object.assign(defaults, options);
     this.init();
   }
 
   init() {
     this.dom = this.cacheDom();
     this.addEventListeners();
-    this.cookieName = "cookie-alert";
+    this.cookieName = this.settings.name;
     this.activeCookie = this.getCookie(this.cookieName);
 
     if (this.activeCookie == "true") {
@@ -17,7 +21,7 @@ export default class CookieMessage {
 
   cacheDom() {
     return {
-      button: this.el.querySelector(".js-cookie-message-close")
+      button: this.el.querySelector(".js-modal-close")
     };
   }
 
@@ -28,7 +32,7 @@ export default class CookieMessage {
   }
 
   handleCookieMessageClosed() {
-    this.setTheCookie("cookie-alert", true, 60);
+    this.setTheCookie(this.settings.name, true, 60);
     this.el.classList.remove("is-active");
   }
 
