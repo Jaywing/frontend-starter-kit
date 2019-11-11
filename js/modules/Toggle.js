@@ -16,6 +16,7 @@ export default class Toggle {
         this.el.classList.toggle(this.settings.activeClass);
       } else {
         if (typeof target === "string") {
+          this.el.classList.toggle(this.settings.activeClass);
           if (target === "parent") {
             this.el.parentNode.classList.toggle(this.settings.activeClass);
           } else {

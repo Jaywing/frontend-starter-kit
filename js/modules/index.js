@@ -13,8 +13,10 @@ for (var i = 0; i < moduleElements.length; i++) {
   if (dataOptions) {
     options = JSON.parse(dataOptions);
   }
-  const Module = require(`./${name}`).default;
-  new Module(el, options);
+
+  import(`./${name}`).then(Module => {
+    new Module.default(el, options);
+  });
 }
 
 /*
